@@ -56,20 +56,20 @@
                 <ul class="nav navbar-top-links navbar-right pull-right">
                     <li class="dropdown">
                         <a class="profile-pic" class="dropdown-toggle" data-toggle="dropdown" href="#"> <img src="{{ asset('img/user.png') }}" alt="user-img" width="36" class="img-circle">
-                            <b class="hidden-xs">ADMIN</b> 
+                            <b class="hidden-xs">{{ Auth::user()->name }}</b> 
                         </a>
                         <ul class="dropdown-menu">
                             <li>
                                 <a href="#" class="btn btn-link">My Profile</a>
                             </li>
                             <li>
-                                <a href="#"
+                                <a href="{{ route('logout') }}"
                                     onclick="event.preventDefault();
                                              document.getElementById('logout-form').submit();" class="btn btn-link">
                                     Sign Out
                                 </a>
 
-                                <form id="logout-form" action="#" method="POST" style="display: none;">
+                                <form id="logout-form" action="{{ route('logout') }}" method="POST" style="display: none;">
                                     {{ csrf_field() }}
                                 </form>
                             </li>
