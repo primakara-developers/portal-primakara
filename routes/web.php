@@ -29,5 +29,9 @@ Route::prefix('admin')->group(function() {
 	Route::get('password/reset/{token}', 'Auth\ResetPasswordController@showResetForm')->name('password.reset');
 	Route::post('password/reset', 'Auth\ResetPasswordController@reset');
 
+	//index
 	Route::get('dashboard','AdminController@index')->name('admin.index');
+
+	//menu post
+	Route::get('post/add','PostController@create')->name('admin.post.add');
 });

@@ -14,7 +14,7 @@
     <script src="https://oss.maxcdn.com/libs/html5shiv/3.7.0/html5shiv.js"></script>
     <script src="https://oss.maxcdn.com/libs/respond.js/1.4.2/respond.min.js"></script>
     <![endif]-->
-    @yield('additional-style')
+    @yield('additional-styles')
     <style type="text/css">
         .sub-menu{
             display: none;
@@ -83,21 +83,21 @@
                 <ul class="nav" id="side-menu">
                     <li style="padding: 10px 0 0;">
                         <a href="#" class="waves-effect" id="toggle-sub-menu-manage">
-                            <i class="fa fa-calendar fa-fw" aria-hidden="true"></i>
-                            <span class="hide-menu">Events</span>
+                            <i class="fa fa-book fa-fw" aria-hidden="true"></i>
+                            <span class="hide-menu">Article Menu</span>
                         </a>
                         <span class="sub-menu" id="sub-menu-manage">
                             <ul>
                                 <li>
-                                    <a href="#" class="waves-effect">
-                                        <i class="fa fa-calendar-plus-o fa-fw"></i>
-                                        <span class="hide-menu">Events</span>
+                                    <a href="{{ route('admin.post.add') }}" class="waves-effect">
+                                        <i class="fa fa-pencil-square-o fa-fw"></i>
+                                        <span class="hide-menu">Write Article</span>
                                     </a>
                                 </li>
                                 <li>
                                     <a href="#" class="waves-effect">
-                                        <i class="fa fa-comments-o fa-fw"></i>
-                                        <span class="hide-menu">Topics</span>
+                                        <i class="fa fa-list fa-fw"></i>
+                                        <span class="hide-menu">Articles</span>
                                     </a>
                                 </li>
                             </ul>
