@@ -19,8 +19,8 @@ class CreateArticlesTable extends Migration
             $table->string('title');
             $table->string('slug')->unique();
             $table->longtext('content');
-            $table->integer('category_id');
-            $table->integer('user_id');
+            $table->unsignedInteger('category_id');
+            $table->unsignedInteger('user_id');
             $table->timestamps();
             
             $table->foreign('category_id')->references('id')->on('categories');
