@@ -31,7 +31,8 @@ Route::prefix('dashboard')->group(function() {
 	Route::post('password/email', 'Auth\ForgotPasswordController@sendResetLinkEmail')->name('password.email');
 	Route::get('password/reset/{token}', 'Auth\ResetPasswordController@showResetForm')->name('password.reset');
 	Route::post('password/reset', 'Auth\ResetPasswordController@reset');
-	//menu post
+	//menu article
 	Route::get('article/add','ArticleController@create')->name('admin.article.add');
 	Route::post('article/add','ArticleController@store');
+	Route::get('articles', 'ArticleController@index')->name('admin.article.index');
 });

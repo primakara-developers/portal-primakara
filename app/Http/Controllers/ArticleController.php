@@ -25,7 +25,13 @@ class ArticleController extends Controller
      */
     public function index()
     {
-        //
+        if(Auth::user()->is_staff == 1){
+            $articles = Article::where('user_id',Auth::user()->id)->get();
+        }else{
+            $articles = Article::all();
+        }
+        return view('dashboard.articles.index')
+        ->with('articles',$articles);
     }
 
     /**
@@ -35,7 +41,7 @@ class ArticleController extends Controller
      */
     public function create()
     {
-        $categories = Category::all();
+        $categories = Category::all();  
         return view('dashboard.articles.add')
         ->with('categories', $categories);
     }
@@ -81,7 +87,8 @@ class ArticleController extends Controller
             
             $insert = Article::create($fields);
             if($insert){
-                return redirect()->to(route('admin.index'));
+                return redirect()->to(route('admin.article.index'))
+                ->with('msg', 'Article created successfully!');
             }
         }
 

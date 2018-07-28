@@ -95,7 +95,7 @@
                                     </a>
                                 </li>
                                 <li>
-                                    <a href="#" class="waves-effect">
+                                    <a href="{{ route('admin.article.index') }}" class="waves-effect">
                                         <i class="fa fa-list fa-fw"></i>
                                         <span class="hide-menu">Articles</span>
                                     </a>
