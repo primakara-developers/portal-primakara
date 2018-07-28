@@ -17,7 +17,10 @@ Route::get('/', function () {
 
 // Auth::routes()
 
-Route::prefix('admin')->group(function() {
+Route::prefix('dashboard')->group(function() {
+	//index
+	Route::get('/','AdminController@index')->name('admin.index');
+
 	// Authentication Routes...
 	Route::get('login', 'Auth\LoginController@showLoginForm')->name('login');
 	Route::post('login', 'Auth\LoginController@login');
@@ -28,10 +31,7 @@ Route::prefix('admin')->group(function() {
 	Route::post('password/email', 'Auth\ForgotPasswordController@sendResetLinkEmail')->name('password.email');
 	Route::get('password/reset/{token}', 'Auth\ResetPasswordController@showResetForm')->name('password.reset');
 	Route::post('password/reset', 'Auth\ResetPasswordController@reset');
-
-	//index
-	Route::get('dashboard','AdminController@index')->name('admin.index');
-
 	//menu post
-	Route::get('post/add','PostController@create')->name('admin.post.add');
+	Route::get('article/add','ArticleController@create')->name('admin.article.add');
+	Route::post('article/add','ArticleController@store');
 });

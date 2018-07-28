@@ -51,7 +51,7 @@
         <li><a href="{{ route('admin.index') }}">Welcome Page</a></li>
         <li class="active">Write Post</li>
         @endslot
-        <form action="" method="POST" class="form-horizontal form-material" enctype="multipart/form-data">
+        <form action="{{ route('admin.article.add') }}" method="POST" class="form-horizontal form-material" enctype="multipart/form-data">
             {{ csrf_field() }}
             <div class="form-group">
                 <label for="article_title" class="col-xs-12">Title of Article</label>
@@ -79,11 +79,18 @@
                 </div>
             </div>
             <div class="form-group">
-                <label for="category_id" class="col-xs-12" >Content of Article</label>
+                <label for="category_id" class="col-xs-12" >Category of Article</label>
                 <div class="col-xs-12">
-                    <select name="category_id[]" id="category_id" class="form-control form-line" multiple>
-
+                    <select name="category_name" id="category_id" class="form-control form-line" multiple>
+                        @foreach ($categories as $category)
+                            <option value="{{ $category->category_name }}">{{ $category->category_name }}</option>
+                        @endforeach
                     </select>
+                </div>
+            </div>
+            <div class="form-group">
+                <div class="col-xs-12">
+                    <input type="submit" value="Publish" class="btn btn-succes btn-pull">
                 </div>
             </div>
         </form>
@@ -102,6 +109,7 @@
         });
         function slugify(text)
         {
+
             return text.toString().toLowerCase()
             .replace(/\s+/g, '-')           // Replace spaces with -
             .replace(/[^\w\-]+/g, '')       // Remove all non-word chars
@@ -122,8 +130,9 @@
     $(document).ready(function() {
         $('#category_id').select2({
             placeholder: "Please choose",
-            tags:true
+            tags:true,
+            maximumSelectionLength:1
         });
     });
 </script>
-@endsection
+@endsection.

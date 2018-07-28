@@ -89,7 +89,7 @@
                         <span class="sub-menu" id="sub-menu-manage">
                             <ul>
                                 <li>
-                                    <a href="{{ route('admin.post.add') }}" class="waves-effect">
+                                    <a href="{{ route('admin.article.add') }}" class="waves-effect">
                                         <i class="fa fa-pencil-square-o fa-fw"></i>
                                         <span class="hide-menu">Write Article</span>
                                     </a>
@@ -110,7 +110,7 @@
             <div class="container-fluid">
                 @yield('content')
             </div>
-            <footer class="footer text-center"> 2018 &copy; PHPBali </footer>
+            <footer class="footer text-center"> {{ Carbon\Carbon::now()->format('Y') }} &copy Primakara Developer Team</footer>
         </div>
     </div>
     <script src="{{ asset('js/app-dashboard.js') }}"></script>
