@@ -135,4 +135,6 @@
         });
     });
 </script>
+<script src="{{ asset('js/sweetalert2.js') }}"></script>
+@include('components.dialog')
 @endsection.
