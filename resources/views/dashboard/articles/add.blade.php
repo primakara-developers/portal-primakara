@@ -60,15 +60,15 @@
                 </div>
             </div>
             <div class="form-group">
-                <label for="article_cover" class="col-xs-12" >Cover of Article</label>
-                <div class="col-xs-12">
-                    <input type="file" class="form-control" name="article_cover" id="article_cover" required>
-                </div>
-            </div>
-            <div class="form-group">
                 <label for="article_slug" class="col-xs-12" >Slug of Article</label>
                 <div class="col-xs-12">
                     <input type="text" class="form-control form-line" name="article_slug" id="article_slug" required>
+                </div>
+            </div>
+            <div class="form-group">
+                <label for="article_cover" class="col-xs-12" >Cover of Article</label>
+                <div class="col-xs-12">
+                    <input type="file" class="form-control" name="article_cover" id="article_cover" required>
                 </div>
             </div>
             <div class="form-group">
@@ -81,7 +81,7 @@
             <div class="form-group">
                 <label for="category_id" class="col-xs-12" >Category of Article</label>
                 <div class="col-xs-12">
-                    <select name="category_name" id="category_id" class="form-control form-line" multiple>
+                    <select name="category_name" id="category_id" class="form-control form-line" multiple required>
                         @foreach ($categories as $category)
                             <option value="{{ $category->category_name }}">{{ $category->category_name }}</option>
                         @endforeach
