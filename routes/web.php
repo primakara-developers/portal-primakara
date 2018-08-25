@@ -35,4 +35,8 @@ Route::prefix('dashboard')->group(function() {
 	Route::get('article/add','ArticleController@create')->name('admin.article.add');
 	Route::post('article/add','ArticleController@store');
 	Route::get('articles', 'ArticleController@index')->name('admin.article.index');
+	//menu category
+	Route::get('category/add','CategoryController@create')->name('admin.category.add');
+	Route::post('category/add','CategoryController@store');
+	Route::get('categories','CategoryController@index')->name('admin.category.index');
 });

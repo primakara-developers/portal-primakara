@@ -54,45 +54,23 @@
             </div>
             <!-- /.box-header -->
             <div class="box-body">
-                <form action="{{ route('admin.article.add') }}" method="POST" enctype="multipart/form-data">
+                <form action="{{ route('admin.category.add') }}" method="POST" enctype="multipart/form-data">
                     {{ csrf_field() }}
                     <div class="form-group">
-                        <label for="article_title" class="col-xs-12">Title of Article</label>
+                        <label for="article_title" class="col-xs-12">Title of Category</label>
                         <div class="col-xs-12">
-                            <input type="text" class="form-control form-line" id="article_title" name="article_title" required>
+                            <input type="text" class="form-control form-line" id="article_title" name="category_name" required>
                         </div>
                     </div>
                     <div class="form-group">
-                        <label for="article_slug" class="col-xs-12" >Slug of Article</label>
+                        <label for="article_slug" class="col-xs-12" >Slug of Category</label>
                         <div class="col-xs-12">
-                            <input type="text" class="form-control form-line" name="article_slug" id="article_slug" required>
-                        </div>
-                    </div>
-                    <div class="form-group">
-                        <label for="article_cover" class="col-xs-12" >Cover of Article</label>
-                        <div class="col-xs-12">
-                            <input type="file" class="" name="article_cover" id="article_cover" required >
-                        </div>
-                    </div>
-                    <div class="form-group">
-                        <label for="article_content" class="col-xs-12" >Content of Article</label>
-                        <div class="col-xs-12">
-                            <textarea name="article_content" id="article_content" required></textarea>
-                        </div>
-                    </div>
-                    <div class="form-group">
-                        <label for="category_id" class="col-xs-12" >Category of Article</label>
-                        <div class="col-xs-12">
-                            <select name="category_name" id="category_id" class="form-control form-line" multiple required>
-                                @foreach ($categories as $category)
-                                    <option value="{{ $category->category_name }}">{{ $category->category_name }}</option>
-                                @endforeach
-                            </select>
+                            <input type="text" class="form-control form-line" name="category_slug" id="article_slug" required>
                         </div>
                     </div>
                     <div class="form-group">
                         <div class="col-xs-12">
-                            <input type="submit" value="Publish" class="btn btn-succes btn-pull">
+                            <input type="submit" value="Save" class="btn btn-succes btn-pull">
                         </div>
                     </div>
                 </form>
@@ -105,32 +83,10 @@
 </div>
 @endsection
 @section('additional-scripts')
-<script src="https://cdnjs.cloudflare.com/ajax/libs/select2/4.0.6-rc.0/js/select2.min.js"></script>
-
 <script>
-    $(document).ready(function() {
-        $('#category_id').select2({
-            placeholder: "Please choose",
-            maximumSelectionLength:1
-        });
-    });
 </script>
 <script src="{{ asset('js/sweetalert2.js') }}"></script>
-<script src="{{ asset('summernote/summernote.min.js') }}"></script>
 <script>
-    $('#article_content').summernote({
-        placeholder: 'Type Here!',
-        tabsize:2,
-        height:300,
-        toolbar: [
-            ['style',['bold','italic','underline','clear']],
-            ['font', ['striketrough','superscript','subscript']],
-            ['fontsize',['fontsize']],
-            ['color', ['color']],
-            ['para', ['ul', 'ol', 'paragraph']],
-            ['height',['height']]
-        ]
-    })
     var articleTitle = document.getElementById('article_title');
     var slug = document.getElementById('article_slug');
     articleTitle.addEventListener('keyup', function(e) {

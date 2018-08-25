@@ -38,9 +38,9 @@
     <!-- Logo -->
     <a href="../../index2.html" class="logo">
       <!-- mini logo for sidebar mini 50x50 pixels -->
-      <span class="logo-mini"><b>A</b>LT</span>
+      <span class="logo-mini"><b>P</b>AD</span>
       <!-- logo for regular state and mobile devices -->
-      <span class="logo-lg"><b>Admin</b>LTE</span>
+      <span class="logo-lg"><b>Primakara</span>
     </a>
     <!-- Header Navbar: style can be found in header.less -->
     <nav class="navbar navbar-static-top">
@@ -120,13 +120,12 @@
       <!-- /.search form -->
       <!-- sidebar menu: : style can be found in sidebar.less -->
       <ul class="sidebar-menu" data-widget="tree">
-        <li class="header">MAIN NAVIGATION</li>
+        <li class="header">MAIN FEATURES</li>
         <li><a href="{{ route('admin.article.add') }}"><i class="fa fa-pencil-square-o"></i> <span>Write Article</span></a></li>
         <li><a href="{{ route('admin.article.index') }}"><i class="fa fa-list"></i> <span>List Articles</span></a></li>
-        <li class="header">LABELS</li>
-        <li><a href="#"><i class="fa fa-circle-o text-red"></i> <span>Important</span></a></li>
-        <li><a href="#"><i class="fa fa-circle-o text-yellow"></i> <span>Warning</span></a></li>
-        <li><a href="#"><i class="fa fa-circle-o text-aqua"></i> <span>Information</span></a></li>
+        <li class="header">ADDITIONAL FEATURES</li>
+        <li><a href="{{ route('admin.category.add') }}"><i class="fa fa-circle-o text-red"></i> <span>Add Category</span></a></li>
+        <li><a href="{{ route('admin.category.index') }}"><i class="fa fa-circle-o text-yellow"></i> <span>Category List</span></a></li>
       </ul>
     </section>
     <!-- /.sidebar -->
