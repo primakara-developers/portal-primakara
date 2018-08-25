@@ -4,6 +4,7 @@ namespace App\Http\Controllers;
 
 use Illuminate\Http\Request;
 use App\Category;
+use App\Article;
 
 class CategoryController extends Controller
 {
@@ -74,7 +75,8 @@ class CategoryController extends Controller
      */
     public function edit($id)
     {
-        //
+        $category = Category::find($id);
+        return view('dashboard.categories.edit')->with('category',$category);
     }
 
     /**
@@ -86,7 +88,18 @@ class CategoryController extends Controller
      */
     public function update(Request $request, $id)
     {
-        //
+        $request->validate([
+            'category_name'=> 'required|string',
+            'category_slug'=> 'required|string'
+        ]);
+        $category = [
+            'category_name'=> $request->category_name,
+            'category_slug'=> $request->category_slug
+        ];
+        $insert = Category::find($id)->update($category);
+        if($insert){
+            return redirect()->back()->with(['msg'=>'Category Succesfully edited']);
+        }
     }
 
     /**
@@ -97,6 +110,13 @@ class CategoryController extends Controller
      */
     public function destroy($id)
     {
-        //
+        $articles = Article::where('category_id',$id)->count();
+        // dd($articles);
+        if($articles > 0) {
+            return redirect()->back()->with([
+                'hasArticles'=>'This Category has '.$articles.' articles',
+                'category_id'=> $id
+            ]);
+        }
     }
 }

@@ -140,4 +140,17 @@ class ArticleController extends Controller
     {
         //
     }
+
+    /**
+     * filter article by category id
+     * @param int $id
+     * @return \Illuminate\Http\Response
+     */
+    public function filteredArticles($id)
+    {
+        $articles = Article::where('category_id',$id)->get();
+
+        return view('dashboard.articles.index')
+        ->with('articles',$articles);
+    }
 }
