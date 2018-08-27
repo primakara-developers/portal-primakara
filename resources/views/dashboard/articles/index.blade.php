@@ -24,7 +24,7 @@
                         <td>
                             <a href="#" class="btn btn-sm btn-primary"><i class="fa fa-pencil"></i></a>
                             <a href="#" class="btn btn-sm btn-success"><i class="fa fa-eye"></i></a>
-                            <a href="#" class="btn btn-sm btn-danger"><i class="fa fa-trash"></i></a>
+                            <a href="{{ route('admin.article.delete',['id' => $article->id]) }}" class="btn btn-sm btn-danger"><i class="fa fa-trash"></i></a>
                         </td>
                     </tr>
                 @endforeach

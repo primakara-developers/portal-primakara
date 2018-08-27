@@ -117,6 +117,13 @@ class CategoryController extends Controller
                 'hasArticles'=>'This Category has '.$articles.' articles',
                 'category_id'=> $id
             ]);
+        }else {
+            $category = Category::find($id)->delete();
+            if($category) {
+                return redirect()->back()->with([
+                    'msg'=>'Category deleted succesfully!'
+                ]);
+            }
         }
     }
 }

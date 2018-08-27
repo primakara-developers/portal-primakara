@@ -115,7 +115,8 @@ class ArticleController extends Controller
      */
     public function edit($id)
     {
-        //
+        $article = Category::find($id);
+        return view('dashboard.articles.edit')->with(['article'=>$article]);
     }
 
     /**
@@ -138,7 +139,18 @@ class ArticleController extends Controller
      */
     public function destroy($id)
     {
-        //
+        $article = Article::find($id);
+        $deleteCover = Storage::disk('local')->delete('public/media/'.$article->article_cover);
+        $execute = $article->delete();
+        if($execute) {
+            return redirect()->back()->with([
+                'msg'=>'Article removed succesfully!'
+            ]);
+        }else {
+            return redirect()->back()->with([
+                'msg'=>'Article is Not found!'
+            ]);
+        }
     }
 
     /**

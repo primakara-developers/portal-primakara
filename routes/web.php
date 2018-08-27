@@ -35,6 +35,9 @@ Route::prefix('dashboard')->group(function() {
 	Route::get('article/add','ArticleController@create')->name('admin.article.add');
 	Route::post('article/add','ArticleController@store');
 	Route::get('articles', 'ArticleController@index')->name('admin.article.index');
+	Route::get('article/{id}/edit', 'ArticleController@edit')->name('admin.article.edit');
+	Route::get('article/{id}/delete', 'ArticleController@destroy')->name('admin.article.delete');
+	
 	//filtered articles
 	Route::get('articles/{id}','ArticleController@filteredArticles')->name('admin.article.filter');
 	//menu category

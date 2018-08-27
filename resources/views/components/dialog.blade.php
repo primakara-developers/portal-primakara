@@ -12,6 +12,7 @@
 
 @if(session('msg'))
 <script type="text/javascript">
+console.log('wowo');
     $(function(){
         swal(
             'Operation Succed',
