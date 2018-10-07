@@ -1,36 +1,8 @@
 @extends('layouts.dashboard-app')
 @section('additional-styles')
 <link rel="stylesheet" href="{{ asset('summernote/summernote.min.css') }}">
-<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/select2/4.0.6-rc.0/css/select2.min.css">
+<link rel="stylesheet" href="{{ asset('css/select2.min.css') }}">
 <style>
-[class^='select2'] {
-  border-radius: 0px !important;
-  box-shadow: none !important;
-}
-.select2-container--default .select2-selection--multiple .select2-selection__rendered li {
-    color:#000;
-
-}
-.select2-container--default .select2-selection--single, .select2-container--default .select2-selection--multiple {
-
-  float: none;
-  background-color: rgba(0,0,0,0);
-  background-position: center bottom,center calc(99%);
-  background-repeat: no-repeat;
-  background-size: 0 2px,100% 1px;
-  padding: 0;
-  transition: background 0s ease-out 0s;
-}
-
-.select2-container--default.select2-container--focus .select2-selection--single, .select2-container--default.select2-container--focus .select2-selection--multiple {
-  background-size: 100% 2px,100% 1px;
-
-  transition-duration: .3s;
-}
-
-.select2-container--default .select2-selection--multiple .select2-selection__choice {
-  border: none;
-}
 .form-group {
     padding-bottom : 8px;
     overflow : hidden;
@@ -70,7 +42,7 @@
                     </div>
                     <div class="form-group">
                         <label for="article_cover" class="col-xs-12" >Cover of Article</label>
-                        
+                        <img src="/media/{{ $article->article_cover }}" alt="" srcset="">
                         <div class="col-xs-12">
                             <input type="file" class="" name="article_cover" id="article_cover" required >
                         </div>
@@ -78,13 +50,14 @@
                     <div class="form-group">
                         <label for="article_content" class="col-xs-12" >Content of Article</label>
                         <div class="col-xs-12">
-                            <textarea name="article_content" id="article_content" required></textarea>
+                            <textarea value="" name="article_content" id="article_content" required>{{ $article->article_content }}</textarea>
                         </div>
                     </div>
                     <div class="form-group">
                         <label for="category_id" class="col-xs-12" >Category of Article</label>
                         <div class="col-xs-12">
                             <select name="category_name" id="category_id" class="form-control form-line" multiple required>
+                                <!--<option selected="selected" value="{{ $article->article_category }}"></option>-->
                                 @foreach ($categories as $category)
                                     <option value="{{ $category->category_name }}">{{ $category->category_name }}</option>
                                 @endforeach
@@ -106,14 +79,17 @@
 </div>
 @endsection
 @section('additional-scripts')
-<script src="https://cdnjs.cloudflare.com/ajax/libs/select2/4.0.6-rc.0/js/select2.min.js"></script>
+<script src="{{ asset('js/select2.full.min.js') }}"></script>
 
 <script>
     $(document).ready(function() {
         $('#category_id').select2({
             placeholder: "Please choose",
             maximumSelectionLength:1
-        });
+        }).val([
+            "{{ $selectedCategory }}"
+        ]);
+        $('#category_id').trigger('change');
     });
 </script>
 <script src="{{ asset('js/sweetalert2.js') }}"></script>

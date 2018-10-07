@@ -115,8 +115,11 @@ class ArticleController extends Controller
      */
     public function edit($id)
     {
-        $article = Category::find($id);
-        return view('dashboard.articles.edit')->with(['article'=>$article]);
+        $article = Article::find($id);
+        $categories = Category::all();
+        $selectedCategory = Category::find($article->category_id)->category_name;
+        // dd($selectedCategory);
+        return view('dashboard.articles.edit')->with(['article'=>$article, 'categories'=>$categories, 'selectedCategory'=>$selectedCategory]);
     }
 
     /**
