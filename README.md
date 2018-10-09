@@ -13,6 +13,10 @@ $ git clone https://github.com/{username-anda}/portal-primakara.git
 $ git remote add upstream https://github.com/primakara-developers/portal-primakara.git
 ```
 4. Buat file baru `.env`. Isi file `.env` tersebut dengan isi dari file `.env.example`
+5. Install seluruh package agar bisa dijalankan
+```sh
+$ composer install
+```
 
 ### Berikut langkah-langkah yang wajib dilakukan dalam proses kontribusi
 1. Selalu pull upstream setiap ingin memulai mengembangkan
