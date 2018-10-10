@@ -28,8 +28,8 @@ DB_PASSWORD=secretpassword
 7. Jalankan command berikut:
 ```sh
 $ php artisan key:generate
-$ php artisan migrate
 $ php artisan migrate --seed
+$ npm install
 ```
 
 ### Berikut langkah-langkah yang wajib dilakukan dalam proses kontribusi
