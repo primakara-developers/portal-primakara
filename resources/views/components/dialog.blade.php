@@ -33,8 +33,7 @@ console.log('wowo');
             type:"warning",
             showCancelButton: true,
             confirmButtonColor: "#dd6b55",
-            confirmButtonText:"show me!",
-            // closeOnConfirm: false
+            confirmButtonText:"show me!"
         })
         .then(()=>{
             window.location.href = "{{ route('admin.article.filter', ['id'=> session('category_id')]) }}";

@@ -1,7 +1,7 @@
 @extends('layouts.dashboard-app')
 @section('additional-styles')
-<link rel="stylesheet" href="{{ asset('summernote/summernote.min.css') }}">
-<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/select2/4.0.6-rc.0/css/select2.min.css">
+<link href="http://cdnjs.cloudflare.com/ajax/libs/summernote/0.8.9/summernote.css" rel="stylesheet">
+<link rel="stylesheet" type="text/css" href="https://cdnjs.cloudflare.com/ajax/libs/select2/4.0.6-rc.1/css/select2.min.css">
 <style>
 [class^='select2'] {
   border-radius: 0px !important;
@@ -105,8 +105,9 @@
 </div>
 @endsection
 @section('additional-scripts')
-<script src="https://cdnjs.cloudflare.com/ajax/libs/select2/4.0.6-rc.0/js/select2.min.js"></script>
-
+<script src="https://cdnjs.cloudflare.com/ajax/libs/select2/4.0.6-rc.1/js/select2.full.min.js"></script>
+<script src="https://unpkg.com/sweetalert/dist/sweetalert.min.js"></script>
+<script src="http://cdnjs.cloudflare.com/ajax/libs/summernote/0.8.9/summernote.js"></script>
 <script>
     $(document).ready(function() {
         $('#category_id').select2({
@@ -115,8 +116,6 @@
         });
     });
 </script>
-<script src="{{ asset('js/sweetalert2.js') }}"></script>
-<script src="{{ asset('summernote/summernote.min.js') }}"></script>
 <script>
     $('#article_content').summernote({
         placeholder: 'Type Here!',
