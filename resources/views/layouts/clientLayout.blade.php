@@ -6,9 +6,11 @@
     <link rel="stylesheet" href="{{ asset('css/clientApp.css') }}">
     <meta name="viewport" content="width=device-width, initial-scale=1">
   </head>
+  @yield('additional-styles')
   <body>
 
     @yield('content')
 
+    @yield('additional-scripts')
   </body>
 </html>

@@ -44,6 +44,6 @@
 </div>
 @endsection
 @section('additional-scripts')
-<script src="{{ asset('js/sweetalert2.js') }}"></script>
+<script src="https://unpkg.com/sweetalert/dist/sweetalert.min.js"></script>
 @include('components.dialog')
 @endsection
