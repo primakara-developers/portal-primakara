@@ -1,4 +1,3 @@
-@extends('layouts.dashboard-app')
 @section('content')
 <div class="box">
     <div class="box-header with-border">
@@ -44,6 +43,6 @@
 </div>
 @endsection
 @section('additional-scripts')
-<script src="{{ asset('js/sweetalert2.js') }}"></script>
+<script src="https://unpkg.com/sweetalert/dist/sweetalert.min.js"></script>
 @include('components.dialog')
 @endsection
