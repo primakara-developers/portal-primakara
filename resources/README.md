@@ -8,9 +8,9 @@ Client
 - [Layout Views](https://github.com/primakara-developers/portal-primakara/blob/master/resources/views/layouts/clientLayout.blade.php)
 - [Assets Javascript](https://github.com/primakara-developers/portal-primakara/tree/master/resources/assets/js)
 - [Assets SCSS](https://github.com/primakara-developers/portal-primakara/tree/master/resources/assets/sass)
-- [Assets Images]()
-2. Untuk `scss`. Jika ingin membuat style untuk halaman baru. Silahkan tambahkan file `scss` di folder [pages]() dengan nama file yang sesuai seperti halaman yang mau dibuat.
-3. Setelah itu jangan lupa import file baru tersebut di [app.scss]()
+- [Assets Images](https://github.com/primakara-developers/portal-primakara/tree/master/resources/assets/images)
+2. Untuk `scss`. Jika ingin membuat style untuk halaman baru. Silahkan tambahkan file `scss` di folder [pages](https://github.com/primakara-developers/portal-primakara/tree/master/resources/assets/sass/pages) dengan nama file yang sesuai seperti halaman yang mau dibuat.
+3. Setelah itu jangan lupa import file baru tersebut di [app.scss](https://github.com/primakara-developers/portal-primakara/blob/master/resources/assets/sass/app.scss)
 
 ### Panduan development
 1. Pastikan anda sudah menginstall [Node.js](https://nodejs.org/). Versi yang disarankan >= 8
