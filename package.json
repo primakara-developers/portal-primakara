@@ -14,5 +14,10 @@
         "cross-env": "^5.1",
         "laravel-mix": "^2.0",
         "lodash": "^4.17.4"
+    },
+    "dependencies": {
+        "copy-webpack-plugin": "^4.5.3",
+        "imagemin-mozjpeg": "^7.0.0",
+        "imagemin-webpack-plugin": "^2.3.0"
     }
 }
