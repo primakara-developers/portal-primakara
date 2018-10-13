@@ -1,0 +1,50 @@
+// footer
+.border-footer{
+    border: 3px solid #109d59;
+  }
+  .line{
+    border-left: 2px solid grey;
+    height: 134px;
+    opacity: 0.3;
+  }
+  
+  .footer-control{
+    height: 231px;
+  }
+  .footer-center-title{
+    font-size: 20px;
+    color: #109d59;
+    font-weight: bold;
+  }
+  
+  .footer-center-list{
+    font-size: 20px;
+    color: #109d59;
+  }
+  
+  .footer-right-title{
+    font-size: 20px;
+    color: #109d59;
+    font-weight: bold;
+  }
+  
+  .footer-right-detail{
+    font-size: 16px;
+    color: $text-color;
+  }
+  
+  .footer-logo-pertama{
+    height: 65px;
+  }
+  
+  .footer-logo-kedua{
+    height: 65px;
+  }
+  
+  .footer-bottom-copyright{
+    text-align: center;
+    padding: 1%;
+    background: #109d59;
+    color: white;
+    font-size: 14px;
+  }
