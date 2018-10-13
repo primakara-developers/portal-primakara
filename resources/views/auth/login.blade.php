@@ -57,7 +57,7 @@
 @section('content')
 <div class="container">
     <div class="row justify-content-center">
-        <div class="col-md-5 px-md-5">
+        <div class="col-md-5 px-lg-5">
             <div class="card primdev-card">
                 <div class="card-header">{{ __('Login') }}</div>
 
