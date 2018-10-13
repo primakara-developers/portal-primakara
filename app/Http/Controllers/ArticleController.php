@@ -25,11 +25,12 @@ class ArticleController extends Controller
      */
     public function index()
     {
-        if(Auth::user()->is_staff == 1){
+        if (Auth::user()->is_staff == 1) {
             $articles = Article::where('user_id',Auth::user()->id)->get();
-        }else{
-            $articles = Article::all();
+        } else {
+            $articles = Article::paginate(10);
         }
+       
         return view('dashboard.articles.index')
         ->with('articles',$articles);
     }
