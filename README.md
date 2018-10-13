@@ -55,6 +55,8 @@ $ git push origin {nama-branch}
 ### Sedikit Panduan
 - Jika pull request tersebut untuk menyelesaikan sebuah issue. Mohon gunakan Title dengan contoh seperti ini: `Fix issue #25`. Sesuaikan dengan nomer issue yang diselesaikan.
 - Dalam membuat pull request, jika terkait dengan Front-End mohon isi reviewer dengan [wahyubucil]. Dan jika terkait dengan Back-End mohon isi Reviewer dengan [kirizu336] & [marvelalexius].
+- [Panduan untuk menambah mockup](https://github.com/primakara-developers/portal-primakara/blob/master/resources/assets/mockup/README.md)
+- [Panduan untuk development Front-End]()
 
 
 License
