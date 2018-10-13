@@ -1,0 +1,411 @@
+body{
+  margin: 0;
+  padding: 0;
+  font-family: 'Nunito', sans-serif;
+  font-size: 12px;
+  color: $default-color;
+}
+
+.active{
+  background: #109d59;
+  padding: 1.7% 2% 1.7% 2%;
+  color: White;
+  border-radius: 10px;
+}
+
+// navbar
+@media screen and (min-width: 1137px){
+  .container-navbar{
+    width: 1137px;
+    margin-left: auto;
+    margin-right: auto;
+  }
+}
+
+.logo-primdev{
+  padding: 1% 1% 1% 0%;
+  display: block;
+}
+.logo-primdev img{
+  height: 45px;
+}
+.menu-primdev{
+  text-align: right;
+  padding: 3.2% 0% 3.2% 3.2%;
+  font-size: 20px;
+  font-weight: bold;
+  color: #109d59;
+
+}
+.menu-primdev-button{
+  margin-left: 60px;
+}
+// navbar
+
+
+// header
+.primdev-title{
+  position: relative;
+  top: 277px;
+  text-align: center;
+  z-index: 1;
+  color: white;
+  font-size: 45px;
+}
+
+.primdev-sub-title{
+  position: relative;
+  top: 304px;
+  text-align: center;
+  z-index: 1;
+  color: white;
+  font-size: 30px;
+}
+// header
+
+
+// quote
+.kutipan-control{
+  position: relative;
+  top: 125px;
+  text-align: center;
+  z-index: 1;
+  color: white;
+  font-size: 45px;
+}
+
+.kutipan-hover{
+  position: relative;
+  top: 150px;
+  text-align: center;
+  z-index: 1;
+  color: white;
+  font-size: 30px;
+  border: 3px solid white;
+  width: 20%;
+  border-radius: 10px;
+  left: 39%;
+  cursor: pointer;
+}
+
+.kutipan-hover:hover{
+  background: white;
+  color: #109d59;
+  transition: all 0.3s ease-in-out;
+}
+// quote
+
+
+// content 1
+.main-content{
+  margin-top: 10%;
+}
+
+.link-text-decoration{
+	text-decoration: none;
+}
+
+.box-big{
+	height: 364px;
+}
+
+.box-mini{
+	height: 182px;
+}
+
+.box-content-main{
+	position: relative;
+	overflow: hidden;
+}
+
+.box-content-main:hover > .image-box {
+	transform: scale(1.1);
+}
+
+.image-box{
+	width: 100%;
+	height: auto;
+  transform: scale(2);
+	display: block;
+	-webkit-transition: all 0.3s ease-in-out;
+	-moz-transition: all 0.3s ease-in-out;
+	transition: all 0.3s ease-in-out;
+}
+
+.box-gradient{
+	position: absolute;
+	width: 100%;
+	height: 100%;
+	top: 0;
+	left: 0;
+	opacity: .7;
+}
+
+.gradient-color-1{
+	background: linear-gradient(45deg,#4db2ec 0%,#4a8f5e 100%);
+
+}
+
+.gradient-color-2{
+	background: linear-gradient(135deg,rgba(244,208,63,.97) 0%,#f27a35 100%);
+
+}
+
+.gradient-color-3{
+	background: linear-gradient(45deg,#d17646 0%,#c63939 100%);
+
+}
+
+.gradient-color-4{
+	background: linear-gradient(135deg,#d760b7 0%,#3b78b4 100%);
+
+}
+
+.gradient-color-5{
+	background: linear-gradient(45deg,#4db2ec 0%,#4a8f5e 100%);
+
+}
+
+.gradient-color-6{
+	background: linear-gradient(45deg,#4db2ec 0%,#4a8f5e 100%);
+
+}
+
+.gradient-color-7{
+	background: linear-gradient(135deg,#b0b43b 0%,rgba(145,96,81,.97) 100%);
+}
+
+.box-content{
+	position: absolute;
+	width: 100%;
+	height: 100%;
+	top: 0;
+	left: 0;
+}
+
+.title-box{
+	padding: 20px 20px;
+	overflow: hidden;
+}
+
+.title-content-box{
+  font-size: 10px;
+  color: white;
+  background-color: rgba(0, 0, 0, 0.5);
+  width: 49px;
+  height: auto;
+  text-align: center;
+  margin: 0px;
+  padding: 1%;
+
+}
+
+.title-content-box:hover {
+	background-color: rgba(0,0,0,1);
+	transition: all 0.3s ease-in-out;
+}
+
+.box-mini-content{
+	color: white;
+	font-size: 18px;
+	margin: 0px;
+	padding: 0px 30px;
+}
+
+.box-big-content{
+	color: white;
+	font-size: 30px;
+	margin: 0px;
+	padding: 0px 30px;
+}
+// content
+
+
+// information
+.information-tag{
+  margin-bottom: 5%;
+}
+.information-tag-title{
+  padding: 1%;
+  background: #109d59;
+  color: white;
+  font-size: 14px;
+  font-weight: bold;
+}
+.information-border-bottom{
+  border-bottom: 3px solid #109d59;
+  width: 100%;
+  height: 8px;
+  display: block;
+}
+.information-next{
+  float: right;
+  color: #109d59;
+  font-size: 16px;
+}
+.information-tag-title{
+  padding: 1%;
+  background: #109d59;
+  color: white;
+}
+
+.information-images{
+  width: 90%;
+  margin-left: auto;
+  margin-right: auto;
+  display: block;
+  height: auto;
+  position: relative;
+  overflow: hidden;
+}
+
+.information-images img{
+  width: 100%;
+  transform: scaleX(1.2);
+}
+
+.information-title{
+  font-size: 16px;
+  color: $default-color;
+  font-weight: bold;
+  margin-left: 5%;
+  width: 90%;
+  margin-top: 3%;
+}
+
+.information-detail{
+  font-size: 12px;
+  color: $text-color;
+  letter-spacing: 1px;
+  margin-top: 3%;
+  margin-left: 5%;
+  width: 90%;
+}
+
+.information-date{
+    margin-top: 3%;
+    margin-bottom: 10%;
+}
+
+.information-detail-date{
+  font-size: 12px;
+  color: $text-color;
+}
+
+.information-author{
+  font-size: 12px;
+  color: #109d59;
+  font-weight: bold;
+  margin-left: 5%;
+  width: 90%;
+}
+// information
+
+
+// ukm
+.ukm-content{
+  width: 95%;
+  height: 100%;
+  position: relative;
+  overflow: hidden;
+  border-radius: 10%;
+  margin-bottom: 5%;
+}
+.ukm-control{
+  text-align: center;
+  padding: 15%;
+}
+
+.ukm-title{
+  font-size: 24px;
+  color: #484848;
+  font-weight: bold;
+}
+
+.ukm-detail{
+  font-size: 24px;
+  color: #484848;
+  font-weight: bold;
+  margin-bottom: 5%;
+}
+
+.ukm-content-title{
+  position: relative;
+  top: 150px;
+  color: white;
+  font-size: 20px;
+  font-weight: bold;
+  z-index: 2;
+}
+
+.ukm-images{
+  display: block;
+  width: 100%;
+  height: 100%;
+  transform: scale(1.4);
+}
+
+.gradient-primdev{
+	 background: linear-gradient(135deg, #484848 0%, #000 100%);
+}
+
+.box-primdev{
+  position: absolute;
+  width: 100%;
+  height: 100%;
+  top: 0;
+  left: 0;
+  opacity: .7;
+}
+
+
+// footer
+.border-footer{
+  border: 3px solid #109d59;
+}
+.line{
+  border-left: 2px solid grey;
+  height: 134px;
+  opacity: 0.3;
+}
+
+.footer-control{
+  height: 231px;
+}
+.footer-center-title{
+  font-size: 20px;
+  color: #109d59;
+  font-weight: bold;
+}
+
+.footer-center-list{
+  font-size: 20px;
+  color: #109d59;
+}
+
+.footer-right-title{
+  font-size: 20px;
+  color: #109d59;
+  font-weight: bold;
+}
+
+.footer-right-detail{
+  font-size: 16px;
+  color: $text-color;
+}
+
+.footer-logo-pertama{
+  height: 65px;
+}
+
+.footer-logo-kedua{
+  height: 65px;
+}
+
+.footer-bottom-copyright{
+  text-align: center;
+  padding: 1%;
+  background: #109d59;
+  color: white;
+  font-size: 14px;
+}
