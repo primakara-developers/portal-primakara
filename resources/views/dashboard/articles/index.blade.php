@@ -1,4 +1,3 @@
-@extends('layouts.dashboard-app')
 @section('content')
 <div class="box">
     <div class="box-header with-border">
