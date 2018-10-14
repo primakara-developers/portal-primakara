@@ -9,7 +9,7 @@
       <div class="row">
         <div class="col-6">
           <div class="logo-primdev">
-              <img src="images/primdev.jpg" alt="">
+              <a href="#"><img src="images/primdev.jpg" alt=""></a>
           </div>
         </div>
         <div class="col-6">
@@ -284,9 +284,11 @@
                 <div class="col-12">
                   <div class="quote-control">
                     <div class="kutipan-control">
-                      Dapatkan informasi kegiatan kami dan tips serta trik seputar dunia teknologi dan kampus
+                      <div class="kutipan-control-content">
+                        Dapatkan informasi kegiatan kami dan tips serta trik seputar dunia teknologi dan kampus
+                      </div>
                     </div>
-                    <div class="kutipan-hover">Subscribe</div>
+                    <div class="kutipan-hover">SUBSCRIBE</div>
                   </div>
                 </div>
             </div>
@@ -296,7 +298,7 @@
     <!-- Quote -->
 
     <!-- ukm -->
-    <div class="container">
+    <div class="container-fluid">
         <div class="row">
             <div class="ukm-control">
                 <div class="ukm-title">UNIT KEGIATAN MAHASISWA</div>
@@ -360,11 +362,14 @@
       <div class="container-navbar">
         <div class="row">
             <div class="footer-control">
-                <div class="col-4">
-                  <img src="images/primdev.jpg" alt="" class="footer-logo-pertama">
+
+                <div class="col-3">
                   <img src="images/primakara.jpg" alt="" class="footer-logo-kedua">
+                  <img src="images/primdev.jpg" alt="" class="footer-logo-pertama">
                 </div>
+
                 <div class="col-1 line"></div>
+
                 <div class="col-2">
                     <div class="footer-center">
                         <div class="footer-center-title">INFORMASI</div>
@@ -375,7 +380,8 @@
                         <div class="footer-center-list">Etcetera</div>
                     </div>
                 </div>
-                <div class="-col-5">
+
+                <div class="col-4">
                     <div class="footer-right">
                         <div class="footer-right-title">SUMMARY</div>
 
@@ -387,6 +393,7 @@
                         </div>
                     </div>
                 </div>
+
             </div>
         </div>
       </div>
@@ -403,7 +410,6 @@
                 </div>
             </div>
         </div>
-
     </div>
 </footer>
 <!-- footer -->

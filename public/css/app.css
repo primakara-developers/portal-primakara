@@ -526,7 +526,7 @@ body {
 
 .parallax2 {
   background-image: url(/images/bg-bg.jpeg);
-  height: 425px;
+  height: 498px;
   background-attachment: fixed;
   background-position: center;
   background-repeat: no-repeat;
@@ -587,7 +587,7 @@ body {
 }
 
 .menu-primdev-link {
-  font-size: 17px;
+  font-size: 16px;
   font-weight: bold;
   color: #109d59;
 }
@@ -597,7 +597,7 @@ a {
 }
 
 .menu-primdev-button {
-  margin-left: 51px;
+  margin-left: 53px;
   vertical-align: middle;
 }
 
@@ -606,43 +606,53 @@ a {
 }
 
 .line {
-  border-left: 2px solid grey;
-  height: 134px;
+  border-left: 2px solid #cccbcb;
+  height: 150px;
   opacity: 0.3;
+  vertical-align: middle;
+  margin-top: 10px;
+  margin-left: 50px;
 }
 
 .footer-control {
-  height: 231px;
+  height: 190px;
+  padding: 2% 0% 0% 0%;
 }
 
 .footer-center-title {
-  font-size: 20px;
+  font-size: 22px;
   color: #109d59;
   font-weight: bold;
+  margin-bottom: 10px;
 }
 
 .footer-center-list {
-  font-size: 20px;
+  font-size: 22px;
   color: #109d59;
+  line-height: 35px;
 }
 
 .footer-right-title {
-  font-size: 20px;
+  font-size: 22px;
   color: #109d59;
   font-weight: bold;
+  margin-bottom: 10px;
 }
 
 .footer-right-detail {
   font-size: 16px;
   color: #696969;
+  line-height: 30px;
+  width: 470px;
 }
 
 .footer-logo-pertama {
-  height: 65px;
+  height: 50px;
 }
 
 .footer-logo-kedua {
-  height: 65px;
+  height: 85px;
+  margin-bottom: 5%;
 }
 
 .footer-bottom-copyright {
@@ -659,7 +669,7 @@ a {
   text-align: center;
   z-index: 1;
   color: white;
-  font-size: 43px;
+  font-size: 41px;
   letter-spacing: 0px;
 }
 
@@ -674,25 +684,39 @@ a {
 
 .kutipan-control {
   position: relative;
+}
+
+.kutipan-control-content {
   top: 125px;
   text-align: center;
   z-index: 1;
   color: white;
-  font-size: 45px;
+  position: relative;
+  right: 0;
+  bottom: 0;
+  left: 0;
+  margin: auto;
+  font-size: 30px;
+  width: 70%;
+  line-height: 50px;
 }
 
 .kutipan-hover {
   position: relative;
-  top: 150px;
+  top: 175px;
   text-align: center;
   z-index: 1;
   color: white;
-  font-size: 30px;
+  font-size: 27px;
   border: 3px solid white;
-  width: 20%;
-  border-radius: 10px;
-  left: 39%;
+  width: 15%;
+  border-radius: 13px;
+  padding: 10px 0px 10px 0px;
+  left: 0;
   cursor: pointer;
+  right: 0;
+  bottom: 0;
+  margin: auto;
 }
 
 .kutipan-hover:hover {
@@ -810,7 +834,7 @@ a {
 
 .box-mini-content {
   color: white;
-  font-size: 18px;
+  font-size: 16px;
   padding: 30px 25px;
   width: 313px;
   line-height: 30px;
@@ -818,21 +842,21 @@ a {
 
 .box-big-content {
   color: white;
-  font-size: 35px;
+  font-size: 30px;
   padding: 30px 25px;
   width: 275px;
   line-height: 50px;
 }
 
 .information-tag {
-  margin-bottom: 5%;
+  margin-bottom: 2%;
 }
 
 .information-tag-title {
   padding: 1%;
   background: #109d59;
   color: white;
-  font-size: 19px;
+  font-size: 17px;
   font-weight: bold;
   width: 100%;
   height: auto;
@@ -840,16 +864,16 @@ a {
 }
 
 .information-border-bottom {
-  border-bottom: 3px solid #109d59;
+  border-bottom: 2px solid #109d59;
   width: 100%;
-  height: 8px;
+  height: 10px;
   display: block;
 }
 
 .information-next {
   float: right;
   color: #109d59;
-  font-size: 16px;
+  font-size: 15px;
 }
 
 .information-next:hover {
@@ -872,37 +896,34 @@ a {
 }
 
 .information-images {
-  width: 90%;
-  margin-left: auto;
-  margin-right: auto;
+  width: 273px;
   display: block;
-  height: auto;
+  height: 178px;
   position: relative;
   overflow: hidden;
 }
 
 .information-images img {
   width: 100%;
-  -webkit-transform: scaleX(1.2);
-          transform: scaleX(1.2);
+  -webkit-transform: scaleX(1.1);
+  transform: scaleX(1.1);
 }
 
 .information-title {
   font-size: 16px;
-  color: #484848;
+  color: #494949;
   font-weight: bold;
-  margin-left: 5%;
-  width: 90%;
+  width: 275px;
   margin-top: 3%;
+  line-height: 22px;
 }
 
 .information-detail {
-  font-size: 12px;
+  font-size: 14px;
   color: #696969;
-  letter-spacing: 1px;
   margin-top: 3%;
-  margin-left: 5%;
-  width: 90%;
+  width: 262px;
+  line-height: 20px;
 }
 
 .information-date {
@@ -919,28 +940,28 @@ a {
   font-size: 12px;
   color: #109d59;
   font-weight: bold;
-  margin-left: 5%;
   width: 90%;
 }
 
 .ukm-content {
-  width: 95%;
-  height: 100%;
+  width: 544px;
+  height: 368px;
   position: relative;
   overflow: hidden;
-  border-radius: 10%;
-  margin-bottom: 5%;
+  border-radius: 26px;
+  margin: auto auto 5% auto;
 }
 
 .ukm-control {
   text-align: center;
-  padding: 15%;
+  padding-top: 5%;
 }
 
 .ukm-title {
   font-size: 24px;
   color: #484848;
   font-weight: bold;
+  line-height: 60px;
 }
 
 .ukm-detail {
@@ -951,12 +972,14 @@ a {
 }
 
 .ukm-content-title {
-  position: relative;
-  top: 150px;
+  position: absolute;
+  top: 180px;
   color: white;
-  font-size: 20px;
+  font-size: 26px;
   font-weight: bold;
   z-index: 2;
+  left: 0;
+  right: 0;
 }
 
 .ukm-images {
