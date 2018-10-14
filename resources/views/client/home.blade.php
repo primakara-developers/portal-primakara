@@ -33,150 +33,152 @@
   <div class="container">
         <div class="row">
             <div class="col-12">
-                <div class="primdev-title">PRIMAKARA DEVELOPER</div>
+                <div class="primdev-title">PRIMAKARA DEVELOPERS</div>
                 <div class="primdev-sub-title">Proudly Present</div>
-                <div class="primdev-scroll-button">
-                    <img src="images/scroll.png" alt="">
-                </div>
             </div>
         </div>
         <div class="gradient"></div>
         <div class="parallax1"></div>
+        <a href="javascript:void(0)" class="primdev-scroll-button">
+            <img src="images/icons/downwards-pointer.svg" alt="">
+        </a>
   </div>
     <!-- Banner -->
 
 
 <!-- Content-->
-    <div class="container-fluid">
-      <div class="main-content">
-        <div class="col-4">
-          <a href="single_page.php" class="link-text-decoration">
-            <div class="box-big box-content-main">
-
-                <img src="images/no1.jpg" class="image-box">
-
-                <div class="box-gradient gradient-color-1"></div>
-
-                <div class="box-content">
-
+    <section id="headnews">
+        <div class="container-fluid">
+          <div class="main-content">
+            <div class="col-4">
+              <a href="single_page.php" class="link-text-decoration">
+                <div class="box-big box-content-main">
+    
+                    <img src="images/no1.jpg" class="image-box">
+    
+                    <div class="box-gradient gradient-color-1"></div>
+    
+                    <div class="box-content">
+    
+                        <div class="title-box">
+                          <p class="title-content-box"> IPHONE </p>
+                        </div>
+    
+                        <h1 class="box-big-content">
+                           Canon XC10 4K<br>
+                           Digital Camcorder Is Out:<br>
+                           VersatileAnd For Only $2,500
+                        </h1>
+    
+                    </div>
+    
+                </div>
+              </a>
+    
+              <a href="single_page.php" class="link-text-decoration">
+    
+                <div class="box-mini box-content-main">
+    
+                  <img src="images/no2.jpg" class="image-box">
+    
+                  <div class="box-gradient gradient-color-2"></div>
+                  <?php // XXX:  ?>
+                  <div class="box-content">
+                    <div class="title-box">
+                      <p class="title-content-box"> ANDROID </p>
+                    </div>
+                    <h1 class="box-mini-content">
+                       Robots helped inspire deep learning
+                       might become
+                    </h1>
+                  </div>
+                </div>
+              </a>
+            </div>
+    
+            <div class="col-4">
+              <a href="single_page.php" class="link-text-decoration">
+                <div class="box-mini box-content-main">
+                  <img src="images/no3.jpg" class="image-box">
+                  <div class="box-gradient gradient-color-3"></div>
+                  <div class="box-content">
+                    <div class="title-box">
+                      <p class="title-content-box"> REVIEWS </p>
+                    </div>
+                    <h1 class="box-mini-content">
+                       Apple Server Most Powerful rack<br>
+                       optimized server
+                    </h1>
+                  </div>
+                </div>
+              </a>
+    
+              <a href="single_page.php" class="link-text-decoration">
+                <div class="box-mini box-content-main">
+                  <img src="images/no4.jpg" class="image-box">
+                  <div class="box-gradient gradient-color-4"></div>
+                  <div class="box-content">
+                    <div class="title-box">
+                      <p class="title-content-box"> CAMERA </p>
+                    </div>
+                    <h1 class="box-mini-content">
+                       A first glimpse at Java 9: Early access<br>
+                       release of JDK9 on OpenJDK
+                    </h1>
+                  </div>
+                </div>
+              </a>
+              <a href="single_page.php" class="link-text-decoration">
+                <div class="box-mini box-content-main">
+                  <img src="images/no5.jpg" class="image-box">
+                  <div class="box-gradient gradient-color-5"></div>
+                    <div class="box-content">
+                      <div class="title-box">
+                        <p class="title-content-box"> APPLE </p>
+                      </div>
+                      <h1 class="box-mini-content">
+                         Lea Michele Flaunts Cleavage In White-<br>
+                         Hot Dress For SOP Premiere
+                      </h1>
+                    </div>
+                </div>
+              </a>
+            </div>
+    
+            <div class="col-4">
+              <a href="single_page.php" class="link-text-decoration">
+                <div class="box-mini box-content-main">
+                  <img src="images/no6.jpg" class="image-box">
+                  <div class="box-gradient gradient-color-6"></div>
+                  <div class="box-content">
                     <div class="title-box">
                       <p class="title-content-box"> IPHONE </p>
                     </div>
-
-                    <h1 class="box-big-content">
-                       Canon XC10 4K<br>
-                       Digital Camcorder Is Out:<br>
-                       VersatileAnd For Only $2,500
+                    <h1 class="box-mini-content">
+                       Building an API in 60 seconds,<br>
+                       without any server setup
                     </h1>
-
-                </div>
-
-            </div>
-          </a>
-
-          <a href="single_page.php" class="link-text-decoration">
-
-            <div class="box-mini box-content-main">
-
-              <img src="images/no2.jpg" class="image-box">
-
-              <div class="box-gradient gradient-color-2"></div>
-              <?php // XXX:  ?>
-              <div class="box-content">
-                <div class="title-box">
-                  <p class="title-content-box"> ANDROID </p>
-                </div>
-                <h1 class="box-mini-content">
-                   Robots helped inspire deep learning
-                   might become
-                </h1>
-              </div>
-            </div>
-          </a>
-        </div>
-
-        <div class="col-4">
-          <a href="single_page.php" class="link-text-decoration">
-            <div class="box-mini box-content-main">
-              <img src="images/no3.jpg" class="image-box">
-              <div class="box-gradient gradient-color-3"></div>
-              <div class="box-content">
-                <div class="title-box">
-                  <p class="title-content-box"> REVIEWS </p>
-                </div>
-                <h1 class="box-mini-content">
-                   Apple Server Most Powerful rack<br>
-                   optimized server
-                </h1>
-              </div>
-            </div>
-          </a>
-
-          <a href="single_page.php" class="link-text-decoration">
-            <div class="box-mini box-content-main">
-              <img src="images/no4.jpg" class="image-box">
-              <div class="box-gradient gradient-color-4"></div>
-              <div class="box-content">
-                <div class="title-box">
-                  <p class="title-content-box"> CAMERA </p>
-                </div>
-                <h1 class="box-mini-content">
-                   A first glimpse at Java 9: Early access<br>
-                   release of JDK9 on OpenJDK
-                </h1>
-              </div>
-            </div>
-          </a>
-          <a href="single_page.php" class="link-text-decoration">
-            <div class="box-mini box-content-main">
-              <img src="images/no5.jpg" class="image-box">
-              <div class="box-gradient gradient-color-5"></div>
-                <div class="box-content">
-                  <div class="title-box">
-                    <p class="title-content-box"> APPLE </p>
                   </div>
-                  <h1 class="box-mini-content">
-                     Lea Michele Flaunts Cleavage In White-<br>
-                     Hot Dress For SOP Premiere
-                  </h1>
                 </div>
+              </a>
+              <a href="single_page.php" class="link-text-decoration">
+                <div class="box-big box-content-main">
+                  <img src="images/no7.jpg" class="image-box">
+                  <div class="box-gradient gradient-color-7"></div>
+                  <div class="box-content">
+                    <div class="title-box">
+                      <p class="title-content-box"> ANDROID </p>
+                    </div>
+                    <h1 class="box-big-content">
+                      Announcing a specification for PHP
+                    </h1>
+                  </div>
+                </div>
+              </a>
             </div>
-          </a>
+          </div>
         </div>
-
-        <div class="col-4">
-          <a href="single_page.php" class="link-text-decoration">
-            <div class="box-mini box-content-main">
-              <img src="images/no6.jpg" class="image-box">
-              <div class="box-gradient gradient-color-6"></div>
-              <div class="box-content">
-                <div class="title-box">
-                  <p class="title-content-box"> IPHONE </p>
-                </div>
-                <h1 class="box-mini-content">
-                   Building an API in 60 seconds,<br>
-                   without any server setup
-                </h1>
-              </div>
-            </div>
-          </a>
-          <a href="single_page.php" class="link-text-decoration">
-            <div class="box-big box-content-main">
-              <img src="images/no7.jpg" class="image-box">
-              <div class="box-gradient gradient-color-7"></div>
-              <div class="box-content">
-                <div class="title-box">
-                  <p class="title-content-box"> ANDROID </p>
-                </div>
-                <h1 class="box-big-content">
-                  Announcing a specification for PHP
-                </h1>
-              </div>
-            </div>
-          </a>
-        </div>
-      </div>
-    </div>
+    </section>
     <!-- Content -->
 
     <!-- Information -->
@@ -411,5 +413,20 @@
     </div>
 </footer>
 <!-- footer -->
+
+@endsection
+
+@section('additional-scripts')
+
+<script>
+    var scrollToBottom = document.getElementsByClassName('primdev-scroll-button')[0];
+    var headNews = document.getElementById('headnews');
+    scrollToBottom.addEventListener('click', function(e) {
+        headNews.scrollIntoView({
+            behavior: 'smooth',
+            block: 'start'
+        });
+    });
+</script>
 
 @endsection
