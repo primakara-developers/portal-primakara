@@ -187,91 +187,99 @@
                 </div>
 
                 <div class="col-3">
-                    <div class="information-images">
-                        <img src="images/no1.jpg" alt="">
-                    </div>
-                    <div class="information-title">
-                        Membangun Ekosistem Digital,
-                        STMIK dan STIKOM Bergabung
-                    </div>
-                    <div class="information-detail">
-                        Happy Sunday from software Expand
-                        In this Week's edition of Feedback
-                        Loop, we talk about the future of
-                        Windows Phone, whether they look
-                        like shit
-                    </div>
-                    <div class="information-date">
-                        <span class="information-author">Nadim</span>
-                        -
-                        <span class="information-detail-date">29 February 2018</span>
-                    </div>
+                    <a href="#">
+                      <div class="information-images">
+                          <img src="images/no1.jpg" alt="">
+                      </div>
+                      <div class="information-title">
+                          Membangun Ekosistem Digital,
+                          STMIK dan STIKOM Bergabung
+                      </div>
+                      <div class="information-detail">
+                          Happy Sunday from software Expand
+                          In this Week's edition of Feedback
+                          Loop, we talk about the future of
+                          Windows Phone, whether they look
+                          like shit
+                      </div>
+                      <div class="information-date">
+                          <span class="information-author">Nadim</span>
+                          -
+                          <span class="information-detail-date">29 February 2018</span>
+                      </div>
+                    </a>
                 </div>
 
                 <div class="col-3">
-                    <div class="information-images">
-                        <img src="images/no1.jpg" alt="">
-                    </div>
-                    <div class="information-title">
-                        Membangun Ekosistem Digital,
-                        STMIK dan STIKOM Bergabung
-                    </div>
-                    <div class="information-detail">
-                        Happy Sunday from software Expand
-                        In this Week's edition of Feedback
-                        Loop, we talk about the future of
-                        Windows Phone, whether they look
-                        like shit
-                    </div>
-                    <div class="information-date">
-                        <span class="information-author">Nadim</span>
-                        -
-                        <span class="information-detail-date">29 February 2018</span>
-                    </div>
+                    <a href="#">
+                      <div class="information-images">
+                          <img src="images/no1.jpg" alt="">
+                      </div>
+                      <div class="information-title">
+                          Membangun Ekosistem Digital,
+                          STMIK dan STIKOM Bergabung
+                      </div>
+                      <div class="information-detail">
+                          Happy Sunday from software Expand
+                          In this Week's edition of Feedback
+                          Loop, we talk about the future of
+                          Windows Phone, whether they look
+                          like shit
+                      </div>
+                      <div class="information-date">
+                          <span class="information-author">Nadim</span>
+                          -
+                          <span class="information-detail-date">29 February 2018</span>
+                      </div>
+                    </a>
                 </div>
 
                 <div class="col-3">
-                    <div class="information-images">
-                        <img src="images/no1.jpg" alt="">
-                    </div>
-                    <div class="information-title">
-                        Membangun Ekosistem Digital,
-                        STMIK dan STIKOM Bergabung
-                    </div>
-                    <div class="information-detail">
-                        Happy Sunday from software Expand
-                        In this Week's edition of Feedback
-                        Loop, we talk about the future of
-                        Windows Phone, whether they look
-                        like shit
-                    </div>
-                    <div class="information-date">
-                        <span class="information-author">Nadim</span>
-                        -
-                        <span class="information-detail-date">29 February 2018</span>
-                    </div>
+                    <a href="#">
+                      <div class="information-images">
+                          <img src="images/no1.jpg" alt="">
+                      </div>
+                      <div class="information-title">
+                          Membangun Ekosistem Digital,
+                          STMIK dan STIKOM Bergabung
+                      </div>
+                      <div class="information-detail">
+                          Happy Sunday from software Expand
+                          In this Week's edition of Feedback
+                          Loop, we talk about the future of
+                          Windows Phone, whether they look
+                          like shit
+                      </div>
+                      <div class="information-date">
+                          <span class="information-author">Nadim</span>
+                          -
+                          <span class="information-detail-date">29 February 2018</span>
+                      </div>
+                    </a>
                 </div>
 
                 <div class="col-3">
-                    <div class="information-images">
-                        <img src="images/no1.jpg" alt="">
-                    </div>
-                    <div class="information-title">
-                        Membangun Ekosistem Digital,
-                        STMIK dan STIKOM Bergabung
-                    </div>
-                    <div class="information-detail">
-                        Happy Sunday from software Expand
-                        In this Week's edition of Feedback
-                        Loop, we talk about the future of
-                        Windows Phone, whether they look
-                        like shit
-                    </div>
-                    <div class="information-date">
-                        <span class="information-author">Nadim</span>
-                        -
-                        <span class="information-detail-date">29 February 2018</span>
-                    </div>
+                    <a href="#">
+                      <div class="information-images">
+                          <img src="images/no1.jpg" alt="">
+                      </div>
+                      <div class="information-title">
+                          Membangun Ekosistem Digital,
+                          STMIK dan STIKOM Bergabung
+                      </div>
+                      <div class="information-detail">
+                          Happy Sunday from software Expand
+                          In this Week's edition of Feedback
+                          Loop, we talk about the future of
+                          Windows Phone, whether they look
+                          like shit
+                      </div>
+                      <div class="information-date">
+                          <span class="information-author">Nadim</span>
+                          -
+                          <span class="information-detail-date">29 February 2018</span>
+                      </div>
+                    </a>
                 </div>
             </div>
         </div>
@@ -304,48 +312,73 @@
                 <div class="ukm-title">UNIT KEGIATAN MAHASISWA</div>
                 <div class="ukm-detail">STMIK PRIMAKARA</div>
                 <div class="col-6">
+
+                  <a href="#">
                     <div class="ukm-content">
                         <div class="ukm-content-title">HIPMI PRIMAKARA</div>
                         <img src="images/no4.jpg" alt="" class="ukm-images">
                         <div class="gradient-primdev box-primdev"></div>
                     </div>
+                  </a>
+
+                  <a href="#">
                     <div class="ukm-content">
                         <div class="ukm-content-title">PRIMAKARA DEVELOPERS</div>
                         <img src="images/no4.jpg" alt="" class="ukm-images">
                         <div class="gradient-primdev box-primdev"></div>
                     </div>
+                  </a>
+
+                  <a href="#">
                     <div class="ukm-content">
                         <div class="ukm-content-title">E-SPORT</div>
                         <img src="images/no4.jpg" alt="" class="ukm-images">
                         <div class="gradient-primdev box-primdev"></div>
                     </div>
+                  </a>
+
+                  <a href="#">
                     <div class="ukm-content">
                         <div class="ukm-content-title">ENGLISH CLUB</div>
                         <img src="images/no4.jpg" alt="" class="ukm-images">
                         <div class="gradient-primdev box-primdev"></div>
                     </div>
+                  </a>
+
                 </div>
                 <div class="col-6">
+                  <a href="#">
                     <div class="ukm-content">
-                        <div class="ukm-content-title">MAPALA</div>
-                        <img src="images/no4.jpg" alt="" class="ukm-images">
-                        <div class="gradient-primdev box-primdev"></div>
-                    </div>
-                    <div class="ukm-content">
-                        <div class="ukm-content-title">PHOTOGRAPHY</div>
-                        <img src="images/no4.jpg" alt="" class="ukm-images">
-                        <div class="gradient-primdev box-primdev"></div>
-                    </div>
+                          <div class="ukm-content-title">MAPALA</div>
+                          <img src="images/no4.jpg" alt="" class="ukm-images">
+                          <div class="gradient-primdev box-primdev"></div>
+                      </div>
+                  </a>
+
+                  <a href="#">
+                      <div class="ukm-content">
+                          <div class="ukm-content-title">PHOTOGRAPHY</div>
+                          <img src="images/no4.jpg" alt="" class="ukm-images">
+                          <div class="gradient-primdev box-primdev"></div>
+                      </div>
+                  </a>
+
+                  <a href="#">
                     <div class="ukm-content">
                         <div class="ukm-content-title">AIR SOFT</div>
                         <img src="images/no4.jpg" alt="" class="ukm-images">
                         <div class="gradient-primdev box-primdev"></div>
                     </div>
+                  </a>
+
+                  <a href="#">
                     <div class="ukm-content">
                         <div class="ukm-content-title">DANCE</div>
                         <img src="images/no4.jpg" alt="" class="ukm-images">
                         <div class="gradient-primdev box-primdev"></div>
                     </div>
+                  </a>
+
                 </div>
             </div>
         </div>
@@ -374,10 +407,9 @@
                     <div class="footer-center">
                         <div class="footer-center-title">INFORMASI</div>
 
-                        <div class="footer-center-list">Story</div>
-                        <div class="footer-center-list">About</div>
-                        <div class="footer-center-list">Event</div>
-                        <div class="footer-center-list">Etcetera</div>
+                        <a href=""><div class="footer-center-list">Story</div></a>                        <div class="footer-center-list">About</div>
+                        <a href=""><div class="footer-center-list">Event</div></a>
+                        <a href=""><div class="footer-center-list">Etcetera</div></a>
                     </div>
                 </div>
 
