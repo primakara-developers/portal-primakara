@@ -2,8 +2,8 @@
 
 @section('content')
 
-<!-- Navbar -->
-<div class="wrapper">
+<!-- Header -->
+<header id="site-header">
   <div class="container">
     <div class="container-navbar">
       <div class="row">
@@ -23,10 +23,13 @@
       </div>
     </div>
   </div>
-<!-- Navbar -->
-
-
+</header>
 <!-- Header -->
+
+<!--Main -->
+<main>
+
+    <!-- Banner -->
   <div class="container">
         <div class="row">
             <div class="col-12">
@@ -40,7 +43,7 @@
         <div class="gradient"></div>
         <div class="parallax1"></div>
   </div>
-<!-- Header -->
+    <!-- Banner -->
 
 
 <!-- Content-->
@@ -350,9 +353,12 @@
         </div>
 
     </div>
+</main>
+<!-- Main -->
 
 
     <!-- footer -->
+<footer>
     <div class="container footer-container">
       <div class="border-footer"></div>
       <div class="container-navbar">
@@ -389,7 +395,6 @@
         </div>
       </div>
     </div>
-    <!-- footer -->
 
     <!-- footer-bottom -->
     <div class="container">
@@ -404,6 +409,7 @@
         </div>
 
     </div>
-  </div>
+</footer>
+<!-- footer -->
 
 @endsection
