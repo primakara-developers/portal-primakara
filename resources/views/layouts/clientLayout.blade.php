@@ -4,6 +4,7 @@
     <meta charset="utf-8">
     <title>Portal Primakara</title>
     <meta name="viewport" content="width=device-width, initial-scale=1">
+    <link href="https://fonts.googleapis.com/css?family=Montserrat:400,700" rel="stylesheet">
     <link rel="stylesheet" href="{{ mix('css/app.css') }}">
     @yield('additional-styles')
   </head>
