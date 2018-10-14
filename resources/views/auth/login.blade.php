@@ -98,7 +98,7 @@
                                 <div class="form-check pl-0">
                                     <input class="form-check-input primdev-checkbox" type="checkbox" name="remember" id="remember" {{ old('remember') ? 'checked' : '' }}>
 
-                                    <label class="form-check-label primdev-checkbox" for="remember">
+                                    <label class="form-check-label primdev-checkbox btn" for="remember">
                                         {{ __('Remember Me') }}
                                     </label>
                                 </div>
