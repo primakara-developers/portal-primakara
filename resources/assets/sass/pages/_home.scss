@@ -1,21 +1,22 @@
 
 // banner
-.primdev-title{
+.primdev-title {
   position: relative;
-  top: 277px;
+  top: 265px;
   text-align: center;
   z-index: 1;
   color: white;
-  font-size: 45px;
+  font-size: 43px;
+  letter-spacing: 0px;
 }
 
-.primdev-sub-title{
-  position: relative;
-  top: 304px;
-  text-align: center;
-  z-index: 1;
-  color: white;
-  font-size: 30px;
+.primdev-sub-title {
+    position: relative;
+    top: 289px;
+    text-align: center;
+    z-index: 1;
+    color: white;
+    font-size: 30px;
 }
 // banner
 
@@ -62,16 +63,17 @@
 }
 
 .box-big{
-	height: 364px;
+	height: 388px;
 }
 
 .box-mini{
-	height: 182px;
+	height: 194px;
 }
 
-.box-content-main{
-	position: relative;
-	overflow: hidden;
+.box-content-main {
+  position: relative;
+  overflow: hidden;
+  width: 379px;
 }
 
 .box-content-main:hover > .image-box {
@@ -138,22 +140,22 @@
 	top: 0;
 	left: 0;
 }
-
-.title-box{
-	padding: 20px 20px;
-	overflow: hidden;
+.title-box {
+    padding: 20px 25px;
+    overflow: hidden;
+    position: absolute;
+    bottom: 0;
 }
 
-.title-content-box{
-  font-size: 10px;
-  color: white;
-  background-color: rgba(0, 0, 0, 0.5);
-  width: 49px;
-  height: auto;
-  text-align: center;
-  margin: 0px;
-  padding: 1%;
-
+.title-content-box {
+    font-size: 9px;
+    color: white;
+    background-color: rgba(0, 0, 0, 0.5);
+    width: 100%;
+    height: auto;
+    text-align: center;
+    margin: 0px;
+    padding: 8%;
 }
 
 .title-content-box:hover {
@@ -161,18 +163,20 @@
 	transition: all 0.3s ease-in-out;
 }
 
-.box-mini-content{
-	color: white;
-	font-size: 18px;
-	margin: 0px;
-	padding: 0px 30px;
+.box-mini-content {
+    color: white;
+    font-size: 18px;
+    padding: 30px 25px;
+    width: 313px;
+    line-height: 30px;
 }
 
-.box-big-content{
-	color: white;
-	font-size: 30px;
-	margin: 0px;
-	padding: 0px 30px;
+.box-big-content {
+    color: white;
+    font-size: 35px;
+    padding: 30px 25px;
+    width: 275px;
+    line-height: 50px;
 }
 // content
 
@@ -181,12 +185,15 @@
 .information-tag{
   margin-bottom: 5%;
 }
-.information-tag-title{
-  padding: 1%;
-  background: #109d59;
-  color: white;
-  font-size: 14px;
-  font-weight: bold;
+.information-tag-title {
+    padding: 1%;
+    background: #109d59;
+    color: white;
+    font-size: 19px;
+    font-weight: bold;
+    width: 100%;
+    height: auto;
+    display: inline;
 }
 .information-border-bottom{
   border-bottom: 3px solid #109d59;
@@ -199,10 +206,24 @@
   color: #109d59;
   font-size: 16px;
 }
-.information-tag-title{
-  padding: 1%;
-  background: #109d59;
-  color: white;
+
+.information-next:hover{
+  border-bottom: 1px solid #109d59;
+}
+
+.arrow-next {
+    border-right: 1px solid #969696;
+    border-top: 1px solid #969696;
+    display: block;
+    height: 2px;
+    -webkit-transform: rotate(45deg);
+    transform: rotate(45deg);
+    width: 2px;
+    float: right;
+    margin-top: 2px;
+    margin-left: 5px;
+    padding: 5px;
+    border-color: #109d59;
 }
 
 .information-images{

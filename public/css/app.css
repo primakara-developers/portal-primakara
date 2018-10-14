@@ -535,7 +535,7 @@ body {
 
 .parallax1 {
   background-image: url(/images/bege.jpeg);
-  height: 636px;
+  height: 638px;
   background-attachment: fixed;
   background-position: center;
   background-repeat: no-repeat;
@@ -558,9 +558,9 @@ body {
 
 .active {
   background: #109d59;
-  padding: 1.7% 2% 1.7% 2%;
+  padding: 12px 10px 12px 10px;
   color: White;
-  border-radius: 10px;
+  border-radius: 13px;
 }
 
 @media screen and (min-width: 1137px) {
@@ -578,18 +578,27 @@ body {
 
 .logo-primdev img {
   height: 45px;
+  margin-top: 3px;
 }
 
 .menu-primdev {
   text-align: right;
-  padding: 3.2% 0% 3.2% 3.2%;
-  font-size: 20px;
+  padding: 22px 0px 20px 0px;
+}
+
+.menu-primdev-link {
+  font-size: 17px;
   font-weight: bold;
   color: #109d59;
 }
 
+a {
+  text-decoration: none;
+}
+
 .menu-primdev-button {
-  margin-left: 60px;
+  margin-left: 51px;
+  vertical-align: middle;
 }
 
 .border-footer {
@@ -646,16 +655,17 @@ body {
 
 .primdev-title {
   position: relative;
-  top: 277px;
+  top: 265px;
   text-align: center;
   z-index: 1;
   color: white;
-  font-size: 45px;
+  font-size: 43px;
+  letter-spacing: 0px;
 }
 
 .primdev-sub-title {
   position: relative;
-  top: 304px;
+  top: 289px;
   text-align: center;
   z-index: 1;
   color: white;
@@ -701,16 +711,17 @@ body {
 }
 
 .box-big {
-  height: 364px;
+  height: 388px;
 }
 
 .box-mini {
-  height: 182px;
+  height: 194px;
 }
 
 .box-content-main {
   position: relative;
   overflow: hidden;
+  width: 379px;
 }
 
 .box-content-main:hover > .image-box {
@@ -774,19 +785,21 @@ body {
 }
 
 .title-box {
-  padding: 20px 20px;
+  padding: 20px 25px;
   overflow: hidden;
+  position: absolute;
+  bottom: 0;
 }
 
 .title-content-box {
-  font-size: 10px;
+  font-size: 9px;
   color: white;
   background-color: rgba(0, 0, 0, 0.5);
-  width: 49px;
+  width: 100%;
   height: auto;
   text-align: center;
   margin: 0px;
-  padding: 1%;
+  padding: 8%;
 }
 
 .title-content-box:hover {
@@ -798,15 +811,17 @@ body {
 .box-mini-content {
   color: white;
   font-size: 18px;
-  margin: 0px;
-  padding: 0px 30px;
+  padding: 30px 25px;
+  width: 313px;
+  line-height: 30px;
 }
 
 .box-big-content {
   color: white;
-  font-size: 30px;
-  margin: 0px;
-  padding: 0px 30px;
+  font-size: 35px;
+  padding: 30px 25px;
+  width: 275px;
+  line-height: 50px;
 }
 
 .information-tag {
@@ -817,8 +832,11 @@ body {
   padding: 1%;
   background: #109d59;
   color: white;
-  font-size: 14px;
+  font-size: 19px;
   font-weight: bold;
+  width: 100%;
+  height: auto;
+  display: inline;
 }
 
 .information-border-bottom {
@@ -834,10 +852,23 @@ body {
   font-size: 16px;
 }
 
-.information-tag-title {
-  padding: 1%;
-  background: #109d59;
-  color: white;
+.information-next:hover {
+  border-bottom: 1px solid #109d59;
+}
+
+.arrow-next {
+  border-right: 1px solid #969696;
+  border-top: 1px solid #969696;
+  display: block;
+  height: 2px;
+  -webkit-transform: rotate(45deg);
+  transform: rotate(45deg);
+  width: 2px;
+  float: right;
+  margin-top: 2px;
+  margin-left: 5px;
+  padding: 5px;
+  border-color: #109d59;
 }
 
 .information-images {

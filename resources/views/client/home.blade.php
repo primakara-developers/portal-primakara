@@ -14,10 +14,10 @@
         </div>
         <div class="col-6">
           <div class="menu-primdev">
-              <span class="menu-primdev-button">Home</span>
-              <span class="menu-primdev-button">Story</span>
-              <span class="menu-primdev-button">About</span>
-              <span class="menu-primdev-button active">Event</span>
+              <a href="" class="menu-primdev-link"><span class="menu-primdev-button">HOME</span></a>
+              <a href="" class="menu-primdev-link"><span class="menu-primdev-button">STORY</span></a>
+              <a href="" class="menu-primdev-link"><span class="menu-primdev-button">ABOUT</span></a>
+              <a href="" class="menu-primdev-link"><span class="menu-primdev-button active">EVENT</span></a>
           </div>
         </div>
       </div>
@@ -35,9 +35,7 @@
             <div class="col-12">
                 <div class="primdev-title">PRIMAKARA DEVELOPER</div>
                 <div class="primdev-sub-title">Proudly Present</div>
-                <div class="primdev-scroll-button">
-                    <img src="images/scroll.png" alt="">
-                </div>
+                <div class="primdev-scroll-button"></div>
             </div>
         </div>
         <div class="gradient"></div>
@@ -59,16 +57,15 @@
 
                 <div class="box-content">
 
-                    <div class="title-box">
-                      <p class="title-content-box"> IPHONE </p>
-                    </div>
-
                     <h1 class="box-big-content">
-                       Canon XC10 4K<br>
-                       Digital Camcorder Is Out:<br>
-                       VersatileAnd For Only $2,500
+                       Primakara Gelar Startup Expo besar
+                       di Tahun 1862 Sebelum Masehi
                     </h1>
 
+                </div>
+
+                <div class="title-box">
+                  <p class="title-content-box"> KEGIATAN </p>
                 </div>
 
             </div>
@@ -83,13 +80,12 @@
               <div class="box-gradient gradient-color-2"></div>
               <?php // XXX:  ?>
               <div class="box-content">
-                <div class="title-box">
-                  <p class="title-content-box"> ANDROID </p>
-                </div>
                 <h1 class="box-mini-content">
-                   Robots helped inspire deep learning
-                   might become
+                   Yuk Simak Informasi Berguna Cara Membuat Website Company Profile Ala Pornhub
                 </h1>
+              </div>
+              <div class="title-box">
+                <p class="title-content-box"> WEBSITE </p>
               </div>
             </div>
           </a>
@@ -101,13 +97,13 @@
               <img src="images/no3.jpg" class="image-box">
               <div class="box-gradient gradient-color-3"></div>
               <div class="box-content">
-                <div class="title-box">
-                  <p class="title-content-box"> REVIEWS </p>
-                </div>
                 <h1 class="box-mini-content">
-                   Apple Server Most Powerful rack<br>
-                   optimized server
+                    Memory SSD Untuk Programmer?
+                    Apakah Membantu Mempercepat Project Agar Cepat Selesai?
                 </h1>
+              </div>
+              <div class="title-box">
+                <p class="title-content-box"> HARDWARE </p>
               </div>
             </div>
           </a>
@@ -117,13 +113,12 @@
               <img src="images/no4.jpg" class="image-box">
               <div class="box-gradient gradient-color-4"></div>
               <div class="box-content">
-                <div class="title-box">
-                  <p class="title-content-box"> CAMERA </p>
-                </div>
                 <h1 class="box-mini-content">
-                   A first glimpse at Java 9: Early access<br>
-                   release of JDK9 on OpenJDK
+                   Pras, CTO Laravel.org Mengakui Framework Miliknya Tidak Berguna
                 </h1>
+              </div>
+              <div class="title-box">
+                <p class="title-content-box"> FRAMEWORK </p>
               </div>
             </div>
           </a>
@@ -132,13 +127,13 @@
               <img src="images/no5.jpg" class="image-box">
               <div class="box-gradient gradient-color-5"></div>
                 <div class="box-content">
-                  <div class="title-box">
-                    <p class="title-content-box"> APPLE </p>
-                  </div>
                   <h1 class="box-mini-content">
-                     Lea Michele Flaunts Cleavage In White-<br>
-                     Hot Dress For SOP Premiere
+                     Dr. Boyke, 150 Orang Tiap Detiknya Mengidap Penyakit Wibu, Karena Asupan Anime
+                     Yang Berlebih
                   </h1>
+                </div>
+                <div class="title-box">
+                  <p class="title-content-box"> KESEHATAN </p>
                 </div>
             </div>
           </a>
@@ -150,13 +145,13 @@
               <img src="images/no6.jpg" class="image-box">
               <div class="box-gradient gradient-color-6"></div>
               <div class="box-content">
-                <div class="title-box">
-                  <p class="title-content-box"> IPHONE </p>
-                </div>
                 <h1 class="box-mini-content">
-                   Building an API in 60 seconds,<br>
-                   without any server setup
+                   Yaw, Konglomerat Asal Bali Membeli Stiker Mobil Lamborghini
+                   Gallardo di Las Vegas
                 </h1>
+              </div>
+              <div class="title-box">
+                <p class="title-content-box"> INTERMEZZO </p>
               </div>
             </div>
           </a>
@@ -165,12 +160,12 @@
               <img src="images/no7.jpg" class="image-box">
               <div class="box-gradient gradient-color-7"></div>
               <div class="box-content">
-                <div class="title-box">
-                  <p class="title-content-box"> ANDROID </p>
-                </div>
                 <h1 class="box-big-content">
-                  Announcing a specification for PHP
+                  8 Cara Membuat Website Dengan Mudah Tanpa Framework!
                 </h1>
+              </div>
+              <div class="title-box">
+                <p class="title-content-box"> ANDROID </p>
               </div>
             </div>
           </a>
@@ -186,8 +181,9 @@
 
                 <div class="information-tag">
                     <span class="information-tag-title">INFORMASI</span>
-                    <span class="information-next">Selengkapnya ></span>
-                    <span class="information-border-bottom"></span>
+                    <span class="arrow-next"></span>
+                    <a href="#" class="information-next">Selengkapnya</a>
+                    <div class="information-border-bottom"></div>
                 </div>
 
                 <div class="col-3">
