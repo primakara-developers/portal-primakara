@@ -15,11 +15,6 @@
   }
 }
 
-.wrapper{
-width: 100%;
-height: auto;
-}
-
 .container{
   width: 100%;
   height: auto;
@@ -154,23 +149,23 @@ height: auto;
   }
 }
 
-.parallax4{
-  background-image: url(../assets/parallax4.jpg);
-  height: 425px;
-  background-attachment: fixed;
-  background-position: center;
-  background-repeat: no-repeat;
-  background-size: cover;
-}
+// .parallax4{
+//   background-image: url(../assets/parallax4.jpg);
+//   height: 425px;
+//   background-attachment: fixed;
+//   background-position: center;
+//   background-repeat: no-repeat;
+//   background-size: cover;
+// }
 
-.parallax3{
-  background-image: url(../assets/parallax3.jpg);
-  height: 425px;
-  background-attachment: fixed;
-  background-position: center;
-  background-repeat: no-repeat;
-  background-size: cover;
-}
+// .parallax3{
+//   background-image: url(../assets/parallax3.jpg);
+//   height: 425px;
+//   background-attachment: fixed;
+//   background-position: center;
+//   background-repeat: no-repeat;
+//   background-size: cover;
+// }
 .parallax2{
   background-image: url(/images/bg-bg.jpeg);
   height: 425px;
