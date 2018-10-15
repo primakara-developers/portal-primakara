@@ -186,7 +186,7 @@
                     <div class="information-border-bottom"></div>
                 </div>
 
-                <div class="col-3">
+                <div class="col-3 info-mar">
                     <a href="#">
                       <div class="information-images">
                           <img src="images/no1.jpg" alt="">
@@ -210,7 +210,7 @@
                     </a>
                 </div>
 
-                <div class="col-3">
+                <div class="col-3 info-mar">
                     <a href="#">
                       <div class="information-images">
                           <img src="images/no1.jpg" alt="">
@@ -234,7 +234,7 @@
                     </a>
                 </div>
 
-                <div class="col-3">
+                <div class="col-3 info-mar">
                     <a href="#">
                       <div class="information-images">
                           <img src="images/no1.jpg" alt="">
@@ -258,7 +258,7 @@
                     </a>
                 </div>
 
-                <div class="col-3">
+                <div class="information">
                     <a href="#">
                       <div class="information-images">
                           <img src="images/no1.jpg" alt="">
@@ -296,7 +296,7 @@
                         Dapatkan informasi kegiatan kami dan tips serta trik seputar dunia teknologi dan kampus
                       </div>
                     </div>
-                    <div class="kutipan-hover">SUBSCRIBE</div>
+                    <a href="#"><div class="kutipan-hover">SUBSCRIBE</div></a>
                   </div>
                 </div>
             </div>
@@ -406,10 +406,10 @@
                 <div class="col-2">
                     <div class="footer-center">
                         <div class="footer-center-title">INFORMASI</div>
-
-                        <a href=""><div class="footer-center-list">Story</div></a>                        <div class="footer-center-list">About</div>
-                        <a href=""><div class="footer-center-list">Event</div></a>
-                        <a href=""><div class="footer-center-list">Etcetera</div></a>
+                        <a href="#"><div class="footer-center-list">About</div></a>
+                        <a href="#"><div class="footer-center-list">Story</div></a>
+                        <a href="#"><div class="footer-center-list">Event</div></a>
+                        <a href="#"><div class="footer-center-list">Etcetera</div></a>
                     </div>
                 </div>
 
