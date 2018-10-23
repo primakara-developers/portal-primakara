@@ -17,7 +17,7 @@
               <a href="" class="menu-primdev-link"><span class="menu-primdev-button">HOME</span></a>
               <a href="" class="menu-primdev-link"><span class="menu-primdev-button">STORY</span></a>
               <a href="" class="menu-primdev-link"><span class="menu-primdev-button">ABOUT</span></a>
-              <a href="" class="menu-primdev-link"><span class="menu-primdev-button active">EVENT</span></a>
+              <a href="" class="menu-primdev-link active"><span class="menu-primdev-button">EVENT</span></a>
           </div>
         </div>
       </div>
@@ -181,8 +181,7 @@
 
                 <div class="information-tag">
                     <span class="information-tag-title">INFORMASI</span>
-                    <span class="arrow-next"></span>
-                    <a href="#" class="information-next">Selengkapnya</a>
+                    <a href="#" class="information-next">Selengkapnya<span class="arrow-next"></span></a>
                     <div class="information-border-bottom"></div>
                 </div>
 
@@ -191,10 +190,13 @@
                       <div class="information-images">
                           <img src="images/no1.jpg" alt="">
                       </div>
+                    </a>
+                    <a href="#">
                       <div class="information-title">
                           Membangun Ekosistem Digital,
                           STMIK dan STIKOM Bergabung
                       </div>
+                    </a>
                       <div class="information-detail">
                           Happy Sunday from software Expand
                           In this Week's edition of Feedback
@@ -207,7 +209,7 @@
                           -
                           <span class="information-detail-date">29 February 2018</span>
                       </div>
-                    </a>
+                  
                 </div>
 
                 <div class="col-3 info-mar">
@@ -215,10 +217,13 @@
                       <div class="information-images">
                           <img src="images/no1.jpg" alt="">
                       </div>
+                    </a>
+                    <a href="#">
                       <div class="information-title">
                           Membangun Ekosistem Digital,
                           STMIK dan STIKOM Bergabung
                       </div>
+                    </a>
                       <div class="information-detail">
                           Happy Sunday from software Expand
                           In this Week's edition of Feedback
@@ -231,7 +236,7 @@
                           -
                           <span class="information-detail-date">29 February 2018</span>
                       </div>
-                    </a>
+                    
                 </div>
 
                 <div class="col-3 info-mar">
@@ -239,10 +244,13 @@
                       <div class="information-images">
                           <img src="images/no1.jpg" alt="">
                       </div>
+                    </a>
+                    <a href="#">
                       <div class="information-title">
                           Membangun Ekosistem Digital,
                           STMIK dan STIKOM Bergabung
                       </div>
+                    </a>
                       <div class="information-detail">
                           Happy Sunday from software Expand
                           In this Week's edition of Feedback
@@ -255,7 +263,7 @@
                           -
                           <span class="information-detail-date">29 February 2018</span>
                       </div>
-                    </a>
+                    
                 </div>
 
                 <div class="information">
@@ -263,10 +271,13 @@
                       <div class="information-images">
                           <img src="images/no1.jpg" alt="">
                       </div>
+                    </a>
+                    <a href="#">
                       <div class="information-title">
                           Membangun Ekosistem Digital,
                           STMIK dan STIKOM Bergabung
                       </div>
+                    </a>
                       <div class="information-detail">
                           Happy Sunday from software Expand
                           In this Week's edition of Feedback
@@ -279,7 +290,7 @@
                           -
                           <span class="information-detail-date">29 February 2018</span>
                       </div>
-                    </a>
+                    
                 </div>
             </div>
         </div>
@@ -313,71 +324,71 @@
                 <div class="ukm-detail">STMIK PRIMAKARA</div>
                 <div class="col-6">
 
-                  <a href="#">
                     <div class="ukm-content">
+                     <a href="#">
                         <div class="ukm-content-title">HIPMI PRIMAKARA</div>
                         <img src="images/no4.jpg" alt="" class="ukm-images">
                         <div class="gradient-primdev box-primdev"></div>
+                      </a>
                     </div>
-                  </a>
 
-                  <a href="#">
                     <div class="ukm-content">
+                      <a href="#">
                         <div class="ukm-content-title">PRIMAKARA DEVELOPERS</div>
                         <img src="images/no4.jpg" alt="" class="ukm-images">
                         <div class="gradient-primdev box-primdev"></div>
+                      </a>
                     </div>
-                  </a>
 
-                  <a href="#">
                     <div class="ukm-content">
+                      <a href="#">
                         <div class="ukm-content-title">E-SPORT</div>
                         <img src="images/no4.jpg" alt="" class="ukm-images">
                         <div class="gradient-primdev box-primdev"></div>
+                      </a>
                     </div>
-                  </a>
 
-                  <a href="#">
                     <div class="ukm-content">
+                      <a href="#">
                         <div class="ukm-content-title">ENGLISH CLUB</div>
                         <img src="images/no4.jpg" alt="" class="ukm-images">
                         <div class="gradient-primdev box-primdev"></div>
+                      </a>
                     </div>
-                  </a>
 
                 </div>
                 <div class="col-6">
-                  <a href="#">
                     <div class="ukm-content">
+                        <a href="#">
                           <div class="ukm-content-title">MAPALA</div>
                           <img src="images/no4.jpg" alt="" class="ukm-images">
                           <div class="gradient-primdev box-primdev"></div>
+                        </a>
                       </div>
-                  </a>
 
-                  <a href="#">
                       <div class="ukm-content">
+                        <a href="#">
                           <div class="ukm-content-title">PHOTOGRAPHY</div>
                           <img src="images/no4.jpg" alt="" class="ukm-images">
                           <div class="gradient-primdev box-primdev"></div>
+                        </a>
                       </div>
-                  </a>
 
-                  <a href="#">
                     <div class="ukm-content">
+                      <a href="#">
                         <div class="ukm-content-title">AIR SOFT</div>
                         <img src="images/no4.jpg" alt="" class="ukm-images">
                         <div class="gradient-primdev box-primdev"></div>
+                      </a>
                     </div>
-                  </a>
 
-                  <a href="#">
                     <div class="ukm-content">
+                      <a href="#">
                         <div class="ukm-content-title">DANCE</div>
                         <img src="images/no4.jpg" alt="" class="ukm-images">
                         <div class="gradient-primdev box-primdev"></div>
+                      </a>
                     </div>
-                  </a>
 
                 </div>
             </div>
@@ -406,10 +417,10 @@
                 <div class="col-2">
                     <div class="footer-center">
                         <div class="footer-center-title">INFORMASI</div>
-                        <a href="#"><div class="footer-center-list">About</div></a>
-                        <a href="#"><div class="footer-center-list">Story</div></a>
-                        <a href="#"><div class="footer-center-list">Event</div></a>
-                        <a href="#"><div class="footer-center-list">Etcetera</div></a>
+                        <div class="footer-center-list"><a href="#">About</a></div>
+                        <div class="footer-center-list"><a href="#">Story</a></div>
+                        <div class="footer-center-list"><a href="#">Event</a></div>
+                        <div class="footer-center-list"><a href="#">Etcetera</a></div>
                     </div>
                 </div>
 

@@ -558,9 +558,7 @@ body {
 
 .active {
   background: #109d59;
-  padding: 12px 10px 12px 10px;
-  color: White;
-  border-radius: 13px;
+  color: White !important;
 }
 
 @media screen and (min-width: 1137px) {
@@ -590,6 +588,16 @@ body {
   font-size: 16px;
   font-weight: bold;
   color: #109d59;
+  margin-left: 36px;
+  padding: 12px 10px 12px 10px;
+  border-radius: 13px;
+}
+
+.menu-primdev-link:hover {
+  -webkit-transition: all 0.3s ease-in-out;
+  transition: all 0.3s ease-in-out;
+  background: #109d59;
+  color: White !important;
 }
 
 a {
@@ -597,7 +605,6 @@ a {
 }
 
 .menu-primdev-button {
-  margin-left: 53px;
   vertical-align: middle;
 }
 
@@ -626,7 +633,7 @@ a {
   margin-bottom: 10px;
 }
 
-.footer-center-list {
+.footer-center-list a {
   font-size: 22px;
   color: #109d59;
   line-height: 35px;
@@ -874,6 +881,7 @@ a {
   float: right;
   color: #109d59;
   font-size: 15px;
+  padding-bottom: 5px;
 }
 
 .information-next:hover {
@@ -924,6 +932,12 @@ a {
   width: 275px;
   margin-top: 3%;
   line-height: 22px;
+}
+
+.information-title:hover {
+  -webkit-transition: all 0.3s ease-in-out;
+  transition: all 0.3s ease-in-out;
+  color: #109d59;
 }
 
 .information-detail {
@@ -994,8 +1008,10 @@ a {
   display: block;
   width: 100%;
   height: 100%;
-  -webkit-transform: scale(1.4);
-          transform: scale(1.4);
+  -webkit-transform: scale(2);
+          transform: scale(2);
+  -webkit-transition: all 0.3s ease-in-out;
+  transition: all 0.3s ease-in-out;
 }
 
 .gradient-primdev {
@@ -1009,5 +1025,12 @@ a {
   top: 0;
   left: 0;
   opacity: .7;
+}
+
+.ukm-content a:hover > .ukm-images {
+  -webkit-transition: all 0.3s ease-in-out;
+  transition: all 0.3s ease-in-out;
+  -webkit-transform: scale(1);
+          transform: scale(1);
 }
 

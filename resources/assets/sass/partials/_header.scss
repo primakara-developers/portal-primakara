@@ -1,8 +1,6 @@
 .active {
     background: #109d59;
-    padding: 12px 10px 12px 10px;
-    color: White;
-    border-radius: 13px;
+    color: White !important;
 }
 
   // navbar
@@ -31,6 +29,15 @@
     font-size: 16px;
     font-weight: bold;
     color: #109d59;
+    margin-left: 36px;
+    padding: 12px 10px 12px 10px;
+    border-radius: 13px;
+  }
+
+  .menu-primdev-link:hover{ 
+    transition: all 0.3s ease-in-out;
+    background: #109d59;
+    color: White !important;
   }
 
   a {
@@ -38,7 +45,6 @@
   }
 
   .menu-primdev-button {
-      margin-left: 53px;
       vertical-align: middle;
   }
   // navbar
