@@ -53,37 +53,38 @@
           <div class="col-4">
             <a href="single_page.php" class="link-text-decoration">
               <div class="box-big box-content-main">
-
+  
                   <img src="images/no1.jpg" class="image-box">
-
+  
                   <div class="box-gradient gradient-color-1"></div>
-
+  
                   <div class="box-content">
-
+  
                       <h1 class="box-big-content">
-                        Primakara Gelar Startup Expo besar
-                        di Tahun 1862 Sebelum Masehi
+                         Primakara Gelar Startup Expo besar
+                         di Tahun 1862 Sebelum Masehi
                       </h1>
-                    </div>
+  
                   </div>
-
+  
                   <div class="title-box">
                     <p class="title-content-box"> KEGIATAN </p>
                   </div>
-
+  
               </div>
             </a>
-
+  
             <a href="single_page.php" class="link-text-decoration">
-
+  
               <div class="box-mini box-content-main">
-
+  
                 <img src="images/no2.jpg" class="image-box">
-
+  
                 <div class="box-gradient gradient-color-2"></div>
+                <?php // XXX:  ?>
                 <div class="box-content">
                   <h1 class="box-mini-content">
-                    Yuk Simak Informasi Berguna Cara Membuat Website Company Profile Ala Pornhub
+                     Yuk Simak Informasi Berguna Cara Membuat Website Company Profile Ala Pornhub
                   </h1>
                 </div>
                 <div class="title-box">
@@ -92,7 +93,7 @@
               </div>
             </a>
           </div>
-
+  
           <div class="col-4">
             <a href="single_page.php" class="link-text-decoration">
               <div class="box-mini box-content-main">
@@ -109,14 +110,14 @@
                 </div>
               </div>
             </a>
-
+  
             <a href="single_page.php" class="link-text-decoration">
               <div class="box-mini box-content-main">
                 <img src="images/no4.jpg" class="image-box">
                 <div class="box-gradient gradient-color-4"></div>
                 <div class="box-content">
                   <h1 class="box-mini-content">
-                    Pras, CTO Laravel.org Mengakui Framework Miliknya Tidak Berguna
+                     Pras, CTO Laravel.org Mengakui Framework Miliknya Tidak Berguna
                   </h1>
                 </div>
                 <div class="title-box">
@@ -130,8 +131,8 @@
                 <div class="box-gradient gradient-color-5"></div>
                   <div class="box-content">
                     <h1 class="box-mini-content">
-                      Dr. Boyke, 150 Orang Tiap Detiknya Mengidap Penyakit Wibu, Karena Asupan Anime
-                      Yang Berlebih
+                       Dr. Boyke, 150 Orang Tiap Detiknya Mengidap Penyakit Wibu, Karena Asupan Anime
+                       Yang Berlebih
                     </h1>
                   </div>
                   <div class="title-box">
@@ -140,7 +141,7 @@
               </div>
             </a>
           </div>
-
+  
           <div class="col-4">
             <a href="single_page.php" class="link-text-decoration">
               <div class="box-mini box-content-main">
@@ -148,8 +149,8 @@
                 <div class="box-gradient gradient-color-6"></div>
                 <div class="box-content">
                   <h1 class="box-mini-content">
-                    Yaw, Konglomerat Asal Bali Membeli Stiker Mobil Lamborghini
-                    Gallardo di Las Vegas
+                     Yaw, Konglomerat Asal Bali Membeli Stiker Mobil Lamborghini
+                     Gallardo di Las Vegas
                   </h1>
                 </div>
                 <div class="title-box">
@@ -170,8 +171,10 @@
                   <p class="title-content-box"> ANDROID </p>
                 </div>
               </div>
-            </div>
+            </a>
           </div>
+        </div>
+      </div>
     </section>
     <!-- Content -->
 
