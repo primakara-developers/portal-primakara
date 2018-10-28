@@ -33,145 +33,149 @@
   <div class="container">
         <div class="row">
             <div class="col-12">
-                <div class="primdev-title">PRIMAKARA DEVELOPER</div>
+                <div class="primdev-title">PRIMAKARA DEVELOPERS</div>
                 <div class="primdev-sub-title">Proudly Present</div>
-                <div class="primdev-scroll-button"></div>
             </div>
         </div>
         <div class="gradient"></div>
         <div class="parallax1"></div>
+        <a href="javascript:void(0)" class="primdev-scroll-button">
+            <img src="images/icons/downwards-pointer.svg" alt="">
+        </a>
   </div>
     <!-- Banner -->
 
 
 <!-- Content-->
-    <div class="container-fluid">
-      <div class="main-content">
-        <div class="col-4">
-          <a href="single_page.php" class="link-text-decoration">
-            <div class="box-big box-content-main">
-
-                <img src="images/no1.jpg" class="image-box">
-
-                <div class="box-gradient gradient-color-1"></div>
-
-                <div class="box-content">
-
-                    <h1 class="box-big-content">
-                       Primakara Gelar Startup Expo besar
-                       di Tahun 1862 Sebelum Masehi
-                    </h1>
-
-                </div>
-
-                <div class="title-box">
-                  <p class="title-content-box"> KEGIATAN </p>
-                </div>
-
-            </div>
-          </a>
-
-          <a href="single_page.php" class="link-text-decoration">
-
-            <div class="box-mini box-content-main">
-
-              <img src="images/no2.jpg" class="image-box">
-
-              <div class="box-gradient gradient-color-2"></div>
-              <?php // XXX:  ?>
-              <div class="box-content">
-                <h1 class="box-mini-content">
-                   Yuk Simak Informasi Berguna Cara Membuat Website Company Profile Ala Pornhub
-                </h1>
+    <section id="headnews">
+      <div class="container-fluid">
+        <div class="main-content">
+          <div class="col-4">
+            <a href="single_page.php" class="link-text-decoration">
+              <div class="box-big box-content-main">
+  
+                  <img src="images/no1.jpg" class="image-box">
+  
+                  <div class="box-gradient gradient-color-1"></div>
+  
+                  <div class="box-content">
+  
+                      <h1 class="box-big-content">
+                         Primakara Gelar Startup Expo besar
+                         di Tahun 1862 Sebelum Masehi
+                      </h1>
+  
+                  </div>
+  
+                  <div class="title-box">
+                    <p class="title-content-box"> KEGIATAN </p>
+                  </div>
+  
               </div>
-              <div class="title-box">
-                <p class="title-content-box"> WEBSITE </p>
-              </div>
-            </div>
-          </a>
-        </div>
-
-        <div class="col-4">
-          <a href="single_page.php" class="link-text-decoration">
-            <div class="box-mini box-content-main">
-              <img src="images/no3.jpg" class="image-box">
-              <div class="box-gradient gradient-color-3"></div>
-              <div class="box-content">
-                <h1 class="box-mini-content">
-                    Memory SSD Untuk Programmer?
-                    Apakah Membantu Mempercepat Project Agar Cepat Selesai?
-                </h1>
-              </div>
-              <div class="title-box">
-                <p class="title-content-box"> HARDWARE </p>
-              </div>
-            </div>
-          </a>
-
-          <a href="single_page.php" class="link-text-decoration">
-            <div class="box-mini box-content-main">
-              <img src="images/no4.jpg" class="image-box">
-              <div class="box-gradient gradient-color-4"></div>
-              <div class="box-content">
-                <h1 class="box-mini-content">
-                   Pras, CTO Laravel.org Mengakui Framework Miliknya Tidak Berguna
-                </h1>
-              </div>
-              <div class="title-box">
-                <p class="title-content-box"> FRAMEWORK </p>
-              </div>
-            </div>
-          </a>
-          <a href="single_page.php" class="link-text-decoration">
-            <div class="box-mini box-content-main">
-              <img src="images/no5.jpg" class="image-box">
-              <div class="box-gradient gradient-color-5"></div>
+            </a>
+  
+            <a href="single_page.php" class="link-text-decoration">
+  
+              <div class="box-mini box-content-main">
+  
+                <img src="images/no2.jpg" class="image-box">
+  
+                <div class="box-gradient gradient-color-2"></div>
+                <?php // XXX:  ?>
                 <div class="box-content">
                   <h1 class="box-mini-content">
-                     Dr. Boyke, 150 Orang Tiap Detiknya Mengidap Penyakit Wibu, Karena Asupan Anime
-                     Yang Berlebih
+                     Yuk Simak Informasi Berguna Cara Membuat Website Company Profile Ala Pornhub
                   </h1>
                 </div>
                 <div class="title-box">
-                  <p class="title-content-box"> KESEHATAN </p>
+                  <p class="title-content-box"> WEBSITE </p>
                 </div>
-            </div>
-          </a>
-        </div>
-
-        <div class="col-4">
-          <a href="single_page.php" class="link-text-decoration">
-            <div class="box-mini box-content-main">
-              <img src="images/no6.jpg" class="image-box">
-              <div class="box-gradient gradient-color-6"></div>
-              <div class="box-content">
-                <h1 class="box-mini-content">
-                   Yaw, Konglomerat Asal Bali Membeli Stiker Mobil Lamborghini
-                   Gallardo di Las Vegas
-                </h1>
               </div>
-              <div class="title-box">
-                <p class="title-content-box"> INTERMEZZO </p>
+            </a>
+          </div>
+  
+          <div class="col-4">
+            <a href="single_page.php" class="link-text-decoration">
+              <div class="box-mini box-content-main">
+                <img src="images/no3.jpg" class="image-box">
+                <div class="box-gradient gradient-color-3"></div>
+                <div class="box-content">
+                  <h1 class="box-mini-content">
+                      Memory SSD Untuk Programmer?
+                      Apakah Membantu Mempercepat Project Agar Cepat Selesai?
+                  </h1>
+                </div>
+                <div class="title-box">
+                  <p class="title-content-box"> HARDWARE </p>
+                </div>
               </div>
-            </div>
-          </a>
-          <a href="single_page.php" class="link-text-decoration">
-            <div class="box-big box-content-main">
-              <img src="images/no7.jpg" class="image-box">
-              <div class="box-gradient gradient-color-7"></div>
-              <div class="box-content">
-                <h1 class="box-big-content">
-                  8 Cara Membuat Website Dengan Mudah Tanpa Framework!
-                </h1>
+            </a>
+  
+            <a href="single_page.php" class="link-text-decoration">
+              <div class="box-mini box-content-main">
+                <img src="images/no4.jpg" class="image-box">
+                <div class="box-gradient gradient-color-4"></div>
+                <div class="box-content">
+                  <h1 class="box-mini-content">
+                     Pras, CTO Laravel.org Mengakui Framework Miliknya Tidak Berguna
+                  </h1>
+                </div>
+                <div class="title-box">
+                  <p class="title-content-box"> FRAMEWORK </p>
+                </div>
               </div>
-              <div class="title-box">
-                <p class="title-content-box"> ANDROID </p>
+            </a>
+            <a href="single_page.php" class="link-text-decoration">
+              <div class="box-mini box-content-main">
+                <img src="images/no5.jpg" class="image-box">
+                <div class="box-gradient gradient-color-5"></div>
+                  <div class="box-content">
+                    <h1 class="box-mini-content">
+                       Dr. Boyke, 150 Orang Tiap Detiknya Mengidap Penyakit Wibu, Karena Asupan Anime
+                       Yang Berlebih
+                    </h1>
+                  </div>
+                  <div class="title-box">
+                    <p class="title-content-box"> KESEHATAN </p>
+                  </div>
               </div>
-            </div>
-          </a>
+            </a>
+          </div>
+  
+          <div class="col-4">
+            <a href="single_page.php" class="link-text-decoration">
+              <div class="box-mini box-content-main">
+                <img src="images/no6.jpg" class="image-box">
+                <div class="box-gradient gradient-color-6"></div>
+                <div class="box-content">
+                  <h1 class="box-mini-content">
+                     Yaw, Konglomerat Asal Bali Membeli Stiker Mobil Lamborghini
+                     Gallardo di Las Vegas
+                  </h1>
+                </div>
+                <div class="title-box">
+                  <p class="title-content-box"> INTERMEZZO </p>
+                </div>
+              </div>
+            </a>
+            <a href="single_page.php" class="link-text-decoration">
+              <div class="box-big box-content-main">
+                <img src="images/no7.jpg" class="image-box">
+                <div class="box-gradient gradient-color-7"></div>
+                <div class="box-content">
+                  <h1 class="box-big-content">
+                    8 Cara Membuat Website Dengan Mudah Tanpa Framework!
+                  </h1>
+                </div>
+                <div class="title-box">
+                  <p class="title-content-box"> ANDROID </p>
+                </div>
+              </div>
+            </a>
+          </div>
         </div>
       </div>
-    </div>
+    </section>
     <!-- Content -->
 
     <!-- Information -->
@@ -456,5 +460,20 @@
     </div>
 </footer>
 <!-- footer -->
+
+@endsection
+
+@section('additional-scripts')
+
+<script>
+    var scrollToBottom = document.getElementsByClassName('primdev-scroll-button')[0];
+    var headNews = document.getElementById('headnews');
+    scrollToBottom.addEventListener('click', function(e) {
+        headNews.scrollIntoView({
+            behavior: 'smooth',
+            block: 'start'
+        });
+    });
+</script>
 
 @endsection
