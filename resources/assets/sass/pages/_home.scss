@@ -1,21 +1,22 @@
 
 // banner
-.primdev-title{
+.primdev-title {
   position: relative;
-  top: 277px;
+  top: 265px;
   text-align: center;
   z-index: 1;
   color: white;
-  font-size: 45px;
+  font-size: 41px;
+  letter-spacing: 0px;
 }
 
-.primdev-sub-title{
-  position: relative;
-  top: 304px;
-  text-align: center;
-  z-index: 1;
-  color: white;
-  font-size: 30px;
+.primdev-sub-title {
+    position: relative;
+    top: 289px;
+    text-align: center;
+    z-index: 1;
+    color: white;
+    font-size: 30px;
 }
 
 .primdev-scroll-button {
@@ -36,25 +37,39 @@
 // quote
 .kutipan-control{
   position: relative;
+}
+
+.kutipan-control-content {
   top: 125px;
   text-align: center;
   z-index: 1;
   color: white;
-  font-size: 45px;
+  position: relative;
+  right: 0;
+  bottom: 0;
+  left: 0;
+  margin: auto;
+  font-size: 30px;
+  width: 70%;
+  line-height: 50px;
 }
 
-.kutipan-hover{
+.kutipan-hover {
   position: relative;
-  top: 150px;
+  top: 175px;
   text-align: center;
   z-index: 1;
   color: white;
-  font-size: 30px;
+  font-size: 27px;
   border: 3px solid white;
-  width: 20%;
-  border-radius: 10px;
-  left: 39%;
+  width: 15%;
+  border-radius: 13px;
+  padding: 10px 0px 10px 0px;
+  left: 0;
   cursor: pointer;
+  right: 0;
+  bottom: 0;
+  margin: auto;
 }
 
 .kutipan-hover:hover{
@@ -75,16 +90,17 @@
 }
 
 .box-big{
-	height: 364px;
+	height: 388px;
 }
 
 .box-mini{
-	height: 182px;
+	height: 194px;
 }
 
-.box-content-main{
-	position: relative;
-	overflow: hidden;
+.box-content-main {
+  position: relative;
+  overflow: hidden;
+  width: 379px;
 }
 
 .box-content-main:hover > .image-box {
@@ -151,22 +167,22 @@
 	top: 0;
 	left: 0;
 }
-
-.title-box{
-	padding: 20px 20px;
-	overflow: hidden;
+.title-box {
+    padding: 20px 25px;
+    overflow: hidden;
+    position: absolute;
+    bottom: 0;
 }
 
-.title-content-box{
-  font-size: 10px;
-  color: white;
-  background-color: rgba(0, 0, 0, 0.5);
-  width: 49px;
-  height: auto;
-  text-align: center;
-  margin: 0px;
-  padding: 1%;
-
+.title-content-box {
+    font-size: 9px;
+    color: white;
+    background-color: rgba(0, 0, 0, 0.5);
+    width: 100%;
+    height: auto;
+    text-align: center;
+    margin: 0px;
+    padding: 8%;
 }
 
 .title-content-box:hover {
@@ -174,81 +190,112 @@
 	transition: all 0.3s ease-in-out;
 }
 
-.box-mini-content{
-	color: white;
-	font-size: 18px;
-	margin: 0px;
-	padding: 0px 30px;
+.box-mini-content {
+    color: white;
+    font-size: 16px;
+    padding: 30px 25px;
+    width: 313px;
+    line-height: 30px;
 }
 
-.box-big-content{
-	color: white;
-	font-size: 30px;
-	margin: 0px;
-	padding: 0px 30px;
+.box-big-content {
+    color: white;
+    font-size: 30px;
+    padding: 30px 25px;
+    width: 275px;
+    line-height: 50px;
 }
 // content
 
 
 // information
 .information-tag{
-  margin-bottom: 5%;
+  margin-bottom: 2%;
 }
-.information-tag-title{
-  padding: 1%;
-  background: #109d59;
-  color: white;
-  font-size: 14px;
-  font-weight: bold;
+.information-tag-title {
+    padding: 1%;
+    background: #109d59;
+    color: white;
+    font-size: 17px;
+    font-weight: bold;
+    width: 100%;
+    height: auto;
+    display: inline;
 }
-.information-border-bottom{
-  border-bottom: 3px solid #109d59;
-  width: 100%;
-  height: 8px;
-  display: block;
+.information-border-bottom {
+    border-bottom: 2px solid #109d59;
+    width: 100%;
+    height: 10px;
+    display: block;
 }
 .information-next{
   float: right;
   color: #109d59;
-  font-size: 16px;
-}
-.information-tag-title{
-  padding: 1%;
-  background: #109d59;
-  color: white;
+  font-size: 15px;
+  padding-bottom: 5px;
 }
 
-.information-images{
-  width: 90%;
-  margin-left: auto;
-  margin-right: auto;
-  display: block;
-  height: auto;
-  position: relative;
-  overflow: hidden;
+.information-next:hover{
+  border-bottom: 1px solid #109d59;
 }
 
-.information-images img{
-  width: 100%;
-  transform: scaleX(1.2);
+.arrow-next {
+    border-right: 1px solid #969696;
+    border-top: 1px solid #969696;
+    display: block;
+    height: 2px;
+    -webkit-transform: rotate(45deg);
+    transform: rotate(45deg);
+    width: 2px;
+    float: right;
+    margin-top: 2px;
+    margin-left: 5px;
+    padding: 5px;
+    border-color: #109d59;
 }
 
-.information-title{
-  font-size: 16px;
-  color: $default-color;
-  font-weight: bold;
-  margin-left: 5%;
-  width: 90%;
-  margin-top: 3%;
+.information{
+  float: left;
 }
 
-.information-detail{
-  font-size: 12px;
-  color: $text-color;
-  letter-spacing: 1px;
-  margin-top: 3%;
-  margin-left: 5%;
-  width: 90%;
+.info-mar{
+  margin-right: 3px;
+}
+
+.information-images {
+    width: 273px;
+    display: block;
+    height: 178px;
+    position: relative;
+    overflow: hidden;
+}
+
+.information-images img {
+    width: 100%;
+    -webkit-transform: scaleX(1.1);
+    transform: scaleX(1.1);
+}
+
+.information-title {
+    font-size: 16px;
+    color: #494949;
+    font-weight: bold;
+    width: 275px;
+    margin-top: 3%;
+    line-height: 22px;
+}
+
+.information-title:hover{
+    transition: all 0.3s ease-in-out;
+    color: #109d59;
+}
+
+.information-detail {
+    font-size: 14px;
+    color: #696969;
+    margin-top: 3%;
+    width: 262px;
+    line-height: 20px;
 }
 
 .information-date{
@@ -261,34 +308,34 @@
   color: $text-color;
 }
 
-.information-author{
+.information-author {
   font-size: 12px;
   color: #109d59;
   font-weight: bold;
-  margin-left: 5%;
   width: 90%;
 }
 // information
 
 
 // ukm
-.ukm-content{
-  width: 95%;
-  height: 100%;
+.ukm-content {
+  width: 544px;
+  height: 368px;
   position: relative;
   overflow: hidden;
-  border-radius: 10%;
-  margin-bottom: 5%;
+  border-radius: 26px;
+  margin: auto auto 5% auto;
 }
 .ukm-control{
   text-align: center;
-  padding: 15%;
+  padding-top: 5%;
 }
 
-.ukm-title{
-  font-size: 24px;
-  color: #484848;
-  font-weight: bold;
+.ukm-title {
+    font-size: 24px;
+    color: #484848;
+    font-weight: bold;
+    line-height: 60px;
 }
 
 .ukm-detail{
@@ -298,20 +345,23 @@
   margin-bottom: 5%;
 }
 
-.ukm-content-title{
-  position: relative;
-  top: 150px;
+.ukm-content-title {
+  position: absolute;
+  top: 180px;
   color: white;
-  font-size: 20px;
+  font-size: 26px;
   font-weight: bold;
   z-index: 2;
+  left: 0;
+  right: 0;
 }
 
 .ukm-images{
   display: block;
   width: 100%;
   height: 100%;
-  transform: scale(1.4);
+  transform: scale(2);
+  transition: all 0.3s ease-in-out;
 }
 
 .gradient-primdev{
@@ -325,4 +375,9 @@
   top: 0;
   left: 0;
   opacity: .7;
+}
+
+.ukm-content a:hover > .ukm-images{
+  transition: all 0.3s ease-in-out;
+  transform: scale(1);
 }

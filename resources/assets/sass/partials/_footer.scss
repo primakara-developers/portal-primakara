@@ -1,46 +1,58 @@
 // footer
-.border-footer{
-    border: 3px solid #109d59;
-  }
-  .line{
-    border-left: 2px solid grey;
-    height: 134px;
+  .border-footer{
+      border: 3px solid #109d59;
+    }
+
+  .line {
+    border-left: 2px solid #cccbcb;
+    height: 150px;
     opacity: 0.3;
+    vertical-align: middle;
+    margin-top: 10px;
+    margin-left: 50px;
   }
-  
-  .footer-control{
-    height: 231px;
+
+  .footer-control {
+    height: 190px;
+    padding: 2% 0% 0% 0%;
+
   }
   .footer-center-title{
-    font-size: 20px;
+    font-size: 22px;
     color: #109d59;
     font-weight: bold;
+    margin-bottom: 10px;
   }
-  
-  .footer-center-list{
-    font-size: 20px;
+
+  .footer-center-list a{
+    font-size: 22px;
     color: #109d59;
+    line-height: 35px;
   }
-  
+
   .footer-right-title{
-    font-size: 20px;
+    font-size: 22px;
     color: #109d59;
     font-weight: bold;
+    margin-bottom: 10px;
   }
-  
-  .footer-right-detail{
-    font-size: 16px;
-    color: $text-color;
+
+  .footer-right-detail {
+      font-size: 16px;
+      color: #696969;
+      line-height: 30px;
+      width: 470px;
   }
-  
+
   .footer-logo-pertama{
-    height: 65px;
+    height: 50px;
   }
-  
+
   .footer-logo-kedua{
-    height: 65px;
+    height: 85px;
+    margin-bottom: 5%;
   }
-  
+
   .footer-bottom-copyright{
     text-align: center;
     padding: 1%;
