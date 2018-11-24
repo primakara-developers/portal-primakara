@@ -49,5 +49,8 @@ Route::prefix('dashboard')->group(function() {
 	Route::post('category/edit/{id}','CategoryController@update');
 	// delete category
 	Route::get('category/delete/{id}','CategoryController@destroy')->name('admin.category.delete');
+
+	//headlines
+	Route::get('headlines', 'HeadlineController@index')->name('admin.headline.index');
 	
 });
