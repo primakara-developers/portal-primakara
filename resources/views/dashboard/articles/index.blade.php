@@ -106,6 +106,9 @@
                     confirm: true
                 }
             }).then( function(isConfirm) {
+                if (!isConfirm) {
+                    return;
+                }
                 $.ajaxSetup({
                     headers: {
                         'X-CSRF-Token': '{{ csrf_token() }}'
