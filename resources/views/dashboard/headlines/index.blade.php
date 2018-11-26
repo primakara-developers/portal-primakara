@@ -20,7 +20,7 @@
                     <tr>
                         <td>{{ $loop->iteration }}</td>
                         <td>{{ $headline->article_title }}</td>
-                        <td>{{ $article->created_at->format('d F Y') }}</td>
+                        <td>{{ $headline->created_at->format('d F Y') }}</td>
                         <td>
                             <a href="{{ route('admin.article.edit', ['id'=>$headline->id]) }}" class="btn btn-sm btn-primary"><i class="fa fa-pencil"></i></a>
                             <a href="#" class="btn btn-sm btn-success"><i class="fa fa-eye"></i></a>
