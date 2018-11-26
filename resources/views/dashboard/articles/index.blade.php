@@ -96,9 +96,10 @@
                 headline_at: new Date().toISOString().slice(0, 19).replace('T', ' ')
             }
             button.prop('checked', !button.prop('checked'));
+            var caption = button.prop('checked') ? 'Are you sure you want to remove this article from headline?' : 'Are you sure you want to add this article as headline?'
             swal({
                 title: 'Add Headline',
-                text: 'Are you sure you want to add this article as headline?',
+                text: caption,
                 icon: 'warning',
                 buttons: {
                     cancel: true,
