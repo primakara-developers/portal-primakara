@@ -4,7 +4,7 @@ use Illuminate\Support\Facades\Schema;
 use Illuminate\Database\Schema\Blueprint;
 use Illuminate\Database\Migrations\Migration;
 
-class CreateHeadline extends Migration
+class AddHeadlineAtFieldToArticle extends Migration
 {
     /**
      * Run the migrations.
@@ -13,12 +13,8 @@ class CreateHeadline extends Migration
      */
     public function up()
     {
-        Schema::create('headlines', function (Blueprint $table) {
-            $table->increments('id');
-            $table->unsignedInteger('article_id');
-            $table->timestamps();
-
-            $table->foreign('article_id')->references('id')->on('articles');
+        Schema::table('articles', function (Blueprint $table) {
+            $table->dateTime('headline_at')->nullable();
         });
     }
 
@@ -29,6 +25,6 @@ class CreateHeadline extends Migration
      */
     public function down()
     {
-        Schema::dropIfExists('headlines');
+        Schema::dropIfExists('articles');
     }
 }

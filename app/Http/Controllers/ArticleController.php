@@ -30,7 +30,9 @@ class ArticleController extends Controller
         } else {
             $articles = Article::where('user_id', Auth::user()->id)->paginate(10);
         }
-       
+
+        // dd(Article::find(1));
+
         return view('dashboard.articles.index')
         ->with('articles',$articles);
     }

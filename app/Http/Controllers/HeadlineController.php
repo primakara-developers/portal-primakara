@@ -3,7 +3,7 @@
 namespace App\Http\Controllers;
 
 use Illuminate\Http\Request;
-use App\Headline;
+use App\Article;
 
 class HeadlineController extends Controller
 {
@@ -14,8 +14,7 @@ class HeadlineController extends Controller
      */
     public function index()
     {
-        //
-        $headlines = Headline::with('articles')->paginate(10);
+        $headlines = Article::where('is_headline', 1)->orderBy('headline_at', 'desc')->paginate(10);
         return view('dashboard.headlines.index')
         ->with('headlines', $headlines);
 
@@ -41,7 +40,22 @@ class HeadlineController extends Controller
     public function store(Request $request)
     {
         //
-        
+        $data = [
+            'is_headline' => $request->is_headline == 'true' ? 1 : 0,
+            'headline_at' => $request->headline_at
+        ];
+
+        $execute = Article::where('id', $request->id)->update($data);
+
+        if($execute){
+            return response()->json([
+                'status' => 200
+            ]);
+        }else{
+            return response()->json([
+                'status' => 422
+            ]);
+        }
     }
 
     /**

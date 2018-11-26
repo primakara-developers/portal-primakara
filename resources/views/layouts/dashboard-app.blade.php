@@ -36,7 +36,7 @@
 
   <header class="main-header">
     <!-- Logo -->
-    <a href="../../index2.html" class="logo">
+    <a href="/" class="logo">
       <!-- mini logo for sidebar mini 50x50 pixels -->
       <span class="logo-mini"><b>P</b></span>
       <!-- logo for regular state and mobile devices -->
@@ -137,7 +137,7 @@
         </li>
 
         <li>
-          <a href="">
+          <a href="{{ route('admin.headline.index') }}">
             <i class="fa fa-newspaper-o"></i> 
             <span>Headlines</span>
           </a>

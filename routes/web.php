@@ -52,5 +52,6 @@ Route::prefix('dashboard')->group(function() {
 
 	//headlines
 	Route::get('headlines', 'HeadlineController@index')->name('admin.headline.index');
-	
+	Route::post('headlines', 'HeadlineController@store')->name('admin.headline.store');
+
 });
