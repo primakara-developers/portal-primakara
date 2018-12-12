@@ -374,6 +374,13 @@ template {
   display: none;
 }
 
+*,
+*::before,
+*::after {
+  -webkit-box-sizing: border-box;
+          box-sizing: border-box;
+}
+
 body {
   font-family: 'Montserrat', sans-serif;
   color: #484848;
