@@ -31,9 +31,11 @@
 
     <!-- Banner -->
   <div class="container">
-        <div class="col-12">
+        <div class="row">
+          <div class="col-12">
             <div class="primdev-title">PRIMAKARA DEVELOPERS</div>
             <div class="primdev-sub-title">Proudly Present</div>
+          </div>
         </div>
         <div class="gradient"></div>
         <div class="parallax1"></div>
