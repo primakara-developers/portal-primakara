@@ -1,7 +1,4 @@
-@import 'variable';
-@import 'normalize';
-@import 'base';
-@import 'additional';
-@import 'partials/header';
-@import 'partials/footer';
-@import 'pages/home';
+@import 'config/main';
+@import 'additional'; // Nanti hapus ya Adiva. Inget filenya juga di hapus jangan importnya aja
+@import 'partials/main';
+@import 'pages/main';
