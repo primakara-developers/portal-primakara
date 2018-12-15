@@ -51,3 +51,13 @@ Route::prefix('dashboard')->group(function() {
 	Route::get('category/delete/{id}','CategoryController@destroy')->name('admin.category.delete');
 	
 });
+
+Route::prefix('mockup')->group(function() {
+	Route::view('home', 'home');
+
+	Route::prefix('mac')->group(function() {
+		Route::get('home', function() {
+			return view('home-mac');	
+		});
+	});
+});
