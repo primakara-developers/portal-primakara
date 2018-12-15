@@ -49,7 +49,11 @@ Route::prefix('dashboard')->group(function() {
 	Route::post('category/edit/{id}','CategoryController@update');
 	// delete category
 	Route::get('category/delete/{id}','CategoryController@destroy')->name('admin.category.delete');
-	
+
+	//headlines
+	Route::get('headlines', 'HeadlineController@index')->name('admin.headline.index');
+	Route::post('headlines', 'HeadlineController@store')->name('admin.headline.store');
+
 });
 
 Route::prefix('mockup')->group(function() {
