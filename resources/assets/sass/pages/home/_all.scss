@@ -1,3 +1,4 @@
+// Ini dihapus nanti kalau sudah webnya berjalan normal :)
 
 // banner
 .primdev-title {
@@ -291,6 +292,11 @@
 }
 
 .information-detail {
+   display: -webkit-box;
+  -webkit-line-clamp: 4;
+  -webkit-box-orient: vertical;
+    overflow: hidden;
+
     font-size: 14px;
     color: #696969;
     margin-top: 3%;
