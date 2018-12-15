@@ -1,62 +1,92 @@
 // footer
-  .border-footer{
+  
+  .footer{
+    &--border{
       border: 3px solid #109d59;
     }
 
-  .line {
-    border-left: 2px solid #cccbcb;
-    height: 150px;
-    opacity: 0.3;
-    vertical-align: middle;
-    margin-top: 10px;
-    margin-left: 50px;
+    &--container{
+      width: 100%;
+      height: auto;
+      margin-right: auto;
+      margin-left: auto;
+      position: relative;
+      overflow: hidden;
+      padding: 15px;
+
+      &--logo{
+        width: 33.33%;
+        float: left;
+
+        &--first{
+          height: 50px;
+        }
+        &--second{
+          height: 85px;
+          margin-bottom: 5%;
+        }
+      }
+  
+      &--information{
+        width: 33.33%;
+        float: left;
+
+        &--title{
+          font-size: 22px;
+          color: #109d59;
+          font-weight: bold;
+          margin-bottom: 10px;
+        }
+        &--list a{
+          font-size: 22px;
+          color: #109d59;
+          line-height: 35px;
+        }
+      }
+
+      &--about{
+        width: 33.33%;
+        float: left;
+
+        &--detail{
+          font-size: 16px;
+          color: #696969;
+          line-height: 30px;
+          width: 470px;
+
+          &--title{
+            font-size: 22px;
+            color: #109d59;
+            font-weight: bold;
+            margin-bottom: 10px;
+          }
+        }
+      }
+    }
+    
+    @media screen and (min-width: 1137px){
+      &--container{
+        width: 1137px;
+        
+      }
+    }
   }
 
-  .footer-control {
-    height: 190px;
-    padding: 2% 0% 0% 0%;
+  .footer-bottom{
+    &--container{
+      width: 100%;
+      height: auto;
+      margin-right: auto;
+      margin-left: auto;
+      position: relative;
+      overflow: hidden;
 
-  }
-  .footer-center-title{
-    font-size: 22px;
-    color: #109d59;
-    font-weight: bold;
-    margin-bottom: 10px;
-  }
-
-  .footer-center-list a{
-    font-size: 22px;
-    color: #109d59;
-    line-height: 35px;
-  }
-
-  .footer-right-title{
-    font-size: 22px;
-    color: #109d59;
-    font-weight: bold;
-    margin-bottom: 10px;
-  }
-
-  .footer-right-detail {
-      font-size: 16px;
-      color: #696969;
-      line-height: 30px;
-      width: 470px;
-  }
-
-  .footer-logo-pertama{
-    height: 50px;
-  }
-
-  .footer-logo-kedua{
-    height: 85px;
-    margin-bottom: 5%;
-  }
-
-  .footer-bottom-copyright{
-    text-align: center;
-    padding: 1%;
-    background: #109d59;
-    color: white;
-    font-size: 14px;
+      &--copyright{
+        text-align: center;
+        padding: 1%;
+        background: #109d59;
+        color: white;
+        font-size: 14px;
+      }
+    }
   }

@@ -403,63 +403,47 @@
 <!-- Main -->
 
 
-    <!-- footer -->
+    <!-- footer section -->
 <footer>
-    <div class="container footer-container">
-      <div class="border-footer"></div>
-      <div class="container-navbar">
-        <div class="row">
-            <div class="footer-control">
-
-                <div class="col-3">
-                  <img src="images/primakara.jpg" alt="" class="footer-logo-kedua">
-                  <img src="images/primdev.jpg" alt="" class="footer-logo-pertama">
-                </div>
-
-                <div class="col-1 line"></div>
-
-                <div class="col-2">
-                    <div class="footer-center">
-                        <div class="footer-center-title">INFORMASI</div>
-                        <div class="footer-center-list"><a href="#">About</a></div>
-                        <div class="footer-center-list"><a href="#">Story</a></div>
-                        <div class="footer-center-list"><a href="#">Event</a></div>
-                        <div class="footer-center-list"><a href="#">Etcetera</a></div>
-                    </div>
-                </div>
-
-                <div class="col-4">
-                    <div class="footer-right">
-                        <div class="footer-right-title">SUMMARY</div>
-
-                        <div class="footer-right-detail">
-                            Newspaper Tech Demo is your tech news website. We
-                            provide you with the lastest breaking news and videos
-                            straight from the technology industry provide you with
-                            the lastest breaking.
-                        </div>
-                    </div>
-                </div>
-
-            </div>
-        </div>
+    <!-- footer top -->
+    <div class="footer">
+      <div class="footer--border"></div>
+      <div class="footer--container">
+          <div class="footer--container--logo">
+            <img src="images/primakara.jpg" alt="" class="footer--container--logo--second">
+            <img src="images/primdev.jpg" alt="" class="footer--container--logo--first">
+          </div>
+          <div class="footer--container--information">
+            <div class="footer--container--information--title">INFORMASI</div>
+            <div class="footer--container--information--list"><a href="#">About</a></div>
+            <div class="footer--container--information--list"><a href="#">Story</a></div>
+            <div class="footer--container--information--list"><a href="#">Event</a></div>
+            <div class="footer--container--information--list"><a href="#">Etcetera</a></div>
+          </div>
+          <div class="footer--container--about">
+              <div class="footer--container--about--detail">
+                  <div class="footer--container--about--detail--title">SUMMARY</div>
+                  <div class="footer--container--about--detail--list">
+                      Newspaper Tech Demo is your tech news website. We
+                      provide you with the lastest breaking news and videos
+                      straight from the technology industry provide you with
+                      the lastest breaking.
+                  </div>
+              </div>
+          </div>
       </div>
     </div>
 
     <!-- footer-bottom -->
-    <div class="container">
-        <div class="row">
-            <div class="footer-bottom-control">
-                <div class="col-12">
-                  <div class="footer-bottom-copyright">
-                      &copy;2018 - Team Primakara Developers, All Right Reserved
-                  </div>
-                </div>
-            </div>
+    <div class="footer-bottom">
+      <div class="footer-bottom--container">
+        <div class="footer-bottom--container--copyright">
+            &copy;2018 - Team Primakara Developers, All Right Reserved
         </div>
+      </div>
     </div>
 </footer>
-<!-- footer -->
+    <!-- footer end section-->
 
 @endsection
 
