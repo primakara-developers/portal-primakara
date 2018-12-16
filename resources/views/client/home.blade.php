@@ -306,7 +306,7 @@
       <div class="subscription__content">
         <div class="subscription__content__gradient"></div>
         <div class="subscription__content__title">
-          Dapatkan informasi kegiatan kami dan tips serta trik seputar dunia teknologi dan kampus
+          Dapatkan informasi kegiatan kami dan tips serta trik seputar dunia teknologi dan informasi lainnya
         </div>
         <div class="subscription__content__btn-wrapper">
           <a href="#" class="subscription__content__btn-wrapper__btn">SUBSCRIBE</a>
