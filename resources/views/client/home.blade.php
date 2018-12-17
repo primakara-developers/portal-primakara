@@ -48,14 +48,6 @@
     {{-- Headline --}}
     <section class="headline">
       <div class="headline__list">
-        <span class="headline__list__item headline__list__item__first">
-          <a href="?single=yes" class="headline__list__item__gradient"></a>
-          <a href="?single=yes" class="headline__list__item__title">
-            Woow dlskjs sfdlfjalks akjsafajsdf asdaosdiwpnlk asljdasdkja asdjakjdakdjasd adjalkjdakdjakld
-          </a>
-          <img src="{{ asset('images/no1.jpg') }}" alt="" class="headline__list__item__cover">
-          <a href="?category=andoid" class="headline__list__item__badge">Android</a>
-        </span>
         <span class="headline__list__item">
           <a href="?single=yes" class="headline__list__item__gradient"></a>
           <a href="?single=yes" class="headline__list__item__title">
@@ -96,7 +88,15 @@
           <img src="{{ asset('images/no1.jpg') }}" alt="" class="headline__list__item__cover">
           <a href="?category=andoid" class="headline__list__item__badge">Android</a>
         </span>
-        <span class="headline__list__item headline__list__item__last">
+        <span class="headline__list__item">
+          <a href="?single=yes" class="headline__list__item__gradient"></a>
+          <a href="?single=yes" class="headline__list__item__title">
+            Woow dlskjs sfdlfjalks akjsafajsdf asdaosdiwpnlk asljdasdkja asdjakjdakdjasd adjalkjdakdjakld
+          </a>
+          <img src="{{ asset('images/no1.jpg') }}" alt="" class="headline__list__item__cover">
+          <a href="?category=andoid" class="headline__list__item__badge">Android</a>
+        </span>
+        <span class="headline__list__item">
           <a href="?single=yes" class="headline__list__item__gradient"></a>
           <a href="?single=yes" class="headline__list__item__title">
             Woow dlskjs sfdlfjalks akjsafajsdf asdaosdiwpnlk asljdasdkja asdjakjdakdjasd adjalkjdakdjakld
