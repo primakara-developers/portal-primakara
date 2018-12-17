@@ -55,3 +55,13 @@ Route::prefix('dashboard')->group(function() {
 	Route::post('headlines', 'HeadlineController@store')->name('admin.headline.store');
 
 });
+
+Route::prefix('mockup')->group(function() {
+	Route::view('home', 'home');
+
+	Route::prefix('mac')->group(function() {
+		Route::get('home', function() {
+			return view('home-mac');	
+		});
+	});
+});
