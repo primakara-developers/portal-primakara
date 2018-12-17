@@ -45,138 +45,68 @@
   </div>
     <!-- Banner -->
 
-
-<!-- Content-->
-    <section id="headnews">
-      <div class="container-fluid">
-        <div class="main-content">
-          <div class="col-4">
-            <a href="single_page.php" class="link-text-decoration">
-              <div class="box-big box-content-main">
-  
-                  <img src="images/no1.jpg" class="image-box">
-  
-                  <div class="box-gradient gradient-color-1"></div>
-  
-                  <div class="box-content">
-  
-                      <h1 class="box-big-content">
-                         Primakara Gelar Startup Expo besar
-                         di Tahun 1862 Sebelum Masehi
-                      </h1>
-  
-                  </div>
-  
-                  <div class="title-box">
-                    <p class="title-content-box"> KEGIATAN </p>
-                  </div>
-  
-              </div>
-            </a>
-  
-            <a href="single_page.php" class="link-text-decoration">
-  
-              <div class="box-mini box-content-main">
-  
-                <img src="images/no2.jpg" class="image-box">
-  
-                <div class="box-gradient gradient-color-2"></div>
-                <?php // XXX:  ?>
-                <div class="box-content">
-                  <h1 class="box-mini-content">
-                     Yuk Simak Informasi Berguna Cara Membuat Website Company Profile Ala Pornhub
-                  </h1>
-                </div>
-                <div class="title-box">
-                  <p class="title-content-box"> WEBSITE </p>
-                </div>
-              </div>
-            </a>
-          </div>
-  
-          <div class="col-4">
-            <a href="single_page.php" class="link-text-decoration">
-              <div class="box-mini box-content-main">
-                <img src="images/no3.jpg" class="image-box">
-                <div class="box-gradient gradient-color-3"></div>
-                <div class="box-content">
-                  <h1 class="box-mini-content">
-                      Memory SSD Untuk Programmer?
-                      Apakah Membantu Mempercepat Project Agar Cepat Selesai?
-                  </h1>
-                </div>
-                <div class="title-box">
-                  <p class="title-content-box"> HARDWARE </p>
-                </div>
-              </div>
-            </a>
-  
-            <a href="single_page.php" class="link-text-decoration">
-              <div class="box-mini box-content-main">
-                <img src="images/no4.jpg" class="image-box">
-                <div class="box-gradient gradient-color-4"></div>
-                <div class="box-content">
-                  <h1 class="box-mini-content">
-                     Pras, CTO Laravel.org Mengakui Framework Miliknya Tidak Berguna
-                  </h1>
-                </div>
-                <div class="title-box">
-                  <p class="title-content-box"> FRAMEWORK </p>
-                </div>
-              </div>
-            </a>
-            <a href="single_page.php" class="link-text-decoration">
-              <div class="box-mini box-content-main">
-                <img src="images/no5.jpg" class="image-box">
-                <div class="box-gradient gradient-color-5"></div>
-                  <div class="box-content">
-                    <h1 class="box-mini-content">
-                       Dr. Boyke, 150 Orang Tiap Detiknya Mengidap Penyakit Wibu, Karena Asupan Anime
-                       Yang Berlebih
-                    </h1>
-                  </div>
-                  <div class="title-box">
-                    <p class="title-content-box"> KESEHATAN </p>
-                  </div>
-              </div>
-            </a>
-          </div>
-  
-          <div class="col-4">
-            <a href="single_page.php" class="link-text-decoration">
-              <div class="box-mini box-content-main">
-                <img src="images/no6.jpg" class="image-box">
-                <div class="box-gradient gradient-color-6"></div>
-                <div class="box-content">
-                  <h1 class="box-mini-content">
-                     Yaw, Konglomerat Asal Bali Membeli Stiker Mobil Lamborghini
-                     Gallardo di Las Vegas
-                  </h1>
-                </div>
-                <div class="title-box">
-                  <p class="title-content-box"> INTERMEZZO </p>
-                </div>
-              </div>
-            </a>
-            <a href="single_page.php" class="link-text-decoration">
-              <div class="box-big box-content-main">
-                <img src="images/no7.jpg" class="image-box">
-                <div class="box-gradient gradient-color-7"></div>
-                <div class="box-content">
-                  <h1 class="box-big-content">
-                    8 Cara Membuat Website Dengan Mudah Tanpa Framework!
-                  </h1>
-                </div>
-                <div class="title-box">
-                  <p class="title-content-box"> ANDROID </p>
-                </div>
-              </div>
-            </a>
-          </div>
-        </div>
+    {{-- Headline --}}
+    <section class="headline">
+      <div class="headline__list">
+        <span class="headline__list__item headline__list__item__first">
+          <a href="?single=yes" class="headline__list__item__gradient"></a>
+          <a href="?single=yes" class="headline__list__item__title">
+            Woow dlskjs sfdlfjalks akjsafajsdf asdaosdiwpnlk asljdasdkja asdjakjdakdjasd adjalkjdakdjakld
+          </a>
+          <img src="{{ asset('images/no1.jpg') }}" alt="" class="headline__list__item__cover">
+          <a href="?category=andoid" class="headline__list__item__badge">Android</a>
+        </span>
+        <span class="headline__list__item">
+          <a href="?single=yes" class="headline__list__item__gradient"></a>
+          <a href="?single=yes" class="headline__list__item__title">
+            Woow dlskjs sfdlfjalks akjsafajsdf asdaosdiwpnlk asljdasdkja asdjakjdakdjasd adjalkjdakdjakld
+          </a>
+          <img src="{{ asset('images/no1.jpg') }}" alt="" class="headline__list__item__cover">
+          <a href="?category=andoid" class="headline__list__item__badge">Android</a>
+        </span>
+        <span class="headline__list__item">
+          <a href="?single=yes" class="headline__list__item__gradient"></a>
+          <a href="?single=yes" class="headline__list__item__title">
+            Woow dlskjs sfdlfjalks akjsafajsdf asdaosdiwpnlk asljdasdkja asdjakjdakdjasd adjalkjdakdjakld
+          </a>
+          <img src="{{ asset('images/no1.jpg') }}" alt="" class="headline__list__item__cover">
+          <a href="?category=andoid" class="headline__list__item__badge">Android</a>
+        </span>
+        <span class="headline__list__item">
+          <a href="?single=yes" class="headline__list__item__gradient"></a>
+          <a href="?single=yes" class="headline__list__item__title">
+            Woow dlskjs sfdlfjalks akjsafajsdf asdaosdiwpnlk asljdasdkja asdjakjdakdjasd adjalkjdakdjakld
+          </a>
+          <img src="{{ asset('images/no1.jpg') }}" alt="" class="headline__list__item__cover">
+          <a href="?category=andoid" class="headline__list__item__badge">Android</a>
+        </span>
+        <span class="headline__list__item">
+          <a href="?single=yes" class="headline__list__item__gradient"></a>
+          <a href="?single=yes" class="headline__list__item__title">
+            Woow dlskjs sfdlfjalks akjsafajsdf asdaosdiwpnlk asljdasdkja asdjakjdakdjasd adjalkjdakdjakld
+          </a>
+          <img src="{{ asset('images/no1.jpg') }}" alt="" class="headline__list__item__cover">
+          <a href="?category=andoid" class="headline__list__item__badge">Android</a>
+        </span>
+        <span class="headline__list__item">
+          <a href="?single=yes" class="headline__list__item__gradient"></a>
+          <a href="?single=yes" class="headline__list__item__title">
+            Woow dlskjs sfdlfjalks akjsafajsdf asdaosdiwpnlk asljdasdkja asdjakjdakdjasd adjalkjdakdjakld
+          </a>
+          <img src="{{ asset('images/no1.jpg') }}" alt="" class="headline__list__item__cover">
+          <a href="?category=andoid" class="headline__list__item__badge">Android</a>
+        </span>
+        <span class="headline__list__item headline__list__item__last">
+          <a href="?single=yes" class="headline__list__item__gradient"></a>
+          <a href="?single=yes" class="headline__list__item__title">
+            Woow dlskjs sfdlfjalks akjsafajsdf asdaosdiwpnlk asljdasdkja asdjakjdakdjasd adjalkjdakdjakld
+          </a>
+          <img src="{{ asset('images/no1.jpg') }}" alt="" class="headline__list__item__cover">
+          <a href="?category=andoid" class="headline__list__item__badge">Android</a>
+        </span>
       </div>
     </section>
-    <!-- Content -->
+    {{-- Headline --}}
 
     <!-- Information -->
     <div class="container-fluid">
@@ -321,7 +251,7 @@
     <!-- Quote -->
 
     <!-- ukm -->
-    <div class="container-fluid">
+    {{-- <div class="container-fluid">
         <div class="row">
             <div class="ukm-control">
                 <div class="ukm-title">UNIT KEGIATAN MAHASISWA</div>
@@ -398,7 +328,7 @@
             </div>
         </div>
 
-    </div>
+    </div> --}}
 </main>
 <!-- Main -->
 
@@ -474,6 +404,10 @@
             block: 'start'
         });
     });
+    function link(url) {
+      location.replace = url
+      console.log('tai')
+    }
 </script>
 
 @endsection
