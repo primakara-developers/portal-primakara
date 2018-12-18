@@ -68,4 +68,10 @@
     		padding: 12px 25px 12px 25px;
     	}
     }
+
+    @media screen and (min-width: 520px) and (max-width: 800px){
+    	&__content__title{
+    		font-size: 22px;	
+    	}
+    }
 }
