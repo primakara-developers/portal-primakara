@@ -34,15 +34,15 @@
   float: left;
 }
 
-@media screen and(max-width: 1015px){
-    .col-2{
-      width: 50%;
-    }
+// @media screen and(max-width: 1015px){
+//     .col-2{
+//       width: 50%;
+//     }
 
-    .col-1{
-      display: none;
-    }
-}
+//     .col-1{
+//       display: none;
+//     }
+// }
 
 
 .col-3 {
@@ -50,35 +50,35 @@
   float: left;
 }
 
-@media screen and(max-width: 1015px){
-  .col-3{
-    width: 50%;
-  }
-}
+// @media screen and(max-width: 1015px){
+//   .col-3{
+//     width: 50%;
+//   }
+// }
 
-@media screen and(max-width: 768px){
-  .col-3{
-    width: 100%;
-  }
-}
+// @media screen and(max-width: 768px){
+//   .col-3{
+//     width: 100%;
+//   }
+// }
 
 .col-4 {
   width: 33.33%;
   float: left;
 }
 
-@media screen and (max-width: 1015px){
-  .col-4{
-    width: 50%;
-  }
-}
+// @media screen and (max-width: 1015px){
+//   .col-4{
+//     width: 50%;
+//   }
+// }
 
 
-@media screen and (max-width: 600px){
-  .col-4{
-    width: 100%;
-  }
-}
+// @media screen and (max-width: 600px){
+//   .col-4{
+//     width: 100%;
+//   }
+// }
 
 
 .col-5 {
@@ -86,11 +86,11 @@
   float: left;
 }
 
-@media screen and (max-width: 1015px){
-  .col-5{
-    width: 100%;
-  }
-}
+// @media screen and (max-width: 1015px){
+//   .col-5{
+//     width: 100%;
+//   }
+// }
 
 
 .col-6 {
@@ -98,11 +98,11 @@
   float: left;
 }
 
-@media screen and (max-width: 1015px){
-  .col-6{
-    width: 100%;
-  }
-}
+// @media screen and (max-width: 1015px){
+//   .col-6{
+//     width: 100%;
+//   }
+// }
 
 
 .col-7 {
@@ -136,18 +136,18 @@
 }
 
 
-@media screen and (max-width: 1000px) {
-  * {
-    font-size: 1em;
-  }
-}
+// @media screen and (max-width: 1000px) {
+//   * {
+//     font-size: 1em;
+//   }
+// }
 
 
-@media screen and (max-width: 500px) {
-  * {
-    font-size: 0.9em;
-  }
-}
+// @media screen and (max-width: 500px) {
+//   * {
+//     font-size: 0.9em;
+//   }
+// }
 
 // .parallax4{
 //   background-image: url(../assets/parallax4.jpg);
@@ -197,7 +197,3 @@
   background: #484848;
   width: 291px;
 }
-
-
-
-// TESTING AJA
