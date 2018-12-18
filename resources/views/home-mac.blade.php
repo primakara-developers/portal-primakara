@@ -19,7 +19,7 @@
 </head>
 <body>
     <div class="background">
-        <img src="{{ asset('images/mockup/Portal-Primakara-Home.png') }}" alt="" srcset="">
+        <img src="{{ asset('images/mockup/Portal-Primakara-Home-Mac.jpg') }}" alt="" srcset="">
     </div>
 </body>
 </html>

@@ -8,7 +8,7 @@ class Category extends Model
 {
     protected $table = 'categories';
     protected $fillable = ['category_name','category_slug'];
-
+    
     public function articles() {
         return $this->hasMany('App\Article', 'category_id');
     }
