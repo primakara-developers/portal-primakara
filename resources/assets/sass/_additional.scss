@@ -36,19 +36,51 @@
   float: left;
 }
 
+// @media screen and(max-width: 1015px){
+//     .col-2{
+//       width: 50%;
+//     }
+
+//     .col-1{
+//       display: none;
+//     }
+// }
+
 
 .col-3 {
   width: 25%;
   float: left;
 }
 
+// @media screen and(max-width: 1015px){
+//   .col-3{
+//     width: 50%;
+//   }
+// }
 
+// @media screen and(max-width: 768px){
+//   .col-3{
+//     width: 100%;
+//   }
+// }
 
 .col-4 {
   width: 33.33%;
   float: left;
 }
 
+// @media screen and (max-width: 1015px){
+//   .col-4{
+//     width: 50%;
+//   }
+// }
+
+
+// @media screen and (max-width: 600px){
+//   .col-4{
+//     width: 100%;
+//   }
+// }
 
 
 .col-5 {
@@ -56,6 +88,11 @@
   float: left;
 }
 
+// @media screen and (max-width: 1015px){
+//   .col-5{
+//     width: 100%;
+//   }
+// }
 
 
 .col-6 {
@@ -63,6 +100,11 @@
   float: left;
 }
 
+// @media screen and (max-width: 1015px){
+//   .col-6{
+//     width: 100%;
+//   }
+// }
 
 
 .col-7 {
@@ -95,6 +137,37 @@
   float: left;
 }
 
+
+// @media screen and (max-width: 1000px) {
+//   * {
+//     font-size: 1em;
+//   }
+// }
+
+
+// @media screen and (max-width: 500px) {
+//   * {
+//     font-size: 0.9em;
+//   }
+// }
+
+// .parallax4{
+//   background-image: url(../assets/parallax4.jpg);
+//   height: 425px;
+//   background-attachment: fixed;
+//   background-position: center;
+//   background-repeat: no-repeat;
+//   background-size: cover;
+// }
+
+// .parallax3{
+//   background-image: url(../assets/parallax3.jpg);
+//   height: 425px;
+//   background-attachment: fixed;
+//   background-position: center;
+//   background-repeat: no-repeat;
+//   background-size: cover;
+// }
 .parallax2{
   background-image: url(/images/bg-bg.jpeg);
   height: 498px;
