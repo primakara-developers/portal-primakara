@@ -50,23 +50,23 @@
                 </tr>
             </thead>
             <tbody>
-                @foreach ($articles as $article)
+                @foreach ($headlines as $headline)
                     <tr>
                         <td>{{ $loop->iteration }}</td>
-                        <td>{{ $article->article_title }}</td>
-                        <td>{{ $article->created_at->format('d F Y') }}</td>
+                        <td>{{ $headline->article_title }}</td>
+                        <td>{{ $headline->created_at->format('d F Y') }}</td>
                         <td>
-                            <input type="checkbox" class="toggle-headline" id="article-{{$article->id}}" data-id="{{ $article->id }}" {{ $article->is_headline == 1 ? 'checked' : '' }}/>
-                            <label for="article-{{$article->id}}" class="label-toggle-article"></label>
+                            <input type="checkbox" class="toggle-headline" id="article-{{$headline->id}}" data-id="{{ $headline->id }}" {{ $headline->is_headline == 1 ? 'checked' : '' }}/>
+                            <label for="article-{{$headline->id}}" class="label-toggle-article"></label>
                         </td>
                         <td>
-                            <a href="{{ route('admin.article.edit', ['id'=>$article->id]) }}" class="btn btn-sm btn-primary">
+                            <a href="{{ route('admin.article.edit', ['id'=>$headline->id]) }}" class="btn btn-sm btn-primary">
                                 <i class="fa fa-pencil"></i>
                             </a>
                             <a href="#" class="btn btn-sm btn-success">
                                 <i class="fa fa-eye"></i>
                             </a>
-                            <a href="{{ route('admin.article.delete',['id' => $article->id]) }}" class="btn btn-sm btn-danger">
+                            <a href="{{ route('admin.article.delete',['id' => $headline->id]) }}" class="btn btn-sm btn-danger">
                                 <i class="fa fa-trash"></i>
                             </a>
                         </td>
@@ -79,7 +79,7 @@
     
     <!-- /.box-body -->
     <div class="box-footer clearfix">
-        {{ $articles->links('dashboard.vendor.pagination.default') }}
+        {{ $headlines->links('dashboard.vendor.pagination.default') }}
     </div>
 </div>
 @endsection
@@ -96,10 +96,9 @@
                 headline_at: new Date().toISOString().slice(0, 19).replace('T', ' ')
             }
             button.prop('checked', !button.prop('checked'));
-            var caption = button.prop('checked') ? 'Are you sure you want to remove this article from headline?' : 'Are you sure you want to add this article as headline?'
             swal({
                 title: 'Add Headline',
-                text: caption,
+                text: 'Are you sure you want to remove this article from headline?',
                 icon: 'warning',
                 buttons: {
                     cancel: true,
@@ -119,8 +118,8 @@
                     method: 'POST',
                     data: data,
                     success: function() {
-                        swal("operation succeded", "Your operation succeeded!", "success");
-                        button.prop('checked', !button.prop('checked'));
+                        swal("operation succeeded", "Your operation succeeded!", "success");
+                        $(button.parentsUntil('tbody')[1]).css('display', 'none');
                     },
                     error: function() {
                         swal("operation failed", "Something went wrong", "error");
