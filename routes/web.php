@@ -60,8 +60,6 @@ Route::prefix('mockup')->group(function() {
 	Route::view('home', 'home');
 
 	Route::prefix('mac')->group(function() {
-		Route::get('home', function() {
-			return view('home-mac');	
-		});
+		Route::view('home', 'home-mac');
 	});
 });
