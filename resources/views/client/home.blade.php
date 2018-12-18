@@ -183,7 +183,13 @@
 
                 <div class="information-section__tag">
                     <span class="information-section__tag--title">INFORMASI TERUPDATE</span>
-                    <a href="#" class="information-section__tag--next">Selengkapnya<span class="information-section__tag--arrow"></span></a>
+                    <a href="#" class="information-section__tag--next">
+                      <span class="information-section__tag--remove">Selengkapnya</span>
+                      <div class="information-section__tag--box">
+                        <span class="information-section__tag--box--arrow"></span>
+                        <span class="information-section__tag--box--arrow information-section__tag--box--second-arrow"></span>
+                      </div>
+                    </a>
                     <div class="information-section__tag--border"></div>
                 </div>
 
