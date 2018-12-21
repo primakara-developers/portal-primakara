@@ -57,7 +57,7 @@ $ git push origin {nama-branch}
 - Dalam membuat pull request, jika terkait dengan Front-End mohon isi reviewer dengan [wahyubucil]. Dan jika terkait dengan Back-End mohon isi Reviewer dengan [kirizu336] & [marvelalexius].
 - [Panduan untuk menambah mockup](https://github.com/primakara-developers/portal-primakara/blob/master/resources/assets/mockup/README.md)
 - [Panduan untuk development Front-End](https://github.com/primakara-developers/portal-primakara/blob/master/resources/README.md)
-- Jika ingin menjalankan aplikasi dengan Docker. Bisa lihat [disini](https://github.com/primakara-developers/portal-primakara/blob/master/resources/LARADOCK_SETUP.md)
+- Jika ingin menjalankan project ini dengan Docker. Bisa lihat [disini](https://github.com/primakara-developers/portal-primakara/blob/master/resources/LARADOCK_SETUP.md).
 
 
 License

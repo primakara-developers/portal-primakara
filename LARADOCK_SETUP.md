@@ -30,11 +30,11 @@ MYSQL_PASSWORD=primakara
 MYSQL_ROOT_PASSWORD=root
 ...
 ```
-6. Setelah itu, berikut command untuk mulai menjalankan aplikasi. Contoh ini untuk menjalankan aplikasi dengan Nginx dan MySQL. Jika aplikasi baru pertama kali dijalankan, maka akan dilakukan instalasi dependensi yang dibutuhkan. Prosesnya akan memakan waktu lama. Disarankan menggunakan koneksi Wi-Fi karena dependensi yang di download memiliki ukuran yang besar.
+6. Setelah itu, berikut command untuk mulai menjalankan project ini. Contoh ini untuk menjalankan project dengan Nginx dan MySQL. Jika project baru pertama kali dijalankan, maka akan dilakukan instalasi dependensi yang dibutuhkan. Prosesnya akan memakan waktu lama. Disarankan menggunakan koneksi Wi-Fi karena dependensi yang di download memiliki ukuran yang besar.
 ```sh
 $ docker-compose up -d nginx mysql
 ```
-Jika instalasi pertama sudah dilakukan. Ketika menjalankan command tersebut. Aplikasi akan langsung jalan tanpa melakukan instalasi lagi.
+Jika instalasi pertama sudah dilakukan. Ketika menjalankan command tersebut. Project akan langsung jalan tanpa melakukan instalasi lagi.
 
 7. Kembali ke folder utama dari project ini. Lalu atur `.env` dari project ini agar sesuai dengan yang ada di Laradock. Contoh seperti ini:
 ```
@@ -63,7 +63,7 @@ $ composer install
 $ php artisan key:generate
 $ php artisan migrate --seed
 ```
-11. Jika sudah, silahkan akses `http://localhost`. Dan selamat. Aplikasi sudah berjalan dengan baik.
+11. Jika sudah, silahkan akses `http://localhost`. Dan selamat. Project sudah berjalan dengan baik.
 
 ---
 
@@ -73,15 +73,15 @@ Dalam semua prosesnya. Jangan lupa untuk masuk terlebih dahulu ke folder Laradoc
 $ cd laradock-portal-primakara
 ```
 
-- Menjalankan Aplikasi (Dalam hal ini menggunakan Nginx & MySQL)
+- Menjalankan Project (Dalam hal ini menggunakan Nginx & MySQL)
 ```sh
 $ docker-compose up -d nginx mysql
 ```
-- Mematikan Aplikasi
+- Menghentikan Project
 ```sh
 $ docker-compose stop
 ```
-- Menghapus Aplikasi
+- Menghapus Project (Menghapus aplikasi dari list proses yang ada di Docker Compose)
 ```sh
 $ docker-compose down
 ```
