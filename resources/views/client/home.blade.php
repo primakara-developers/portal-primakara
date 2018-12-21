@@ -301,27 +301,22 @@
     </div>
 
 
-    <!-- Quote -->
-      <div class="container">
-            <div class="row">
-                <div class="col-12">
-                  <div class="quote-control">
-                    <div class="kutipan-control">
-                      <div class="kutipan-control-content">
-                        Dapatkan informasi kegiatan kami dan tips serta trik seputar dunia teknologi dan kampus
-                      </div>
-                    </div>
-                    <a href="#"><div class="kutipan-hover">SUBSCRIBE</div></a>
-                  </div>
-                </div>
-            </div>
-            <div class="gradient"></div>
-            <div class="parallax2"></div>
+    {{-- Subscription --}}
+    <div class="subscription" style="background-image: url('{{ asset('images/bg-bg.jpeg') }}');">
+      <div class="subscription__content">
+        <div class="subscription__content__gradient"></div>
+        <div class="subscription__content__title">
+          Dapatkan informasi kegiatan kami dan tips serta trik seputar dunia teknologi dan informasi lainnya
+        </div>
+        <div class="subscription__content__btn-wrapper">
+          <a href="#" class="subscription__content__btn-wrapper__btn">SUBSCRIBE</a>
+        </div>
       </div>
-    <!-- Quote -->
+    </div>
+    {{-- end of Subscription --}}
 
-    <!-- ukm -->
-    <div class="container-fluid">
+    {{-- ukm --}}
+    {{-- <div class="container-fluid">
         <div class="row">
             <div class="ukm-control">
                 <div class="ukm-title">UNIT KEGIATAN MAHASISWA</div>
@@ -398,7 +393,7 @@
             </div>
         </div>
 
-    </div>
+    </div> --}}
 </main>
 <!-- Main -->
 
