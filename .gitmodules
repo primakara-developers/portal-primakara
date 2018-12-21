@@ -1,0 +1,3 @@
+[submodule "laradock-portal-primakara"]
+	path = laradock-portal-primakara
+	url = https://github.com/Laradock/laradock.git
