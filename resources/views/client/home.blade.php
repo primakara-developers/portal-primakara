@@ -30,20 +30,16 @@
 <main>
 
     <!-- Banner -->
-  <div class="container">
-        <div class="row">
-            <div class="col-12">
-                <div class="primdev-title">PRIMAKARA DEVELOPERS</div>
-                <div class="primdev-sub-title">Proudly Present</div>
-            </div>
+    <div class="banner" style="background-image: url('{{ asset('images/workshop-photos.jpg') }}');">
+        <div class="banner__content">
+            <h1 class="banner__title">Portal Primakara</h1>
+            <h2 class="banner__subtitle">Lorem ipsum dolor sit amet consectetur adipisicing elit.</h2>
         </div>
-        <div class="gradient"></div>
-        <div class="parallax1"></div>
-        <a href="javascript:void(0)" class="primdev-scroll-button">
-            <img src="images/icons/downwards-pointer.svg" alt="">
+        <a href="javascript:void(0)" class="banner__scroll-to-bottom-button">
+            <img src="{{ asset('images/icons/downwards-pointer.svg') }}" class="banner__scroll-to-bottom-image">
         </a>
-  </div>
-    <!-- Banner -->
+    </div>
+<!-- Banner -->
 
 
 <!-- Content-->
@@ -53,33 +49,33 @@
           <div class="col-4">
             <a href="single_page.php" class="link-text-decoration">
               <div class="box-big box-content-main">
-  
+
                   <img src="images/no1.jpg" class="image-box">
-  
+
                   <div class="box-gradient gradient-color-1"></div>
-  
+
                   <div class="box-content">
-  
+
                       <h1 class="box-big-content">
                          Primakara Gelar Startup Expo besar
                          di Tahun 1862 Sebelum Masehi
                       </h1>
-  
+
                   </div>
-  
+
                   <div class="title-box">
                     <p class="title-content-box"> KEGIATAN </p>
                   </div>
-  
+
               </div>
             </a>
-  
+
             <a href="single_page.php" class="link-text-decoration">
-  
+
               <div class="box-mini box-content-main">
-  
+
                 <img src="images/no2.jpg" class="image-box">
-  
+
                 <div class="box-gradient gradient-color-2"></div>
                 <?php // XXX:  ?>
                 <div class="box-content">
@@ -93,7 +89,7 @@
               </div>
             </a>
           </div>
-  
+
           <div class="col-4">
             <a href="single_page.php" class="link-text-decoration">
               <div class="box-mini box-content-main">
@@ -110,7 +106,7 @@
                 </div>
               </div>
             </a>
-  
+
             <a href="single_page.php" class="link-text-decoration">
               <div class="box-mini box-content-main">
                 <img src="images/no4.jpg" class="image-box">
@@ -141,7 +137,7 @@
               </div>
             </a>
           </div>
-  
+
           <div class="col-4">
             <a href="single_page.php" class="link-text-decoration">
               <div class="box-mini box-content-main">
@@ -194,21 +190,21 @@
                 </div>
 
                 <div class="information-section__coloum">
-                    
+
                       <div class="information-section__coloum__images">
                         <a href="#">
                           <img src="images/no1.jpg" alt="">
                         </a>
                       </div>
-                    
-                    
+
+
                       <div class="information-section__coloum__title">
                         <a href="#">
                             Membangun Ekosistem Digital,
                             STMIK dan STIKOM Bergabung
                         </a>
                       </div>
-                    
+
                       <div class="information-section__coloum__detail">
                           Happy Sunday from software Expand
                           In this Week's edition of Feedback
@@ -229,7 +225,7 @@
                           -
                           <span class="information-section__coloum__date__detail">29 February 2018</span>
                       </div>
-                  
+
                 </div>
 
                 <div class="information-section__coloum ">
@@ -264,7 +260,7 @@
                           -
                           <span class="information-section__coloum__date__detail">29 February 2018</span>
                       </div>
-                    
+
                 </div>
 
                 <div class="information-section__coloum ">
@@ -299,7 +295,7 @@
                           -
                           <span class="information-section__coloum__date__detail">29 February 2018</span>
                       </div>
-                    
+
                 </div>
 
                 <div class="information-section__coloum ">
@@ -334,10 +330,10 @@
                           -
                           <span class="information-section__coloum__date__detail">29 February 2018</span>
                       </div>
-                    
+
                 </div>
-            
-        
+
+
     </div>
     <!-- end of information -->
 
@@ -502,10 +498,10 @@
 @section('additional-scripts')
 
 <script>
-    var scrollToBottom = document.getElementsByClassName('primdev-scroll-button')[0];
-    var headNews = document.getElementById('headnews');
+    var scrollToBottom = document.getElementsByClassName('banner__scroll-to-bottom-button')[0];
+    var headline = document.getElementsByClassName('headline')[0];
     scrollToBottom.addEventListener('click', function(e) {
-        headNews.scrollIntoView({
+        headline.scrollIntoView({
             behavior: 'smooth',
             block: 'start'
         });
