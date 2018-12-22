@@ -51,7 +51,47 @@
         <span class="headline__list__item">
           <a href="?single=yes" class="headline__list__item__gradient"></a>
           <a href="?single=yes" class="headline__list__item__title">
-            Woow dlskjs sfdlfjalks akjsafajsdf asdaosdiwpnlk asljdasdkja asdjakjdakdjasd adjalkjdakdjakld
+            Primakara gelar start up expo besar di tahun 1862 sebelum masehi
+          </a>
+          <img src="{{ asset('images/no1.jpg') }}" alt="" class="headline__list__item__cover">
+          <a href="?category=andoid" class="headline__list__item__badge">Kegiatan</a>
+        </span>
+        <span class="headline__list__item">
+          <a href="?single=yes" class="headline__list__item__gradient"></a>
+          <a href="?single=yes" class="headline__list__item__title">
+            yuk simak informasi berguna cara membuat website ala pornhub
+          </a>
+          <img src="{{ asset('images/no1.jpg') }}" alt="" class="headline__list__item__cover">
+          <a href="?category=andoid" class="headline__list__item__badge">Website</a>
+        </span>
+        <span class="headline__list__item">
+          <a href="?single=yes" class="headline__list__item__gradient"></a>
+          <a href="?single=yes" class="headline__list__item__title">
+            Memory SSD untuk programmer? apakah membantu mempercepat projek agar cepat selesai?
+          </a>
+          <img src="{{ asset('images/no1.jpg') }}" alt="" class="headline__list__item__cover">
+          <a href="?category=andoid" class="headline__list__item__badge">Hardware</a>
+        </span>
+        <span class="headline__list__item">
+          <a href="?single=yes" class="headline__list__item__gradient"></a>
+          <a href="?single=yes" class="headline__list__item__title">
+            Prass, CTO Laravel.org mengakui framework miliknya tak berguna.
+          </a>
+          <img src="{{ asset('images/no1.jpg') }}" alt="" class="headline__list__item__cover">
+          <a href="?category=andoid" class="headline__list__item__badge">Framework</a>
+        </span>
+        <span class="headline__list__item">
+          <a href="?single=yes" class="headline__list__item__gradient"></a>
+          <a href="?single=yes" class="headline__list__item__title">
+            dr. Boyke, 150 orang tiap detiknya mengidap penyakit wibu. karena asupan anime yang berlebih.
+          </a>
+          <img src="{{ asset('images/no1.jpg') }}" alt="" class="headline__list__item__cover">
+          <a href="?category=andoid" class="headline__list__item__badge">Kesehatan</a>
+        </span>
+        <span class="headline__list__item">
+          <a href="?single=yes" class="headline__list__item__gradient"></a>
+          <a href="?single=yes" class="headline__list__item__title">
+            Yaw, Konglomerat asal bali membeli sticker lamborghini Galardo di Las Vegas
           </a>
           <img src="{{ asset('images/no1.jpg') }}" alt="" class="headline__list__item__cover">
           <a href="?category=andoid" class="headline__list__item__badge">Android</a>
@@ -59,47 +99,7 @@
         <span class="headline__list__item">
           <a href="?single=yes" class="headline__list__item__gradient"></a>
           <a href="?single=yes" class="headline__list__item__title">
-            Woow dlskjs sfdlfjalks akjsafajsdf asdaosdiwpnlk asljdasdkja asdjakjdakdjasd adjalkjdakdjakld
-          </a>
-          <img src="{{ asset('images/no1.jpg') }}" alt="" class="headline__list__item__cover">
-          <a href="?category=andoid" class="headline__list__item__badge">Android</a>
-        </span>
-        <span class="headline__list__item">
-          <a href="?single=yes" class="headline__list__item__gradient"></a>
-          <a href="?single=yes" class="headline__list__item__title">
-            Woow dlskjs sfdlfjalks akjsafajsdf asdaosdiwpnlk asljdasdkja asdjakjdakdjasd adjalkjdakdjakld
-          </a>
-          <img src="{{ asset('images/no1.jpg') }}" alt="" class="headline__list__item__cover">
-          <a href="?category=andoid" class="headline__list__item__badge">Android</a>
-        </span>
-        <span class="headline__list__item">
-          <a href="?single=yes" class="headline__list__item__gradient"></a>
-          <a href="?single=yes" class="headline__list__item__title">
-            Woow dlskjs sfdlfjalks akjsafajsdf asdaosdiwpnlk asljdasdkja asdjakjdakdjasd adjalkjdakdjakld
-          </a>
-          <img src="{{ asset('images/no1.jpg') }}" alt="" class="headline__list__item__cover">
-          <a href="?category=andoid" class="headline__list__item__badge">Android</a>
-        </span>
-        <span class="headline__list__item">
-          <a href="?single=yes" class="headline__list__item__gradient"></a>
-          <a href="?single=yes" class="headline__list__item__title">
-            Woow dlskjs sfdlfjalks akjsafajsdf asdaosdiwpnlk asljdasdkja asdjakjdakdjasd adjalkjdakdjakld
-          </a>
-          <img src="{{ asset('images/no1.jpg') }}" alt="" class="headline__list__item__cover">
-          <a href="?category=andoid" class="headline__list__item__badge">Android</a>
-        </span>
-        <span class="headline__list__item">
-          <a href="?single=yes" class="headline__list__item__gradient"></a>
-          <a href="?single=yes" class="headline__list__item__title">
-            Woow dlskjs sfdlfjalks akjsafajsdf asdaosdiwpnlk asljdasdkja asdjakjdakdjasd adjalkjdakdjakld
-          </a>
-          <img src="{{ asset('images/no1.jpg') }}" alt="" class="headline__list__item__cover">
-          <a href="?category=andoid" class="headline__list__item__badge">Android</a>
-        </span>
-        <span class="headline__list__item">
-          <a href="?single=yes" class="headline__list__item__gradient"></a>
-          <a href="?single=yes" class="headline__list__item__title">
-            Woow dlskjs sfdlfjalks akjsafajsdf asdaosdiwpnlk asljdasdkja asdjakjdakdjasd adjalkjdakdjakld
+            8 cara membuat website tanpa framework
           </a>
           <img src="{{ asset('images/no1.jpg') }}" alt="" class="headline__list__item__cover">
           <a href="?category=andoid" class="headline__list__item__badge">Android</a>
@@ -109,226 +109,182 @@
     {{-- Headline --}}
 
     <!-- Information -->
-    <div class="container-fluid">
-        <div class="row">
-            <div class="information-control">
+    <div class="information-section blok">
 
-                <div class="information-tag">
-                    <span class="information-tag-title">INFORMASI</span>
-                    <a href="#" class="information-next">Selengkapnya<span class="arrow-next"></span></a>
-                    <div class="information-border-bottom"></div>
+                <div class="information-section__tag">
+                    <span class="information-section__tag--title">INFORMASI TERUPDATE</span>
+                    <a href="#" class="information-section__tag--next">
+                      <span class="information-section__tag--remove">Selengkapnya</span>
+                      <div class="information-section__tag--box">
+                        <span class="information-section__tag--box--arrow"></span>
+                        <span class="information-section__tag--box--arrow information-section__tag--box--second-arrow"></span>
+                      </div>
+                    </a>
+                    <div class="information-section__tag--border"></div>
                 </div>
 
-                <div class="col-3 info-mar">
-                    <a href="#">
-                      <div class="information-images">
+                <div class="information-section__coloum">
+                    
+                      <div class="information-section__coloum__images">
+                        <a href="#">
                           <img src="images/no1.jpg" alt="">
+                        </a>
                       </div>
-                    </a>
-                    <a href="#">
-                      <div class="information-title">
-                          Membangun Ekosistem Digital,
-                          STMIK dan STIKOM Bergabung
+                    
+                    
+                      <div class="information-section__coloum__title">
+                        <a href="#">
+                            Membangun Ekosistem Digital,
+                            STMIK dan STIKOM Bergabung
+                        </a>
                       </div>
-                    </a>
-                      <div class="information-detail">
+                    
+                      <div class="information-section__coloum__detail">
                           Happy Sunday from software Expand
                           In this Week's edition of Feedback
                           Loop, we talk about the future of
                           Windows Phone, whether they look
+                          like shit, we talk about the future of
+                          Windows Phone, whether they look
+                          like shit Happy Sunday from software Expand
+                          In this Week's edition of Feedback
+                          Loop, we talk about the future of
+                          Windows Phone, whether they look
+                          like shit, we talk about the future of
+                          Windows Phone, whether they look
                           like shit
                       </div>
-                      <div class="information-date">
-                          <span class="information-author">Nadim</span>
+                      <div class="information-section__coloum__date">
+                          <span class="information-section__coloum__date__author">Nadim</span>
                           -
-                          <span class="information-detail-date">29 February 2018</span>
+                          <span class="information-section__coloum__date__detail">29 February 2018</span>
                       </div>
                   
                 </div>
 
-                <div class="col-3 info-mar">
-                    <a href="#">
-                      <div class="information-images">
+                <div class="information-section__coloum ">
+                      <div class="information-section__coloum__images">
+                        <a href="#">
                           <img src="images/no1.jpg" alt="">
+                        </a>
                       </div>
-                    </a>
-                    <a href="#">
-                      <div class="information-title">
+                      <div class="information-section__coloum__title">
+                      <a href="#">
                           Membangun Ekosistem Digital,
                           STMIK dan STIKOM Bergabung
+                      </a>
                       </div>
-                    </a>
-                      <div class="information-detail">
+                      <div class="information-section__coloum__detail">
                           Happy Sunday from software Expand
                           In this Week's edition of Feedback
                           Loop, we talk about the future of
                           Windows Phone, whether they look
+                          like shit, we talk about the future of
+                          Windows Phone, whether they look
+                          like shit Happy Sunday from software Expand
+                          In this Week's edition of Feedback
+                          Loop, we talk about the future of
+                          Windows Phone, whether they look
+                          like shit, we talk about the future of
+                          Windows Phone, whether they look
                           like shit
                       </div>
-                      <div class="information-date">
-                          <span class="information-author">Nadim</span>
+                      <div class="information-section__coloum__date">
+                          <span class="information-section__coloum__date__author">Nadim</span>
                           -
-                          <span class="information-detail-date">29 February 2018</span>
+                          <span class="information-section__coloum__date__detail">29 February 2018</span>
                       </div>
                     
                 </div>
 
-                <div class="col-3 info-mar">
-                    <a href="#">
-                      <div class="information-images">
+                <div class="information-section__coloum ">
+                      <div class="information-section__coloum__images">
+                        <a href="#">
                           <img src="images/no1.jpg" alt="">
+                        </a>
                       </div>
-                    </a>
-                    <a href="#">
-                      <div class="information-title">
+                      <div class="information-section__coloum__title">
+                      <a href="#">
                           Membangun Ekosistem Digital,
                           STMIK dan STIKOM Bergabung
+                      </a>
                       </div>
-                    </a>
-                      <div class="information-detail">
+                      <div class="information-section__coloum__detail">
                           Happy Sunday from software Expand
                           In this Week's edition of Feedback
                           Loop, we talk about the future of
                           Windows Phone, whether they look
+                          like shit, we talk about the future of
+                          Windows Phone, whether they look
+                          like shit Happy Sunday from software Expand
+                          In this Week's edition of Feedback
+                          Loop, we talk about the future of
+                          Windows Phone, whether they look
+                          like shit, we talk about the future of
+                          Windows Phone, whether they look
                           like shit
                       </div>
-                      <div class="information-date">
-                          <span class="information-author">Nadim</span>
+                      <div class="information-section__coloum__date">
+                          <span class="information-section__coloum__date__author">Nadim</span>
                           -
-                          <span class="information-detail-date">29 February 2018</span>
+                          <span class="information-section__coloum__date__detail">29 February 2018</span>
                       </div>
                     
                 </div>
 
-                <div class="information">
-                    <a href="#">
-                      <div class="information-images">
+                <div class="information-section__coloum ">
+                    <div class="information-section__coloum__images">
+                        <a href="#">
                           <img src="images/no1.jpg" alt="">
+                        </a>
                       </div>
-                    </a>
-                    <a href="#">
-                      <div class="information-title">
+                      <div class="information-section__coloum__title">
+                      <a href="#">
                           Membangun Ekosistem Digital,
                           STMIK dan STIKOM Bergabung
+                      </a>
                       </div>
-                    </a>
-                      <div class="information-detail">
+                      <div class="information-section__coloum__detail">
                           Happy Sunday from software Expand
                           In this Week's edition of Feedback
                           Loop, we talk about the future of
                           Windows Phone, whether they look
+                          like shit, we talk about the future of
+                          Windows Phone, whether they look
+                          like shit Happy Sunday from software Expand
+                          In this Week's edition of Feedback
+                          Loop, we talk about the future of
+                          Windows Phone, whether they look
+                          like shit, we talk about the future of
+                          Windows Phone, whether they look
                           like shit
                       </div>
-                      <div class="information-date">
-                          <span class="information-author">Nadim</span>
+                      <div class="information-section__coloum__date">
+                          <span class="information-section__coloum__date__author">Nadim</span>
                           -
-                          <span class="information-detail-date">29 February 2018</span>
+                          <span class="information-section__coloum__date__detail">29 February 2018</span>
                       </div>
                     
                 </div>
-            </div>
-        </div>
+            
+        
     </div>
+    <!-- end of information -->
 
 
-    <!-- Quote -->
-      <div class="container">
-            <div class="row">
-                <div class="col-12">
-                  <div class="quote-control">
-                    <div class="kutipan-control">
-                      <div class="kutipan-control-content">
-                        Dapatkan informasi kegiatan kami dan tips serta trik seputar dunia teknologi dan kampus
-                      </div>
-                    </div>
-                    <a href="#"><div class="kutipan-hover">SUBSCRIBE</div></a>
-                  </div>
-                </div>
-            </div>
-            <div class="gradient"></div>
-            <div class="parallax2"></div>
-      </div>
-    <!-- Quote -->
-
-    <!-- ukm -->
-    {{-- <div class="container-fluid">
-        <div class="row">
-            <div class="ukm-control">
-                <div class="ukm-title">UNIT KEGIATAN MAHASISWA</div>
-                <div class="ukm-detail">STMIK PRIMAKARA</div>
-                <div class="col-6">
-
-                    <div class="ukm-content">
-                     <a href="#">
-                        <div class="ukm-content-title">HIPMI PRIMAKARA</div>
-                        <img src="images/no4.jpg" alt="" class="ukm-images">
-                        <div class="gradient-primdev box-primdev"></div>
-                      </a>
-                    </div>
-
-                    <div class="ukm-content">
-                      <a href="#">
-                        <div class="ukm-content-title">PRIMAKARA DEVELOPERS</div>
-                        <img src="images/no4.jpg" alt="" class="ukm-images">
-                        <div class="gradient-primdev box-primdev"></div>
-                      </a>
-                    </div>
-
-                    <div class="ukm-content">
-                      <a href="#">
-                        <div class="ukm-content-title">E-SPORT</div>
-                        <img src="images/no4.jpg" alt="" class="ukm-images">
-                        <div class="gradient-primdev box-primdev"></div>
-                      </a>
-                    </div>
-
-                    <div class="ukm-content">
-                      <a href="#">
-                        <div class="ukm-content-title">ENGLISH CLUB</div>
-                        <img src="images/no4.jpg" alt="" class="ukm-images">
-                        <div class="gradient-primdev box-primdev"></div>
-                      </a>
-                    </div>
-
-                </div>
-                <div class="col-6">
-                    <div class="ukm-content">
-                        <a href="#">
-                          <div class="ukm-content-title">MAPALA</div>
-                          <img src="images/no4.jpg" alt="" class="ukm-images">
-                          <div class="gradient-primdev box-primdev"></div>
-                        </a>
-                      </div>
-
-                      <div class="ukm-content">
-                        <a href="#">
-                          <div class="ukm-content-title">PHOTOGRAPHY</div>
-                          <img src="images/no4.jpg" alt="" class="ukm-images">
-                          <div class="gradient-primdev box-primdev"></div>
-                        </a>
-                      </div>
-
-                    <div class="ukm-content">
-                      <a href="#">
-                        <div class="ukm-content-title">AIR SOFT</div>
-                        <img src="images/no4.jpg" alt="" class="ukm-images">
-                        <div class="gradient-primdev box-primdev"></div>
-                      </a>
-                    </div>
-
-                    <div class="ukm-content">
-                      <a href="#">
-                        <div class="ukm-content-title">DANCE</div>
-                        <img src="images/no4.jpg" alt="" class="ukm-images">
-                        <div class="gradient-primdev box-primdev"></div>
-                      </a>
-                    </div>
-
-                </div>
-            </div>
+    {{-- Subscription --}}
+    <div class="subscription" style="background-image: url('{{ asset('images/bg-bg.jpeg') }}');">
+      <div class="subscription__content">
+        <div class="subscription__content__gradient"></div>
+        <div class="subscription__content__title">
+          Dapatkan informasi kegiatan kami dan tips serta trik seputar dunia teknologi dan informasi lainnya
         </div>
-
-    </div> --}}
+        <div class="subscription__content__btn-wrapper">
+          <a href="#" class="subscription__content__btn-wrapper__btn">SUBSCRIBE</a>
+        </div>
+      </div>
+    </div>
+    {{-- end of Subscription --}}
 </main>
 <!-- Main -->
 
@@ -341,7 +297,7 @@
         <div class="row">
             <div class="footer-control">
 
-                <div class="col-3">
+                <div class="information-section__coloum">
                   <img src="images/primakara.jpg" alt="" class="footer-logo-kedua">
                   <img src="images/primdev.jpg" alt="" class="footer-logo-pertama">
                 </div>
