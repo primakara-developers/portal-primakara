@@ -30,7 +30,7 @@
 <main>
 
     <!-- Banner -->
-    <div class="banner" style="background-image: url('{{ asset('images/workshop-photos.jpg') }}');">
+    <section class="banner" style="background-image: url('{{ asset('images/workshop-photos.jpg') }}');">
         <div class="banner__content">
             <h1 class="banner__title">Portal Primakara</h1>
             <h2 class="banner__subtitle">Lorem ipsum dolor sit amet consectetur adipisicing elit.</h2>
@@ -38,7 +38,7 @@
         <a href="javascript:void(0)" class="banner__scroll-to-bottom-button">
             <img src="{{ asset('images/icons/downwards-pointer.svg') }}" class="banner__scroll-to-bottom-image">
         </a>
-    </div>
+    </section>
 <!-- Banner -->
 
 

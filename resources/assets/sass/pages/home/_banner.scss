@@ -11,15 +11,31 @@
         color: #ffffff;
         position: absolute;
         left: 50%;
+        padding: 0 16px;
         text-align: center;
         top: 50%;
         transform: translate(-50%, -50%);
+        width: 100%;
         z-index: 1;
     }
 
     &__title {
         font-size: 3em;
+        font-weight: normal;
         text-transform: uppercase;
+
+        @media only screen and (max-width: 530px) {
+            font-size: 2em;
+        }
+    }
+
+    &__subtitle {
+        font-weight: normal;
+        line-height: 1.5;
+
+        @media only screen and (max-width: 530px) {
+            font-size: 1.25em;
+        }
     }
 
     &__scroll-to-bottom-button {
