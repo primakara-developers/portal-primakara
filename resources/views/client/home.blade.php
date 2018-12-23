@@ -3,7 +3,7 @@
 @section('content')
 
 <!-- Header -->
-<header id="site-header">
+<!-- <header id="site-header">
   <div class="container">
     <div class="container-navbar">
       <div class="row">
@@ -23,6 +23,17 @@
       </div>
     </div>
   </div>
+</header> -->
+<header class="site-header">
+    <div class="site-header__container">
+        <img src="{{ asset('images/primdev-trans.png') }}" alt="Logo Primakara Developers" class="site-header__logo">
+        <nav class="site-header__menu-desktop">
+            <a href="" class="site-header__menu-desktop-item">Home</a>
+            <a href="" class="site-header__menu-desktop-item">Story</a>
+            <a href="" class="site-header__menu-desktop-item">About</a>
+            <a href="" class="site-header__menu-desktop-item site-header__menu-desktop-item--with-background">Event</a>
+        </nav>
+    </div>
 </header>
 <!-- Header -->
 

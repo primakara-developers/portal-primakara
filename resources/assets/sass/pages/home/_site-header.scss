@@ -1,0 +1,48 @@
+.site-header {
+    background: #ffffff;
+    height: 60px;
+    padding: 5px 0;
+    position: fixed;
+    width: 100%;
+    z-index: 999;
+
+    &__container {
+        height: 100%;
+        margin: auto;
+        position: relative;
+        width: 1150px;
+    }
+
+    &__logo {
+        height: 100%;
+    }
+
+    &__menu-desktop {
+        position: absolute;
+        right: 0;
+        top: 50%;
+        transform: translateY(-50%);
+    }
+
+    &__menu-desktop-item {
+        color: $colorPrimary;
+        display: inline-block;
+        font-weight: 700;
+        font-size: 18px;
+        margin-right: 62px;
+        text-decoration: none;
+        text-transform: uppercase;
+        vertical-align: middle;
+
+        &:last-child {
+            margin-right: 0;
+        }
+
+        &--with-background {
+            background: $colorPrimary;
+            border-radius: 10px;
+            color: #ffffff;
+            padding: 10px;
+        }
+    }
+}
