@@ -124,21 +124,21 @@
                 </div>
 
                 <div class="information-section__coloum">
-                    
+
                       <div class="information-section__coloum__images">
                         <a href="#">
                           <img src="images/no1.jpg" alt="">
                         </a>
                       </div>
-                    
-                    
+
+
                       <div class="information-section__coloum__title">
                         <a href="#">
                             Membangun Ekosistem Digital,
                             STMIK dan STIKOM Bergabung
                         </a>
                       </div>
-                    
+
                       <div class="information-section__coloum__detail">
                           Happy Sunday from software Expand
                           In this Week's edition of Feedback
@@ -159,7 +159,7 @@
                           -
                           <span class="information-section__coloum__date__detail">29 February 2018</span>
                       </div>
-                  
+
                 </div>
 
                 <div class="information-section__coloum ">
@@ -194,7 +194,7 @@
                           -
                           <span class="information-section__coloum__date__detail">29 February 2018</span>
                       </div>
-                    
+
                 </div>
 
                 <div class="information-section__coloum ">
@@ -229,7 +229,7 @@
                           -
                           <span class="information-section__coloum__date__detail">29 February 2018</span>
                       </div>
-                    
+
                 </div>
 
                 <div class="information-section__coloum ">
@@ -264,10 +264,10 @@
                           -
                           <span class="information-section__coloum__date__detail">29 February 2018</span>
                       </div>
-                    
+
                 </div>
-            
-        
+
+
     </div>
     <!-- end of information -->
 
@@ -360,10 +360,6 @@
             block: 'start'
         });
     });
-    function link(url) {
-      location.replace = url
-      console.log('tai')
-    }
 </script>
 
 @endsection
