@@ -3,27 +3,6 @@
 @section('content')
 
 <!-- Header -->
-<!-- <header id="site-header">
-  <div class="container">
-    <div class="container-navbar">
-      <div class="row">
-        <div class="col-6">
-          <div class="logo-primdev">
-              <a href="#"><img src="images/primdev.jpg" alt=""></a>
-          </div>
-        </div>
-        <div class="col-6">
-          <div class="menu-primdev">
-              <a href="" class="menu-primdev-link"><span class="menu-primdev-button">HOME</span></a>
-              <a href="" class="menu-primdev-link"><span class="menu-primdev-button">STORY</span></a>
-              <a href="" class="menu-primdev-link"><span class="menu-primdev-button">ABOUT</span></a>
-              <a href="" class="menu-primdev-link active"><span class="menu-primdev-button">EVENT</span></a>
-          </div>
-        </div>
-      </div>
-    </div>
-  </div>
-</header> -->
 <header class="site-header">
     <div class="site-header__container">
         <img src="{{ asset('images/primdev-trans.png') }}" alt="Logo Primakara Developers" class="site-header__logo">
@@ -33,6 +12,9 @@
             <a href="" class="site-header__menu-desktop-item">About</a>
             <a href="" class="site-header__menu-desktop-item site-header__menu-desktop-item--with-background">Event</a>
         </nav>
+        <a href="javascript:void(0)" class="site-header__menu-mobile-icon">
+            <div class="site-header__menu-mobile-icon__middle"></div>
+        </a>
     </div>
 </header>
 <!-- Header -->
