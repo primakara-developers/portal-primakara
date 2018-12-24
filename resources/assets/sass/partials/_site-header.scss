@@ -51,13 +51,13 @@
         }
 
         &--with-background {
-            background: #14cb73;
+            background: $colorPrimary;
             border-radius: 10px;
             color: #ffffff;
             padding: 10px;
 
             &:hover, &--active {
-                background: $colorPrimary;
+                background: #14cb73;
                 color: #ffffff;
             }
         }
