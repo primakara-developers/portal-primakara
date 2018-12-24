@@ -8,6 +8,8 @@
     pointer-events: none;
     position: absolute;
     top: 0;
+    transform: scale(.95);
+    transform-origin: 100% 0;
     transition: opacity 0.3s ease-in-out, transform 0.3s ease-in-out;
     width: 100%;
     will-change: transform, opacity;
@@ -15,6 +17,7 @@
     &--open {
         opacity: 1;
         pointer-events: auto;
+        transform: none;
     }
 
     @media only screen and (min-width: 531px) {
