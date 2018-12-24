@@ -179,7 +179,7 @@
     <!-- Content -->
 
     <!-- Information -->
-    <div class="information-section blok">
+    <div class="information-section">
 
                 <div class="information-section__tag">
                     <span class="information-section__tag--title">INFORMASI TERUPDATE</span>
@@ -193,23 +193,25 @@
                     <div class="information-section__tag--border"></div>
                 </div>
 
-                <div class="information-section__coloum">
-                    
-                      <div class="information-section__coloum__images">
-                        <a href="#">
+                <div class="information-section__column">
+
+                    <a href="#" class="information-section__column__box">
+                      <div class="information-section__column__box__images">
+                        
                           <img src="images/no1.jpg" alt="">
-                        </a>
+                        
                       </div>
                     
                     
-                      <div class="information-section__coloum__title">
-                        <a href="#">
+                      <div class="information-section__column__box__title">
+                        
                             Membangun Ekosistem Digital,
                             STMIK dan STIKOM Bergabung
-                        </a>
+                        
                       </div>
+                    </a>
                     
-                      <div class="information-section__coloum__detail">
+                      <div class="information-section__column__detail">
                           Happy Sunday from software Expand
                           In this Week's edition of Feedback
                           Loop, we talk about the future of
@@ -224,27 +226,33 @@
                           Windows Phone, whether they look
                           like shit
                       </div>
-                      <div class="information-section__coloum__date">
-                          <span class="information-section__coloum__date__author">Nadim</span>
+                      <div class="information-section__column__date">
+                          <span class="information-section__column__date__author">Nadim</span>
                           -
-                          <span class="information-section__coloum__date__detail">29 February 2018</span>
+                          <span class="information-section__column__date__detail">29 February 2018</span>
                       </div>
                   
                 </div>
 
-                <div class="information-section__coloum ">
-                      <div class="information-section__coloum__images">
-                        <a href="#">
+                <div class="information-section__column ">
+
+                    <a href="#" class="information-section__column__box">
+                      <div class="information-section__column__box__images">
+                        
                           <img src="images/no1.jpg" alt="">
-                        </a>
+                        
                       </div>
-                      <div class="information-section__coloum__title">
-                      <a href="#">
-                          Membangun Ekosistem Digital,
-                          STMIK dan STIKOM Bergabung
-                      </a>
+                    
+                    
+                      <div class="information-section__column__box__title">
+                        
+                            Membangun Ekosistem Digital,
+                            STMIK dan STIKOM Bergabung
+                        
                       </div>
-                      <div class="information-section__coloum__detail">
+                    </a>
+
+                      <div class="information-section__column__detail">
                           Happy Sunday from software Expand
                           In this Week's edition of Feedback
                           Loop, we talk about the future of
@@ -259,27 +267,33 @@
                           Windows Phone, whether they look
                           like shit
                       </div>
-                      <div class="information-section__coloum__date">
-                          <span class="information-section__coloum__date__author">Nadim</span>
+                      <div class="information-section__column__date">
+                          <span class="information-section__column__date__author">Nadim</span>
                           -
-                          <span class="information-section__coloum__date__detail">29 February 2018</span>
+                          <span class="information-section__column__date__detail">29 February 2018</span>
                       </div>
                     
                 </div>
 
-                <div class="information-section__coloum ">
-                      <div class="information-section__coloum__images">
-                        <a href="#">
+                <div class="information-section__column ">
+
+                    <a href="#" class="information-section__column__box">
+                      <div class="information-section__column__box__images">
+                        
                           <img src="images/no1.jpg" alt="">
-                        </a>
+                        
                       </div>
-                      <div class="information-section__coloum__title">
-                      <a href="#">
-                          Membangun Ekosistem Digital,
-                          STMIK dan STIKOM Bergabung
-                      </a>
+                    
+                    
+                      <div class="information-section__column__box__title">
+                        
+                            Membangun Ekosistem Digital,
+                            STMIK dan STIKOM Bergabung
+                        
                       </div>
-                      <div class="information-section__coloum__detail">
+                    </a>
+
+                      <div class="information-section__column__detail">
                           Happy Sunday from software Expand
                           In this Week's edition of Feedback
                           Loop, we talk about the future of
@@ -294,27 +308,33 @@
                           Windows Phone, whether they look
                           like shit
                       </div>
-                      <div class="information-section__coloum__date">
-                          <span class="information-section__coloum__date__author">Nadim</span>
+                      <div class="information-section__column__date">
+                          <span class="information-section__column__date__author">Nadim</span>
                           -
-                          <span class="information-section__coloum__date__detail">29 February 2018</span>
+                          <span class="information-section__column__date__detail">29 February 2018</span>
                       </div>
                     
                 </div>
 
-                <div class="information-section__coloum ">
-                    <div class="information-section__coloum__images">
-                        <a href="#">
+                <div class="information-section__column ">
+
+                    <a href="#" class="information-section__column__box">
+                      <div class="information-section__column__box__images">
+                        
                           <img src="images/no1.jpg" alt="">
-                        </a>
+                        
                       </div>
-                      <div class="information-section__coloum__title">
-                      <a href="#">
-                          Membangun Ekosistem Digital,
-                          STMIK dan STIKOM Bergabung
-                      </a>
+                    
+                    
+                      <div class="information-section__column__box__title">
+                        
+                            Membangun Ekosistem Digital,
+                            STMIK dan STIKOM Bergabung
+                        
                       </div>
-                      <div class="information-section__coloum__detail">
+                    </a>
+
+                      <div class="information-section__column__detail">
                           Happy Sunday from software Expand
                           In this Week's edition of Feedback
                           Loop, we talk about the future of
@@ -329,10 +349,10 @@
                           Windows Phone, whether they look
                           like shit
                       </div>
-                      <div class="information-section__coloum__date">
-                          <span class="information-section__coloum__date__author">Nadim</span>
+                      <div class="information-section__column__date">
+                          <span class="information-section__column__date__author">Nadim</span>
                           -
-                          <span class="information-section__coloum__date__detail">29 February 2018</span>
+                          <span class="information-section__column__date__detail">29 February 2018</span>
                       </div>
                     
                 </div>
