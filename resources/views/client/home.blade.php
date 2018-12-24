@@ -25,8 +25,8 @@
     <!-- Banner -->
     <section class="banner" style="background-image: url('{{ asset('images/workshop-photos.jpg') }}');">
         <div class="banner__content">
-            <h1 class="banner__title">Portal Primakara</h1>
-            <h2 class="banner__subtitle">Lorem ipsum dolor sit amet consectetur adipisicing elit.</h2>
+            <h1 class="banner__title">Primakara Student Information Site</h1>
+            <h3 class="banner__subtitle">Together, we can change anything better</h3>
         </div>
         <a href="javascript:void(0)" class="banner__scroll-to-bottom-button">
             <img src="{{ asset('images/icons/downwards-pointer.svg') }}" class="banner__scroll-to-bottom-image">

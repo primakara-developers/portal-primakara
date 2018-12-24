@@ -1,5 +1,6 @@
 .site-header {
     background: #ffffff;
+    box-shadow: rgba(40, 40, 40, 0.15) 0px 5px 50px;
     height: 60px;
     padding: 5px 0;
     position: fixed;
@@ -33,24 +34,32 @@
     }
 
     &__menu-desktop-item {
-        color: $colorPrimary;
+        color: $textColorSecondary;
         display: inline-block;
-        font-weight: 700;
         font-size: 18px;
         margin-right: 62px;
         text-decoration: none;
-        text-transform: uppercase;
+        transition: all 0.3s ease-in-out;
         vertical-align: middle;
 
         &:last-child {
             margin-right: 0;
         }
 
+        &:hover {
+            color: $colorPrimary;
+        }
+
         &--with-background {
-            background: $colorPrimary;
+            background: #14cb73;
             border-radius: 10px;
             color: #ffffff;
             padding: 10px;
+
+            &:hover {
+                background: $colorPrimary;
+                color: #ffffff;
+            }
         }
     }
 
