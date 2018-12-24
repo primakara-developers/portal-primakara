@@ -11,3 +11,10 @@ const closeButton = document.querySelector('.mobile-nav__close-button')
 closeButton.addEventListener('click', e => {
     mobileNav.close()
 })
+
+window.addEventListener('click', e => {
+    // If click event is OUTSIDE '.mobile-nav' and '.site-header__menu-mobile-icon' content
+    if (!document.querySelector('.mobile-nav').contains(e.target) && !menuMobileIcon.contains(e.target)) {
+        mobileNav.close()
+    }
+})
