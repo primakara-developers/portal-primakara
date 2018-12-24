@@ -46,7 +46,7 @@
             margin-right: 0;
         }
 
-        &:hover {
+        &:hover, &--active {
             color: $colorPrimary;
         }
 
@@ -56,7 +56,7 @@
             color: #ffffff;
             padding: 10px;
 
-            &:hover {
+            &:hover, &--active {
                 background: $colorPrimary;
                 color: #ffffff;
             }
