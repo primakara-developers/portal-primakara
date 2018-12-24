@@ -10,6 +10,10 @@ class MobileNav {
     close() {
         this.mobileNav.classList.remove('mobile-nav--open')
     }
+
+    isOpen() {
+        return this.mobileNav.classList.contains('mobile-nav--open')
+    }
 }
 
 export default MobileNav

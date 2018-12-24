@@ -15,6 +15,11 @@ closeButton.addEventListener('click', e => {
 window.addEventListener('click', e => {
     // If click event is OUTSIDE '.mobile-nav' and '.site-header__menu-mobile-icon' content
     if (!document.querySelector('.mobile-nav').contains(e.target) && !menuMobileIcon.contains(e.target)) {
-        mobileNav.close()
+        if (mobileNav.isOpen()) {
+            mobileNav.close()
+
+            // If the clicked item was an <a> element. Prevent default behavior
+            e.preventDefault()
+        }
     }
 })
