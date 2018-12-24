@@ -10,7 +10,8 @@
   </head>
   <body>
     <div class="wrapper">
-      @yield('content')
+        @include('client.partials.header')
+        @yield('content')
     </div>
     <script src="{{ mix('js/app.js') }}"></script>
     @yield('additional-scripts')
