@@ -1,0 +1,68 @@
+.mobile-nav {
+    background: #ffffff;
+    border-radius: 4px;
+    box-shadow: 0 6px 20px 0 rgba(0, 0, 0, .25);
+    left: 0;
+    opacity: 0;
+    padding-bottom: 12px;
+    pointer-events: none;
+    position: absolute;
+    top: 0;
+    transition: opacity 0.3s ease-in-out, transform 0.3s ease-in-out;
+    width: 100%;
+    will-change: transform, opacity;
+
+    &--open {
+        opacity: 1;
+        pointer-events: auto;
+    }
+
+    @media only screen and (min-width: 531px) {
+        display: none;
+    }
+
+    &__close-button {
+        font-size: 0;
+        height: 40px;
+        position: absolute;
+        right: 0;
+        top: 0;
+        width: 40px;
+
+        &::after, &::before {
+            background: $defaultColor;
+            border-radius: 3px;
+            content: '';
+            height: 3px;
+            position: absolute;
+            left: 50%;
+            top: 50%;
+            width: 24px;
+        }
+
+        &::after {
+            transform: translate(-50%, -50%) rotate(45deg);
+        }
+
+        &::before {
+            transform: translate(-50%, -50%) rotate(-45deg);
+        }
+    }
+
+    &__menu {
+        margin-top: 50px;
+    }
+
+    &__menu-item {
+        color: $textColorSecondary;
+        display: block;
+        font-size: 18px;
+        padding: 12px 24px;
+        text-decoration: none;
+
+        &:hover, &--active {
+            background: $colorPrimary;
+            color: #ffffff;
+        }
+    }
+}
