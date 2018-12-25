@@ -123,16 +123,16 @@
         <li class="header">MAIN FEATURES</li>
         
         <li>
-          <a href="{{ route('admin.article.add') }}">
+          <a href="{{ route('admin.post.add') }}">
             <i class="fa fa-pencil-square-o"></i> 
-            <span>Write Article</span>
+            <span>Write Post</span>
           </a>
         </li>
 
         <li>
-          <a href="{{ route('admin.article.index') }}">
+          <a href="{{ route('admin.post.index') }}">
             <i class="fa fa-list"></i> 
-            <span>List Articles</span>
+            <span>List Posts</span>
           </a>
         </li>
 

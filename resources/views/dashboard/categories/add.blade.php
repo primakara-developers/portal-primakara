@@ -21,15 +21,15 @@
                 <form action="{{ route('admin.category.add') }}" method="POST" enctype="multipart/form-data">
                     {{ csrf_field() }}
                     <div class="form-group">
-                        <label for="article_title" class="col-xs-12">Title of Category</label>
+                        <label for="post_title" class="col-xs-12">Title of Category</label>
                         <div class="col-xs-12">
-                            <input type="text" class="form-control form-line" id="article_title" name="category_name" required>
+                            <input type="text" class="form-control form-line" id="post_title" name="category_name" required>
                         </div>
                     </div>
                     <div class="form-group">
-                        <label for="article_slug" class="col-xs-12" >Slug of Category</label>
+                        <label for="post_slug" class="col-xs-12" >Slug of Category</label>
                         <div class="col-xs-12">
-                            <input type="text" class="form-control form-line" name="category_slug" id="article_slug" required>
+                            <input type="text" class="form-control form-line" name="category_slug" id="post_slug" required>
                         </div>
                     </div>
                     <div class="form-group">
@@ -51,11 +51,11 @@
 </script>
 <script src="https://unpkg.com/sweetalert/dist/sweetalert.min.js"></script>
 <script>
-    var articleTitle = document.getElementById('article_title');
-    var slug = document.getElementById('article_slug');
-    articleTitle.addEventListener('keyup', function(e) {
-        articleTitleValue = articleTitle.value;
-        slug.value = slugify(articleTitleValue);
+    var postTitle = document.getElementById('post_title');
+    var slug = document.getElementById('post_slug');
+    postTitle.addEventListener('keyup', function(e) {
+        postTitleValue = postTitle.value;
+        slug.value = slugify(postTitleValue);
 
     })
     function slugify(text) {

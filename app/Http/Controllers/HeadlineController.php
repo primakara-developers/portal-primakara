@@ -3,7 +3,7 @@
 namespace App\Http\Controllers;
 
 use Illuminate\Http\Request;
-use App\Article;
+use App\Post;
 
 class HeadlineController extends Controller
 {
@@ -14,7 +14,7 @@ class HeadlineController extends Controller
      */
     public function index()
     {
-        $headlines = Article::where('is_headline', 1)->orderBy('headline_at', 'desc')->paginate(10);
+        $headlines = Post::where('is_headline', 1)->orderBy('headline_at', 'desc')->paginate(10);
         return view('dashboard.headlines.index')
         ->with('headlines', $headlines);
 
@@ -45,7 +45,7 @@ class HeadlineController extends Controller
             'headline_at' => $request->headline_at
         ];
 
-        $execute = Article::where('id', $request->id)->update($data);
+        $execute = Post::where('id', $request->id)->update($data);
 
         if($execute){
             return response()->json([
