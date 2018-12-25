@@ -31,15 +31,15 @@ Route::prefix('dashboard')->group(function() {
 	Route::post('password/email', 'Auth\ForgotPasswordController@sendResetLinkEmail')->name('password.email');
 	Route::get('password/reset/{token}', 'Auth\ResetPasswordController@showResetForm')->name('password.reset');
 	Route::post('password/reset', 'Auth\ResetPasswordController@reset');
-	//menu article
-	Route::get('article/add','ArticleController@create')->name('admin.article.add');
-	Route::post('article/add','ArticleController@store');
-	Route::get('articles', 'ArticleController@index')->name('admin.article.index');
-	Route::get('article/{id}/edit', 'ArticleController@edit')->name('admin.article.edit');
-	Route::get('article/{id}/delete', 'ArticleController@destroy')->name('admin.article.delete');
+	//menu post
+	Route::get('post/add','PostController@create')->name('admin.post.add');
+	Route::post('post/add','PostController@store');
+	Route::get('posts', 'PostController@index')->name('admin.post.index');
+	Route::post('post/{id}/edit', 'PostController@edit')->name('admin.post.edit');
+	Route::get('post/{id}/delete', 'PostController@destroy')->name('admin.post.delete');
 	
-	//filtered articles
-	Route::get('articles/{id}','ArticleController@filteredArticles')->name('admin.article.filter');
+	//filtered posts
+	Route::get('posts/{id}','PostController@filteredPosts')->name('admin.post.filter');
 	//menu category
 	Route::get('category/add','CategoryController@create')->name('admin.category.add');
 	Route::post('category/add','CategoryController@store');

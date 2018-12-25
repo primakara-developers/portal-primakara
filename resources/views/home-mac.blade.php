@@ -11,15 +11,21 @@
             padding: 0;
         }
 
+        .background {
+            text-align: center;
+            /* vertical-align: middle;
+            clear: both; */
+        }
+
         .background > img {
-            width: 100%;
-            height: auto
+            width: 1366px;
+            height: auto;
         }
     </style>
 </head>
 <body>
     <div class="background">
-        <img src="{{ asset('images/mockup/Portal-Primakara-Home-Mac.jpg') }}" alt="" srcset="">
+        <img src="{{ asset('images/mockup/Portal-Primakara-Home.jpg') }}" alt="" srcset="">
     </div>
 </body>
 </html>

@@ -4,10 +4,10 @@ namespace App\Http\Controllers;
 
 use Illuminate\Http\Request;
 use Illuminate\Support\Facades\Storage;
-use App\Article;
+use App\Post;
 use App\Category;
 use Auth;
-class ArticleController extends Controller
+class PostController extends Controller
 {   
     /**
      * Create a new controller instance.
@@ -26,15 +26,15 @@ class ArticleController extends Controller
     public function index()
     {
         if (Auth::user()->is_staff == 1) {
-            $articles = Article::paginate(10);
+            $posts = Post::paginate(10);
         } else {
-            $articles = Article::where('user_id', Auth::user()->id)->paginate(10);
+            $posts = Post::where('user_id', Auth::user()->id)->paginate(10);
         }
 
-        // dd(Article::find(1));
+        // dd(Post::find(1));
 
-        return view('dashboard.articles.index')
-        ->with('articles',$articles);
+        return view('dashboard.posts.index')
+        ->with('posts',$posts);
     }
 
     /**
@@ -45,7 +45,7 @@ class ArticleController extends Controller
     public function create()
     {
         $categories = Category::all();  
-        return view('dashboard.articles.add')
+        return view('dashboard.posts.add')
         ->with('categories', $categories);
     }
 
@@ -58,10 +58,10 @@ class ArticleController extends Controller
     public function store(Request $request)
     {
         $request->validate([
-            'article_title'=>'required|string',
-            'article_cover'=>'required|mimes:jpg,png,jpeg|max:2048',
-            'article_slug'=>'required|string|unique:articles,article_slug',
-            'article_content'=>'required|string',
+            'post_title'=>'required|string',
+            'post_cover'=>'required|mimes:jpg,png,jpeg|max:2048',
+            'post_slug'=>'required|string|unique:posts,post_slug',
+            'post_content'=>'required|string',
             'category_name'=>'required|string',
         ]);
 
@@ -73,25 +73,25 @@ class ArticleController extends Controller
 
         if($insertCategory){
             $category_id = $insertCategory->id;
-            if($request->hasFile('article_cover')){
-                $imageFile = $request->file('article_cover');
-                $article_cover = str_slug($request->article_title).uniqid().'.'.$imageFile->getClientOriginalExtension();
-                Storage::disk('local')->putFileAs('public/media/', $imageFile, $article_cover);
+            if($request->hasFile('post_cover')){
+                $imageFile = $request->file('post_cover');
+                $post_cover = str_slug($request->post_title).uniqid().'.'.$imageFile->getClientOriginalExtension();
+                Storage::disk('local')->putFileAs('public/media/', $imageFile, $post_cover);
             }
     
             $fields = [
-                'article_title' => $request->article_title,
-                'article_cover' => $article_cover,
-                'article_slug'=> $request->article_slug,
-                'article_content'=>$request->article_content,
+                'post_title' => $request->post_title,
+                'post_cover' => $post_cover,
+                'post_slug'=> $request->post_slug,
+                'post_content'=>$request->post_content,
                 'category_id'=>$category_id,
                 'user_id'=>Auth::user()->id
             ];
             
-            $insert = Article::create($fields);
+            $insert = Post::create($fields);
             if($insert){
-                return redirect()->to(route('admin.article.index'))
-                ->with('msg', 'Article created successfully!');
+                return redirect()->to(route('admin.post.index'))
+                ->with('msg', 'Post created successfully!');
             }
         }
 
@@ -118,11 +118,11 @@ class ArticleController extends Controller
      */
     public function edit($id)
     {
-        $article = Article::find($id);
+        $post = Post::find($id);
         $categories = Category::all();
-        $selectedCategory = Category::find($article->category_id)->category_name;
+        $selectedCategory = Category::find($post->category_id)->category_name;
         // dd($selectedCategory);
-        return view('dashboard.articles.edit')->with(['article'=>$article, 'categories'=>$categories, 'selectedCategory'=>$selectedCategory]);
+        return view('dashboard.posts.edit')->with(['post'=>$post, 'categories'=>$categories, 'selectedCategory'=>$selectedCategory]);
     }
 
     /**
@@ -145,30 +145,30 @@ class ArticleController extends Controller
      */
     public function destroy($id)
     {
-        $article = Article::find($id);
-        $deleteCover = Storage::disk('local')->delete('public/media/'.$article->article_cover);
-        $execute = $article->delete();
+        $post = Post::find($id);
+        $deleteCover = Storage::disk('local')->delete('public/media/'.$post->post_cover);
+        $execute = $post->delete();
         if($execute) {
             return redirect()->back()->with([
-                'msg'=>'Article removed succesfully!'
+                'msg'=>'Post removed succesfully!'
             ]);
         }else {
             return redirect()->back()->with([
-                'msg'=>'Article is Not found!'
+                'msg'=>'Post is Not found!'
             ]);
         }
     }
 
     /**
-     * filter article by category id
+     * filter Post by category id
      * @param int $id
      * @return \Illuminate\Http\Response
      */
-    public function filteredArticles($id)
+    public function filteredPosts($id)
     {
-        $articles = Article::where('category_id',$id)->get();
+        $posts = Post::where('category_id',$id)->get();
 
-        return view('dashboard.articles.index')
-        ->with('articles',$articles);
+        return view('dashboard.posts.index')
+        ->with('posts',$posts);
     }
 }

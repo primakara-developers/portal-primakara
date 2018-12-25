@@ -4,7 +4,7 @@ namespace App\Http\Controllers;
 
 use Illuminate\Http\Request;
 use App\Category;
-use App\Article;
+use App\Post;
 
 class CategoryController extends Controller
 {
@@ -92,11 +92,14 @@ class CategoryController extends Controller
             'category_name'=> 'required|string',
             'category_slug'=> 'required|string'
         ]);
+
         $category = [
             'category_name'=> $request->category_name,
             'category_slug'=> $request->category_slug
         ];
+
         $insert = Category::find($id)->update($category);
+        
         if($insert){
             return redirect()->back()->with(['msg'=>'Category Succesfully edited']);
         }
@@ -110,11 +113,11 @@ class CategoryController extends Controller
      */
     public function destroy($id)
     {
-        $articles = Article::where('category_id',$id)->count();
-        // dd($articles);
-        if($articles > 0) {
+        $posts = Post::where('category_id',$id)->count();
+        // dd($Posts);
+        if($posts > 0) {
             return redirect()->back()->with([
-                'hasArticles'=>'This Category has '.$articles.' articles',
+                'hasPosts'=>'This Category has '.$posts.' Posts',
                 'category_id'=> $id
             ]);
         }else {

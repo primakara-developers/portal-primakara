@@ -35,7 +35,7 @@
 @section('content')
 <div class="box">
     <div class="box-header with-border">
-        <h3 class="box-title">Articles</h3>
+        <h3 class="box-title">Posts</h3>
     </div>
     <!-- /.box-header -->
     <div class="box-body table-responsive">
@@ -53,20 +53,20 @@
                 @foreach ($headlines as $headline)
                     <tr>
                         <td>{{ $loop->iteration }}</td>
-                        <td>{{ $headline->article_title }}</td>
+                        <td>{{ $headline->post_title }}</td>
                         <td>{{ $headline->created_at->format('d F Y') }}</td>
                         <td>
-                            <input type="checkbox" class="toggle-headline" id="article-{{$headline->id}}" data-id="{{ $headline->id }}" {{ $headline->is_headline == 1 ? 'checked' : '' }}/>
-                            <label for="article-{{$headline->id}}" class="label-toggle-article"></label>
+                            <input type="checkbox" class="toggle-headline" id="post-{{$headline->id}}" data-id="{{ $headline->id }}" {{ $headline->is_headline == 1 ? 'checked' : '' }}/>
+                            <label for="post-{{$headline->id}}" class="label-toggle-post"></label>
                         </td>
                         <td>
-                            <a href="{{ route('admin.article.edit', ['id'=>$headline->id]) }}" class="btn btn-sm btn-primary">
+                            <a href="{{ route('admin.post.edit', ['id'=>$headline->id]) }}" class="btn btn-sm btn-primary">
                                 <i class="fa fa-pencil"></i>
                             </a>
                             <a href="#" class="btn btn-sm btn-success">
                                 <i class="fa fa-eye"></i>
                             </a>
-                            <a href="{{ route('admin.article.delete',['id' => $headline->id]) }}" class="btn btn-sm btn-danger">
+                            <a href="{{ route('admin.post.delete',['id' => $headline->id]) }}" class="btn btn-sm btn-danger">
                                 <i class="fa fa-trash"></i>
                             </a>
                         </td>
@@ -98,7 +98,7 @@
             button.prop('checked', !button.prop('checked'));
             swal({
                 title: 'Add Headline',
-                text: 'Are you sure you want to remove this article from headline?',
+                text: 'Are you sure you want to remove this post from headline?',
                 icon: 'warning',
                 buttons: {
                     cancel: true,
