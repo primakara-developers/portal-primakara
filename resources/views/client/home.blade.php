@@ -112,15 +112,19 @@
     <div class="information-section">
 
                 <div class="information-section__tag">
+                  
                     <span class="information-section__tag--title">INFORMASI TERUPDATE</span>
+
                     <a href="#" class="information-section__tag--next">
-                      <span class="information-section__tag--remove">Selengkapnya</span>
-                      <div class="information-section__tag--box">
-                        <span class="information-section__tag--box--arrow"></span>
-                        <span class="information-section__tag--box--arrow information-section__tag--box--second-arrow"></span>
+                      <span class="information-section__tag--next--remove">Selengkapnya</span>
+                      <div class="information-section__tag--next--box">
+                        <span class="information-section__tag--next--box--arrow"></span>
+                        <span class="information-section__tag--next--box--arrow information-section__tag--next--box--second-arrow"></span>
                       </div>
                     </a>
+                    
                     <div class="information-section__tag--border"></div>
+
                 </div>
 
                 <div class="information-section__column">
@@ -139,9 +143,8 @@
                             STMIK dan STIKOM Bergabung
                         
                       </div>
-                    </a>
-                    
-                      <div class="information-section__column__detail">
+
+                      <div class="information-section__column__box__detail">
                           Happy Sunday from software Expand
                           In this Week's edition of Feedback
                           Loop, we talk about the future of
@@ -156,6 +159,9 @@
                           Windows Phone, whether they look
                           like shit
                       </div>
+                    </a>
+                    
+                      
                       <div class="information-section__column__date">
                           <span class="information-section__column__date__author">Nadim</span>
                           -
@@ -180,9 +186,8 @@
                             STMIK dan STIKOM Bergabung
                         
                       </div>
-                    </a>
 
-                      <div class="information-section__column__detail">
+                      <div class="information-section__column__box__detail">
                           Happy Sunday from software Expand
                           In this Week's edition of Feedback
                           Loop, we talk about the future of
@@ -197,6 +202,9 @@
                           Windows Phone, whether they look
                           like shit
                       </div>
+                    </a>
+
+                      
                       <div class="information-section__column__date">
                           <span class="information-section__column__date__author">Nadim</span>
                           -
@@ -221,9 +229,8 @@
                             STMIK dan STIKOM Bergabung
                         
                       </div>
-                    </a>
 
-                      <div class="information-section__column__detail">
+                      <div class="information-section__column__box__detail">
                           Happy Sunday from software Expand
                           In this Week's edition of Feedback
                           Loop, we talk about the future of
@@ -238,6 +245,9 @@
                           Windows Phone, whether they look
                           like shit
                       </div>
+                    </a>
+
+                      
                       <div class="information-section__column__date">
                           <span class="information-section__column__date__author">Nadim</span>
                           -
@@ -262,9 +272,8 @@
                             STMIK dan STIKOM Bergabung
                         
                       </div>
-                    </a>
 
-                      <div class="information-section__column__detail">
+                      <div class="information-section__column__box__detail">
                           Happy Sunday from software Expand
                           In this Week's edition of Feedback
                           Loop, we talk about the future of
@@ -279,6 +288,9 @@
                           Windows Phone, whether they look
                           like shit
                       </div>
+                    </a>
+
+                      
                       <div class="information-section__column__date">
                           <span class="information-section__column__date__author">Nadim</span>
                           -
