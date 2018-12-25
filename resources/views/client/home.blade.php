@@ -291,7 +291,6 @@
 
     <!-- footer section -->
 <footer>
-<<<<<<< HEAD
     <!-- footer top -->
     <div class="footer">
       <div class="footer--border"></div>
