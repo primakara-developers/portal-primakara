@@ -12,7 +12,10 @@ $ git clone https://github.com/{username-anda}/portal-primakara.git
 ```sh
 $ git remote add upstream https://github.com/primakara-developers/portal-primakara.git
 ```
-4. Buat file baru `.env`. Isilah file `.env` tersebut dengan isi dari file `.env.example`
+4. Copy file `.env.example` menjadi `.env`:
+```sh
+$ cp env-example .env
+```
 5. Install seluruh package agar bisa dijalankan
 ```sh
 $ composer install
