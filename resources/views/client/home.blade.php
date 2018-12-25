@@ -285,6 +285,123 @@
       </div>
     </div>
     {{-- end of Subscription --}}
+
+
+    <!-- ukm -->
+  <div class="ukm">
+      <div class="ukm--container">
+          <div class="ukm--container--title">UNIT KEGIATAN MAHASISWA</div>
+          <div class="ukm--container--detail">STMIK PRIMAKARA</div>
+
+            <div class="ukm--container--content">
+              
+              <div class="ukm--container--content--box">
+                <a href="#" class="ukm--container--content--box--link">
+                  
+                  <div class="ukm--container--content--box--link--logo">
+
+                    <img src="images/logo-gradient.png" class="ukm--container--content--box--link--logo--main">
+                    <img src="images/no4.jpg" class="ukm--container--content--box--link--logo--img">
+                    <div class="ukm--container--content--box--link--logo--gradient ukm--container--content--box--link--logo--primdev"></div>
+
+                  </div>
+
+                  <div class="ukm--container--content--box--link--title">
+                    PRIMAKARA DEVELOPERS
+                  </div>
+
+                </a>
+              </div>
+            
+            </div>
+
+            <div class="ukm--container--content">
+              
+              <div class="ukm--container--content--box">
+                <a href="#" class="ukm--container--content--box--link">
+                  <div class="ukm--container--content--box--link--logo">
+                    <img src="images/logo-gradient.png" class="ukm--container--content--box--link--logo--main">
+                    <img src="images/no4.jpg" class="ukm--container--content--box--link--logo--img">
+                    <div class="ukm--container--content--box--link--logo--gradient ukm--container--content--box--link--logo--primdev"></div>
+                  </div>
+                  <div class="ukm--container--content--box--link--title">
+                    PRIMAKARA DEVELOPERS
+                  </div>
+                </a>
+              </div>
+            
+            </div>
+
+            <div class="ukm--container--content">
+              
+              <div class="ukm--container--content--box">
+                <a href="#" class="ukm--container--content--box--link">
+                  <div class="ukm--container--content--box--link--logo">
+                    <img src="images/logo-gradient.png" class="ukm--container--content--box--link--logo--main">
+                    <img src="images/no4.jpg" class="ukm--container--content--box--link--logo--img">
+                    <div class="ukm--container--content--box--link--logo--gradient ukm--container--content--box--link--logo--primdev"></div>
+                  </div>
+                  <div class="ukm--container--content--box--link--title">
+                    PRIMAKARA DEVELOPERS
+                  </div>
+                </a>
+              </div>
+            
+            </div>
+
+            <div class="ukm--container--content">
+              
+              <div class="ukm--container--content--box">
+                <a href="#" class="ukm--container--content--box--link">
+                  <div class="ukm--container--content--box--link--logo">
+                    <img src="images/logo-gradient.png" class="ukm--container--content--box--link--logo--main">
+                    <img src="images/no4.jpg" class="ukm--container--content--box--link--logo--img">
+                    <div class="ukm--container--content--box--link--logo--gradient ukm--container--content--box--link--logo--primdev"></div>
+                  </div>
+                  <div class="ukm--container--content--box--link--title">
+                    PRIMAKARA DEVELOPERS
+                  </div>
+                </a>
+              </div>
+            
+            </div>
+
+            <div class="ukm--container--content">
+              
+              <div class="ukm--container--content--box">
+                <a href="#" class="ukm--container--content--box--link">
+                    <div class="ukm--container--content--box--link--logo">
+                    <img src="images/logo-gradient.png" class="ukm--container--content--box--link--logo--main">
+                    <img src="images/no4.jpg" class="ukm--container--content--box--link--logo--img">
+                    <div class="ukm--container--content--box--link--logo--gradient ukm--container--content--box--link--logo--primdev"></div>
+                  </div>
+                  <div class="ukm--container--content--box--link--title">
+                    PRIMAKARA DEVELOPERS
+                  </div>
+                </a>
+              </div>
+            
+            </div>
+
+            <div class="ukm--container--content">
+              
+              <div class="ukm--container--content--box">
+                <a href="#" class="ukm--container--content--box--link">
+                  <div class="ukm--container--content--box--link--logo">
+                    <img src="images/logo-gradient.png" class="ukm--container--content--box--link--logo--main">
+                    <img src="images/no4.jpg" class="ukm--container--content--box--link--logo--img">
+                    <div class="ukm--container--content--box--link--logo--gradient ukm--container--content--box--link--logo--primdev"></div>
+                  </div>
+                  <div class="ukm--container--content--box--link--title">
+                    PRIMAKARA DEVELOPERS
+                  </div>
+                </a>
+              </div>
+            
+            </div>
+
+      </div>
+  </div>
 </main>
 <!-- Main -->
 

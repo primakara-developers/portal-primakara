@@ -41,6 +41,11 @@
           font-size: 22px;
           color: #109d59;
           line-height: 35px;
+          transition: all ease-in-out .3s;
+        }
+
+        &--list a:hover{
+          color: #696969;
         }
       }
 
