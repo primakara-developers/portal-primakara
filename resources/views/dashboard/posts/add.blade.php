@@ -54,34 +54,34 @@
             </div>
             <!-- /.box-header -->
             <div class="box-body">
-                <form action="{{ route('admin.article.add') }}" method="POST" enctype="multipart/form-data">
+                <form action="{{ route('admin.post.add') }}" method="POST" enctype="multipart/form-data">
                     {{ csrf_field() }}
                     <div class="form-group">
-                        <label for="article_title" class="col-xs-12">Title of Article</label>
+                        <label for="post_title" class="col-xs-12">Title of Post</label>
                         <div class="col-xs-12">
-                            <input type="text" class="form-control form-line" id="article_title" name="article_title" required>
+                            <input type="text" class="form-control form-line" id="post_title" name="post_title" required>
                         </div>
                     </div>
                     <div class="form-group">
-                        <label for="article_slug" class="col-xs-12" >Slug of Article</label>
+                        <label for="post_slug" class="col-xs-12" >Slug of Post</label>
                         <div class="col-xs-12">
-                            <input type="text" class="form-control form-line" name="article_slug" id="article_slug" required>
+                            <input type="text" class="form-control form-line" name="post_slug" id="post_slug" required>
                         </div>
                     </div>
                     <div class="form-group">
-                        <label for="article_cover" class="col-xs-12" >Cover of Article</label>
+                        <label for="post_cover" class="col-xs-12" >Cover of Post</label>
                         <div class="col-xs-12">
-                            <input type="file" class="" name="article_cover" id="article_cover" required >
+                            <input type="file" class="" name="post_cover" id="post_cover" required >
                         </div>
                     </div>
                     <div class="form-group">
-                        <label for="article_content" class="col-xs-12" >Content of Article</label>
+                        <label for="post_content" class="col-xs-12" >Content of Post</label>
                         <div class="col-xs-12">
-                            <textarea name="article_content" id="article_content" required></textarea>
+                            <textarea name="post_content" id="post_content" required></textarea>
                         </div>
                     </div>
                     <div class="form-group">
-                        <label for="category_id" class="col-xs-12" >Category of Article</label>
+                        <label for="category_id" class="col-xs-12" >Category of Post</label>
                         <div class="col-xs-12">
                             <select name="category_name" id="category_id" class="form-control form-line" multiple required>
                                 @foreach ($categories as $category)
@@ -117,7 +117,7 @@
     });
 </script>
 <script>
-    $('#article_content').summernote({
+    $('#post_content').summernote({
         placeholder: 'Type Here!',
         tabsize:2,
         height:300,
@@ -130,11 +130,11 @@
             ['height',['height']]
         ]
     })
-    var articleTitle = document.getElementById('article_title');
-    var slug = document.getElementById('article_slug');
-    articleTitle.addEventListener('keyup', function(e) {
-        articleTitleValue = articleTitle.value;
-        slug.value = slugify(articleTitleValue);
+    var postTitle = document.getElementById('post_title');
+    var slug = document.getElementById('post_slug');
+    postTitle.addEventListener('keyup', function(e) {
+        postTitleValue = postTitle.value;
+        slug.value = slugify(postTitleValue);
 
     })
     function slugify(text) {

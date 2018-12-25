@@ -13,8 +13,8 @@
 
         .background {
             text-align: center;
-            vertical-align: middle;
-            clear: both;
+            /* vertical-align: middle;
+            clear: both; */
         }
 
         .background > img {
@@ -25,7 +25,7 @@
 </head>
 <body>
     <div class="background">
-        <img src="{{ asset('images/mockup/Portal-Primakara-Home-Mac.jpg') }}" alt="" srcset="">
+        <img src="{{ asset('images/mockup/Portal-Primakara-Home.jpg') }}" alt="" srcset="">
     </div>
 </body>
 </html>

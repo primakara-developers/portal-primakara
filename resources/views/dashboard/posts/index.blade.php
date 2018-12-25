@@ -35,7 +35,7 @@
 @section('content')
 <div class="box">
     <div class="box-header with-border">
-        <h3 class="box-title">Articles</h3>
+        <h3 class="box-title">Posts</h3>
     </div>
     <!-- /.box-header -->
     <div class="box-body table-responsive">
@@ -50,23 +50,23 @@
                 </tr>
             </thead>
             <tbody>
-                @foreach ($articles as $article)
+                @foreach ($posts as $post)
                     <tr>
                         <td>{{ $loop->iteration }}</td>
-                        <td>{{ $article->article_title }}</td>
-                        <td>{{ $article->created_at->format('d F Y') }}</td>
+                        <td>{{ $post->post_title }}</td>
+                        <td>{{ $post->created_at->format('d F Y') }}</td>
                         <td>
-                            <input type="checkbox" class="toggle-headline" id="article-{{$article->id}}" data-id="{{ $article->id }}" {{ $article->is_headline == 1 ? 'checked' : '' }}/>
-                            <label for="article-{{$article->id}}" class="label-toggle-article"></label>
+                            <input type="checkbox" class="toggle-headline" id="post-{{$post->id}}" data-id="{{ $post->id }}" {{ $post->is_headline == 1 ? 'checked' : '' }}/>
+                            <label for="post-{{$post->id}}" class="label-toggle-post"></label>
                         </td>
                         <td>
-                            <a href="{{ route('admin.article.edit', ['id'=>$article->id]) }}" class="btn btn-sm btn-primary">
+                            <a href="{{ route('admin.post.edit', ['id'=>$post->id]) }}" class="btn btn-sm btn-primary">
                                 <i class="fa fa-pencil"></i>
                             </a>
                             <a href="#" class="btn btn-sm btn-success">
                                 <i class="fa fa-eye"></i>
                             </a>
-                            <a href="{{ route('admin.article.delete',['id' => $article->id]) }}" class="btn btn-sm btn-danger">
+                            <a href="{{ route('admin.post.delete',['id' => $post->id]) }}" class="btn btn-sm btn-danger">
                                 <i class="fa fa-trash"></i>
                             </a>
                         </td>
@@ -79,7 +79,7 @@
     
     <!-- /.box-body -->
     <div class="box-footer clearfix">
-        {{ $articles->links('dashboard.vendor.pagination.default') }}
+        {{ $posts->links('dashboard.vendor.pagination.default') }}
     </div>
 </div>
 @endsection
@@ -96,7 +96,7 @@
                 headline_at: new Date().toISOString().slice(0, 19).replace('T', ' ')
             }
             button.prop('checked', !button.prop('checked'));
-            var caption = button.prop('checked') ? 'Are you sure you want to remove this article from headline?' : 'Are you sure you want to add this article as headline?'
+            var caption = button.prop('checked') ? 'Are you sure you want to remove this post from headline?' : 'Are you sure you want to add this post as headline?'
             swal({
                 title: 'Add Headline',
                 text: caption,

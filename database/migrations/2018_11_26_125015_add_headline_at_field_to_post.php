@@ -4,7 +4,7 @@ use Illuminate\Support\Facades\Schema;
 use Illuminate\Database\Schema\Blueprint;
 use Illuminate\Database\Migrations\Migration;
 
-class AddHeadlineFieldToArticle extends Migration
+class AddHeadlineAtFieldToPost extends Migration
 {
     /**
      * Run the migrations.
@@ -13,8 +13,8 @@ class AddHeadlineFieldToArticle extends Migration
      */
     public function up()
     {
-        Schema::table('articles', function (Blueprint $table) {
-            $table->tinyInteger('is_headline')->default(0)->after('article_content');
+        Schema::table('posts', function (Blueprint $table) {
+            $table->dateTime('headline_at')->nullable();
         });
     }
 
@@ -25,6 +25,6 @@ class AddHeadlineFieldToArticle extends Migration
      */
     public function down()
     {
-        Schema::dropIfExists('articles');
+        Schema::dropIfExists('posts');
     }
 }
