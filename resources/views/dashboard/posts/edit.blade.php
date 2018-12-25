@@ -27,6 +27,7 @@
             <!-- /.box-header -->
             <div class="box-body">
                 <form action="{{ route('admin.post.edit', ['id'=>$post->id]) }}" method="POST" enctype="multipart/form-data">
+                    @method('PUT')
                     {{ csrf_field() }}
                     <div class="form-group">
                         <label for="post_title" class="col-xs-12">Title of Post</label>

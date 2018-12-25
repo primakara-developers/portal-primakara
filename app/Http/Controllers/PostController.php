@@ -60,7 +60,7 @@ class PostController extends Controller
         $request->validate([
             'post_title'=>'required|string',
             'post_cover'=>'required|mimes:jpg,png,jpeg|max:2048',
-            'post_slug'=>'required|string|unique:Posts,Post_slug',
+            'post_slug'=>'required|string|unique:posts,post_slug',
             'post_content'=>'required|string',
             'category_name'=>'required|string',
         ]);
