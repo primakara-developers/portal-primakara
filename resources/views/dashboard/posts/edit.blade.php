@@ -26,8 +26,7 @@
             </div>
             <!-- /.box-header -->
             <div class="box-body">
-                <form action="{{ route('admin.post.edit', ['id'=>$post->id]) }}" method="POST" enctype="multipart/form-data">
-                    @method('PUT')
+                <form action="{{ route('admin.post.update', ['id'=>$post->id]) }}" method="POST" enctype="multipart/form-data">
                     {{ csrf_field() }}
                     <div class="form-group">
                         <label for="post_title" class="col-xs-12">Title of Post</label>
@@ -45,7 +44,7 @@
                         <label for="post_cover" class="col-xs-12" >Cover of Post</label>
                         <img src="/media/{{ $post->post_cover }}" alt="" srcset="">
                         <div class="col-xs-12">
-                            <input type="file" class="" name="post_cover" id="post_cover" required >
+                            <input type="file" class="" name="post_cover" id="post_cover" <?=empty($post->post_cover) ? 'required="true"':'' ?>>
                         </div>
                     </div>
                     <div class="form-group">
