@@ -54,6 +54,7 @@
         color: #109d59;
         font-size: 15px;
         padding-bottom: 5px;
+        transition: all 0.3s ease-in-out;
 
             & a{
                 text-decoration: none;
@@ -65,7 +66,7 @@
 
             &:hover{
                 color: #14cb73;
-                transition: all 0.3s ease-in-out;
+                
                 
                 @media screen and (max-width: 320px) {
                     border: none;
@@ -152,9 +153,9 @@
 
         &__box{
             color: #494949;
+            transition: all 0.3s ease-in-out;
 
             &:hover{
-                transition: all 0.3s ease-in-out;
                 color: #109d59;
             }
 
@@ -227,7 +228,7 @@
                 -webkit-line-clamp: 4;
                 -webkit-box-orient: vertical;
                 overflow: hidden;
-      
+                color: #494949;
                 font-weight: lighter;
                 font-size: 14px;
                 margin-top: 3%;
