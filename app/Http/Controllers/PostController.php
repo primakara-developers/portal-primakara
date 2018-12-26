@@ -121,7 +121,6 @@ class PostController extends Controller
         $post = Post::find($id);
         $categories = Category::all();
         $selectedCategory = Category::find($post->category_id)->category_name;
-        // dd($selectedCategory);
         return view('dashboard.posts.edit')->with(['post'=>$post, 'categories'=>$categories, 'selectedCategory'=>$selectedCategory]);
     }
 
@@ -134,7 +133,48 @@ class PostController extends Controller
      */
     public function update(Request $request, $id)
     {
-        //
+        $request->validate([
+            'post_title'=>'required|string',
+            // 'post_cover'=>'required|mimes:jpg,png,jpeg|max:2048',
+            // 'post_slug'=>'required|string|unique:posts,post_slug',
+            'post_content'=>'required|string',
+            'category_name'=>'required|string',
+        ]);
+
+        //insert the category
+        $insertCategory = Category::firstOrCreate([
+            'category_name' => $request->category_name,
+            'category_slug' => str_slug($request->category_name)
+        ]);
+
+        if($insertCategory){
+            $category_id = $insertCategory->id;
+            if($request->hasFile('post_cover')){
+                $imageFile = $request->file('post_cover');
+                $post_cover = str_slug($request->post_title).uniqid().'.'.$imageFile->getClientOriginalExtension();
+                Storage::disk('local')->putFileAs('public/media/', $imageFile, $post_cover);
+            }
+
+            $fields = [
+                'post_title' => $request->post_title,
+                // 'post_cover' => $post_cover,
+                // 'post_slug'=> $request->post_slug,
+                'post_content'=>$request->post_content,
+                'category_id'=>$category_id,
+                'user_id'=>Auth::user()->id
+            ];
+
+            $post = Post::find($id);
+
+            $insert = $post->update($fields);
+            if($insert){
+                return redirect()->to(route('admin.post.edit', ['id'=>$id]))
+                ->with('msg', 'Post created successfully!');
+            }
+        }
+
+        return view('dashboard.posts.edit');
+
     }
 
     /**
