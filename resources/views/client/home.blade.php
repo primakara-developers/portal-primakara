@@ -2,47 +2,19 @@
 
 @section('content')
 
-<!-- Header -->
-<header id="site-header">
-  <div class="container">
-    <div class="container-navbar">
-      <div class="row">
-        <div class="col-6">
-          <div class="logo-primdev">
-              <a href="#"><img src="images/primdev.jpg" alt=""></a>
-          </div>
-        </div>
-        <div class="col-6">
-          <div class="menu-primdev">
-              <a href="" class="menu-primdev-link"><span class="menu-primdev-button">HOME</span></a>
-              <a href="" class="menu-primdev-link"><span class="menu-primdev-button">STORY</span></a>
-              <a href="" class="menu-primdev-link"><span class="menu-primdev-button">ABOUT</span></a>
-              <a href="" class="menu-primdev-link active"><span class="menu-primdev-button">EVENT</span></a>
-          </div>
-        </div>
-      </div>
-    </div>
-  </div>
-</header>
-<!-- Header -->
-
 <!--Main -->
 <main>
 
     <!-- Banner -->
-  <div class="container">
-        <div class="row">
-            <div class="col-12">
-                <div class="primdev-title">PRIMAKARA DEVELOPERS</div>
-                <div class="primdev-sub-title">Proudly Present</div>
-            </div>
+    <section class="banner" style="background-image: url('{{ asset('images/workshop-photos.jpg') }}');">
+        <div class="banner__content">
+            <h1 class="banner__title">Primakara Student Information Site</h1>
+            <h3 class="banner__subtitle">Together, we can change anything better</h3>
         </div>
-        <div class="gradient"></div>
-        <div class="parallax1"></div>
-        <a href="javascript:void(0)" class="primdev-scroll-button">
-            <img src="images/icons/downwards-pointer.svg" alt="">
+        <a href="javascript:void(0)" class="banner__scroll-to-bottom-button">
+            <img src="{{ asset('images/icons/downwards-pointer.svg') }}" class="banner__scroll-to-bottom-image">
         </a>
-  </div>
+    </section>
     <!-- Banner -->
 
     {{-- Headline --}}
@@ -372,10 +344,10 @@
 @section('additional-scripts')
 
 <script>
-    var scrollToBottom = document.getElementsByClassName('primdev-scroll-button')[0];
-    var headNews = document.getElementById('headnews');
+    var scrollToBottom = document.getElementsByClassName('banner__scroll-to-bottom-button')[0];
+    var headline = document.getElementsByClassName('headline')[0];
     scrollToBottom.addEventListener('click', function(e) {
-        headNews.scrollIntoView({
+        headline.scrollIntoView({
             behavior: 'smooth',
             block: 'start'
         });
