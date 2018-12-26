@@ -4,7 +4,7 @@
     padding-bottom: 105px;
     &__list {
         max-width: 100%;
-        width: 1150px;
+        width: 1151px; //1150px makes gap between menu, but 1151px or 1149 don't
         margin: auto;
         padding: 13px;
         column-gap: 0;
@@ -60,6 +60,7 @@
         top: 0;
         z-index: 2;
         opacity: .7;
+        text-decoration: none;
     }
 
     &__title {
@@ -75,6 +76,10 @@
         padding-right: 22px;
         font-size: 16px;
         text-transform: capitalize;
+        text-decoration: none;
+        &:hover {
+            text-decoration: none;
+        }
     }
 
     &__badge {
@@ -89,8 +94,10 @@
         text-transform: uppercase;
         opacity: .5;
         transition: all ease-in-out .3s;
+        text-decoration: none;
         &:hover {
             opacity: .7;
+            text-decoration: none;
         }
     }
     &:first-child, &:last-child {

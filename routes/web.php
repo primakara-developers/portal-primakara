@@ -35,9 +35,10 @@ Route::prefix('dashboard')->group(function() {
 	Route::get('post/add','PostController@create')->name('admin.post.add');
 	Route::post('post/add','PostController@store');
 	Route::get('posts', 'PostController@index')->name('admin.post.index');
-	Route::post('post/{id}/edit', 'PostController@edit')->name('admin.post.edit');
+    Route::post('post/{id}/update', 'PostController@update')->name('admin.post.update');
+	Route::get('post/{id}/edit', 'PostController@edit')->name('admin.post.edit');
 	Route::get('post/{id}/delete', 'PostController@destroy')->name('admin.post.delete');
-	
+
 	//filtered posts
 	Route::get('posts/{id}','PostController@filteredPosts')->name('admin.post.filter');
 	//menu category
