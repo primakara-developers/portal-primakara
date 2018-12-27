@@ -58,9 +58,9 @@ Route::prefix('dashboard')->group(function() {
 });
 
 Route::prefix('mockup')->group(function() {
-	Route::view('home', 'home');
+	Route::view('home', 'mockup', [ 'imageName' => 'images/mockup/Portal-Primakara-Home.jpg', 'mac' => false ]);
 
 	Route::prefix('mac')->group(function() {
-		Route::view('home', 'home-mac');
+        Route::view('home', 'mockup', [ 'imageName' => 'images/mockup/Portal-Primakara-Home.jpg', 'mac' => true ]);
 	});
 });
