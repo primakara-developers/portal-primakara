@@ -11,21 +11,25 @@
             padding: 0;
         }
 
-        .background {
-            text-align: center;
-            /* vertical-align: middle;
-            clear: both; */
+        .background > img {
+            display: block;
+            height: auto;
+            margin: auto;
+            width: 100%;
         }
 
-        .background > img {
+        .background.mac > img {
             width: 1366px;
-            height: auto;
         }
     </style>
 </head>
 <body>
+    @if ($mac)
+    <div class="background mac">
+    @else
     <div class="background">
-        <img src="{{ asset('images/mockup/Portal-Primakara-Home.jpg') }}" alt="" srcset="">
+    @endif
+        <img src="{{ asset($imageName) }}" alt="" srcset="">
     </div>
 </body>
 </html>
