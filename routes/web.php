@@ -15,6 +15,10 @@ Route::get('/', function () {
     return view('client.home');
 });
 
+Route::get('/post-list', function () {
+    return view('client.postList');
+});
+
 // Auth::routes()
 
 Route::prefix('dashboard')->group(function() {
