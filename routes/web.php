@@ -15,6 +15,10 @@ Route::get('/', function () {
     return view('client.home');
 });
 
+Route::get('/post-list', function () {
+    return view('client.postList');
+});
+
 // Auth::routes()
 
 Route::prefix('dashboard')->group(function() {
@@ -58,9 +62,11 @@ Route::prefix('dashboard')->group(function() {
 });
 
 Route::prefix('mockup')->group(function() {
-	Route::view('home', 'mockup', [ 'imageName' => 'images/mockup/Portal-Primakara-Home.jpg', 'mac' => false ]);
+	Route::view('home', 'mockup', [ 'imageName' => 'images/mockup/home-mockup.jpg', 'mac' => false ]);
+	Route::view('post-list', 'mockup', [ 'imageName' => 'images/mockup/post-list-mockup.jpg', 'mac' => false ]);
 
 	Route::prefix('mac')->group(function() {
-        Route::view('home', 'mockup', [ 'imageName' => 'images/mockup/Portal-Primakara-Home.jpg', 'mac' => true ]);
+        Route::view('home', 'mockup', [ 'imageName' => 'images/mockup/home-mockup.jpg', 'mac' => true ]);
+        Route::view('post-list', 'mockup', [ 'imageName' => 'images/mockup/post-list-mockup.jpg', 'mac' => true ]);
 	});
 });
