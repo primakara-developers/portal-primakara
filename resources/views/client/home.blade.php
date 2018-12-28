@@ -26,7 +26,7 @@
             Primakara gelar start up expo besar di tahun 1862 sebelum masehi
           </a>
           <img src="{{ asset('images/no1.jpg') }}" alt="" class="headline__list__item__cover">
-          <a href="?category=andoid" class="headline__list__item__badge">Kegiatan</a>
+          <a href="/post-list" class="headline__list__item__badge">Kegiatan</a>
         </span>
         <span class="headline__list__item">
           <a href="?single=yes" class="headline__list__item__gradient"></a>
@@ -34,7 +34,7 @@
             yuk simak informasi berguna cara membuat website ala pornhub
           </a>
           <img src="{{ asset('images/no1.jpg') }}" alt="" class="headline__list__item__cover">
-          <a href="?category=andoid" class="headline__list__item__badge">Website</a>
+          <a href="/post-list" class="headline__list__item__badge">Website</a>
         </span>
         <span class="headline__list__item">
           <a href="?single=yes" class="headline__list__item__gradient"></a>
@@ -42,7 +42,7 @@
             Memory SSD untuk programmer? apakah membantu mempercepat projek agar cepat selesai?
           </a>
           <img src="{{ asset('images/no1.jpg') }}" alt="" class="headline__list__item__cover">
-          <a href="?category=andoid" class="headline__list__item__badge">Hardware</a>
+          <a href="/post-list" class="headline__list__item__badge">Hardware</a>
         </span>
         <span class="headline__list__item">
           <a href="?single=yes" class="headline__list__item__gradient"></a>
@@ -50,7 +50,7 @@
             Prass, CTO Laravel.org mengakui framework miliknya tak berguna.
           </a>
           <img src="{{ asset('images/no1.jpg') }}" alt="" class="headline__list__item__cover">
-          <a href="?category=andoid" class="headline__list__item__badge">Framework</a>
+          <a href="/post-list" class="headline__list__item__badge">Framework</a>
         </span>
         <span class="headline__list__item">
           <a href="?single=yes" class="headline__list__item__gradient"></a>
@@ -58,7 +58,7 @@
             dr. Boyke, 150 orang tiap detiknya mengidap penyakit wibu. karena asupan anime yang berlebih.
           </a>
           <img src="{{ asset('images/no1.jpg') }}" alt="" class="headline__list__item__cover">
-          <a href="?category=andoid" class="headline__list__item__badge">Kesehatan</a>
+          <a href="/post-list" class="headline__list__item__badge">Kesehatan</a>
         </span>
         <span class="headline__list__item">
           <a href="?single=yes" class="headline__list__item__gradient"></a>
@@ -66,7 +66,7 @@
             Yaw, Konglomerat asal bali membeli sticker lamborghini Galardo di Las Vegas
           </a>
           <img src="{{ asset('images/no1.jpg') }}" alt="" class="headline__list__item__cover">
-          <a href="?category=andoid" class="headline__list__item__badge">Android</a>
+          <a href="/post-list" class="headline__list__item__badge">Android</a>
         </span>
         <span class="headline__list__item">
           <a href="?single=yes" class="headline__list__item__gradient"></a>
@@ -74,7 +74,7 @@
             8 cara membuat website tanpa framework
           </a>
           <img src="{{ asset('images/no1.jpg') }}" alt="" class="headline__list__item__cover">
-          <a href="?category=andoid" class="headline__list__item__badge">Android</a>
+          <a href="/post-list" class="headline__list__item__badge">Android</a>
         </span>
       </div>
     </section>
@@ -84,17 +84,17 @@
     <div class="information-section">
 
                 <div class="information-section__tag">
-                  
+
                     <span class="information-section__tag--title">INFORMASI TERUPDATE</span>
 
-                    <a href="#" class="information-section__tag--next">
+                    <a href="/post-list" class="information-section__tag--next">
                       <span class="information-section__tag--next--remove">Selengkapnya</span>
                       <div class="information-section__tag--next--box">
                         <span class="information-section__tag--next--box--arrow"></span>
                         <span class="information-section__tag--next--box--arrow information-section__tag--next--box--second-arrow"></span>
                       </div>
                     </a>
-                    
+
                     <div class="information-section__tag--border"></div>
 
                 </div>
@@ -103,17 +103,17 @@
 
                     <a href="#" class="information-section__column__box">
                       <div class="information-section__column__box__images">
-                        
+
                           <img src="images/no1.jpg" alt="">
-                        
+
                       </div>
-                    
-                    
+
+
                       <div class="information-section__column__box__title">
-                        
+
                             Membangun Ekosistem Digital,
                             STMIK dan STIKOM Bergabung
-                        
+
                       </div>
 
                       <div class="information-section__column__box__detail">
@@ -132,31 +132,31 @@
                           like shit
                       </div>
                     </a>
-                    
-                      
+
+
                       <div class="information-section__column__date">
                           <span class="information-section__column__date__author">Nadim</span>
                           -
                           <span class="information-section__column__date__detail">29 February 2018</span>
                       </div>
-                  
+
                 </div>
 
                 <div class="information-section__column ">
 
                     <a href="#" class="information-section__column__box">
                       <div class="information-section__column__box__images">
-                        
+
                           <img src="images/no1.jpg" alt="">
-                        
+
                       </div>
-                    
-                    
+
+
                       <div class="information-section__column__box__title">
-                        
+
                             Membangun Ekosistem Digital,
                             STMIK dan STIKOM Bergabung
-                        
+
                       </div>
 
                       <div class="information-section__column__box__detail">
@@ -176,30 +176,30 @@
                       </div>
                     </a>
 
-                      
+
                       <div class="information-section__column__date">
                           <span class="information-section__column__date__author">Nadim</span>
                           -
                           <span class="information-section__column__date__detail">29 February 2018</span>
                       </div>
-                    
+
                 </div>
 
                 <div class="information-section__column ">
 
                     <a href="#" class="information-section__column__box">
                       <div class="information-section__column__box__images">
-                        
+
                           <img src="images/no1.jpg" alt="">
-                        
+
                       </div>
-                    
-                    
+
+
                       <div class="information-section__column__box__title">
-                        
+
                             Membangun Ekosistem Digital,
                             STMIK dan STIKOM Bergabung
-                        
+
                       </div>
 
                       <div class="information-section__column__box__detail">
@@ -219,30 +219,30 @@
                       </div>
                     </a>
 
-                      
+
                       <div class="information-section__column__date">
                           <span class="information-section__column__date__author">Nadim</span>
                           -
                           <span class="information-section__column__date__detail">29 February 2018</span>
                       </div>
-                    
+
                 </div>
 
                 <div class="information-section__column ">
 
                     <a href="#" class="information-section__column__box">
                       <div class="information-section__column__box__images">
-                        
+
                           <img src="images/no1.jpg" alt="">
-                        
+
                       </div>
-                    
-                    
+
+
                       <div class="information-section__column__box__title">
-                        
+
                             Membangun Ekosistem Digital,
                             STMIK dan STIKOM Bergabung
-                        
+
                       </div>
 
                       <div class="information-section__column__box__detail">
@@ -262,16 +262,16 @@
                       </div>
                     </a>
 
-                      
+
                       <div class="information-section__column__date">
                           <span class="information-section__column__date__author">Nadim</span>
                           -
                           <span class="information-section__column__date__detail">29 February 2018</span>
                       </div>
-                    
+
                 </div>
-            
-        
+
+
     </div>
     <!-- end of information -->
 
