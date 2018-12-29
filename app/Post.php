@@ -16,5 +16,13 @@ class Post extends Model
     	'headline_at',
     	'category_id',
     	'user_id'
-    ];
+	];
+	
+	public function categories() {
+		return $this->belongsTo('App\Category', 'category_id');
+	}
+
+	public function user() {
+		return $this->belongsTo('App\User', 'user_id');
+	}
 }

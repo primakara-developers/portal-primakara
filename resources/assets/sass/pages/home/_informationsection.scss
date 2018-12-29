@@ -224,16 +224,15 @@
     
             }
             &__detail{
-                display: -webkit-box;
-                -webkit-line-clamp: 4;
-                -webkit-box-orient: vertical;
-                overflow: hidden;
                 color: #494949;
                 font-weight: lighter;
-                font-size: 14px;
                 margin-top: 3%;
                 width: 100%;
-                line-height: 20px;
+
+                @include excerpt($font-size: 14px, 
+                    $line-height: 1.4, 
+                    $lines-to-show: 4, 
+                    $excerpt-bg: #fff);
     
                 @media screen and (max-width: 1070px) {
                     width: 100%;
