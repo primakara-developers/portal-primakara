@@ -1,20 +1,13 @@
 <?php
 
-namespace App\Http\Controllers;
-use Illuminate\Http\Request;
-use Auth;
+namespace App\Http\Controllers\Dashboard;
 
-class AdminController extends Controller
+use App\Http\Controllers\Controller;
+use Illuminate\Http\Request;
+use App\Post;
+
+class HeadlineController extends Controller
 {
-    /**
-     * Create a new controller instance.
-     *
-     * @return void
-     */
-    public function __construct()
-    {
-        $this->middleware('auth');
-    }
     /**
      * Display a listing of the resource.
      *
@@ -22,9 +15,10 @@ class AdminController extends Controller
      */
     public function index()
     {
-        $variableNama = "diva";
-        return view('dashboard.index')
-        ->with('name', $variableNama);
+        $headlines = Post::where('is_headline', 1)->orderBy('headline_at', 'desc')->paginate(10);
+        return view('dashboard.headlines.index')
+        ->with('headlines', $headlines);
+
     }
 
     /**
@@ -35,6 +29,7 @@ class AdminController extends Controller
     public function create()
     {
         //
+
     }
 
     /**
@@ -46,6 +41,22 @@ class AdminController extends Controller
     public function store(Request $request)
     {
         //
+        $data = [
+            'is_headline' => $request->is_headline == 'true' ? 1 : 0,
+            'headline_at' => $request->headline_at
+        ];
+
+        $execute = Post::where('id', $request->id)->update($data);
+
+        if($execute){
+            return response()->json([
+                'status' => 200
+            ]);
+        }else{
+            return response()->json([
+                'status' => 422
+            ]);
+        }
     }
 
     /**
