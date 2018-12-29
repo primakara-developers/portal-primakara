@@ -4,7 +4,6 @@
 
 <!--Main -->
 <main>
-
     <!-- Banner -->
     <section class="banner" style="background-image: url('{{ asset('images/workshop-photos.jpg') }}');">
         <div class="banner__content">
@@ -82,196 +81,47 @@
 
     <!-- Information -->
     <div class="information-section">
+        <div class="information-section__tag">
 
-                <div class="information-section__tag">
+            <span class="information-section__tag--title">INFORMASI TERUPDATE</span>
 
-                    <span class="information-section__tag--title">INFORMASI TERUPDATE</span>
-
-                    <a href="/post-list" class="information-section__tag--next">
-                      <span class="information-section__tag--next--remove">Selengkapnya</span>
-                      <div class="information-section__tag--next--box">
-                        <span class="information-section__tag--next--box--arrow"></span>
-                        <span class="information-section__tag--next--box--arrow information-section__tag--next--box--second-arrow"></span>
-                      </div>
-                    </a>
-
-                    <div class="information-section__tag--border"></div>
-
+            <a href="/post-list" class="information-section__tag--next">
+                <span class="information-section__tag--next--remove">Selengkapnya</span>
+                <div class="information-section__tag--next--box">
+                <span class="information-section__tag--next--box--arrow"></span>
+                <span class="information-section__tag--next--box--arrow information-section__tag--next--box--second-arrow"></span>
                 </div>
+            </a>
 
-                <div class="information-section__column">
+            <div class="information-section__tag--border"></div>
 
-                    <a href="#" class="information-section__column__box">
-                      <div class="information-section__column__box__images">
+        </div>
 
-                          <img src="images/no1.jpg" alt="">
+        @foreach ($posts as $post)
+            <div class="information-section__column">
 
-                      </div>
-
-
-                      <div class="information-section__column__box__title">
-
-                            Membangun Ekosistem Digital,
-                            STMIK dan STIKOM Bergabung
-
-                      </div>
-
-                      <div class="information-section__column__box__detail">
-                          Happy Sunday from software Expand
-                          In this Week's edition of Feedback
-                          Loop, we talk about the future of
-                          Windows Phone, whether they look
-                          like shit, we talk about the future of
-                          Windows Phone, whether they look
-                          like shit Happy Sunday from software Expand
-                          In this Week's edition of Feedback
-                          Loop, we talk about the future of
-                          Windows Phone, whether they look
-                          like shit, we talk about the future of
-                          Windows Phone, whether they look
-                          like shit
-                      </div>
-                    </a>
+                <a href="{{ $post->post_slug }}" class="information-section__column__box">
+                    <div class="information-section__column__box__images">
+                        <img src="{{ Storage::url('media/'.$post->post_cover) }}" alt="">
+                    </div>
 
 
-                      <div class="information-section__column__date">
-                          <span class="information-section__column__date__author">Nadim</span>
-                          -
-                          <span class="information-section__column__date__detail">29 February 2018</span>
-                      </div>
+                    <div class="information-section__column__box__title">
+                            {{ $post->post_title }}
+                    </div>
 
+                    <div class="information-section__column__box__detail">
+                        {{ $post->post_content }}
+                    </div>
+                </a>
+
+                <div class="information-section__column__date">
+                    <span class="information-section__column__date__author">{{ $post->user->name }}</span>
+                    -
+                    <span class="information-section__column__date__detail">{{ $post->created_at->format('d M Y') }}</span>
                 </div>
-
-                <div class="information-section__column ">
-
-                    <a href="#" class="information-section__column__box">
-                      <div class="information-section__column__box__images">
-
-                          <img src="images/no1.jpg" alt="">
-
-                      </div>
-
-
-                      <div class="information-section__column__box__title">
-
-                            Membangun Ekosistem Digital,
-                            STMIK dan STIKOM Bergabung
-
-                      </div>
-
-                      <div class="information-section__column__box__detail">
-                          Happy Sunday from software Expand
-                          In this Week's edition of Feedback
-                          Loop, we talk about the future of
-                          Windows Phone, whether they look
-                          like shit, we talk about the future of
-                          Windows Phone, whether they look
-                          like shit Happy Sunday from software Expand
-                          In this Week's edition of Feedback
-                          Loop, we talk about the future of
-                          Windows Phone, whether they look
-                          like shit, we talk about the future of
-                          Windows Phone, whether they look
-                          like shit
-                      </div>
-                    </a>
-
-
-                      <div class="information-section__column__date">
-                          <span class="information-section__column__date__author">Nadim</span>
-                          -
-                          <span class="information-section__column__date__detail">29 February 2018</span>
-                      </div>
-
-                </div>
-
-                <div class="information-section__column ">
-
-                    <a href="#" class="information-section__column__box">
-                      <div class="information-section__column__box__images">
-
-                          <img src="images/no1.jpg" alt="">
-
-                      </div>
-
-
-                      <div class="information-section__column__box__title">
-
-                            Membangun Ekosistem Digital,
-                            STMIK dan STIKOM Bergabung
-
-                      </div>
-
-                      <div class="information-section__column__box__detail">
-                          Happy Sunday from software Expand
-                          In this Week's edition of Feedback
-                          Loop, we talk about the future of
-                          Windows Phone, whether they look
-                          like shit, we talk about the future of
-                          Windows Phone, whether they look
-                          like shit Happy Sunday from software Expand
-                          In this Week's edition of Feedback
-                          Loop, we talk about the future of
-                          Windows Phone, whether they look
-                          like shit, we talk about the future of
-                          Windows Phone, whether they look
-                          like shit
-                      </div>
-                    </a>
-
-
-                      <div class="information-section__column__date">
-                          <span class="information-section__column__date__author">Nadim</span>
-                          -
-                          <span class="information-section__column__date__detail">29 February 2018</span>
-                      </div>
-
-                </div>
-
-                <div class="information-section__column ">
-
-                    <a href="#" class="information-section__column__box">
-                      <div class="information-section__column__box__images">
-
-                          <img src="images/no1.jpg" alt="">
-
-                      </div>
-
-
-                      <div class="information-section__column__box__title">
-
-                            Membangun Ekosistem Digital,
-                            STMIK dan STIKOM Bergabung
-
-                      </div>
-
-                      <div class="information-section__column__box__detail">
-                          Happy Sunday from software Expand
-                          In this Week's edition of Feedback
-                          Loop, we talk about the future of
-                          Windows Phone, whether they look
-                          like shit, we talk about the future of
-                          Windows Phone, whether they look
-                          like shit Happy Sunday from software Expand
-                          In this Week's edition of Feedback
-                          Loop, we talk about the future of
-                          Windows Phone, whether they look
-                          like shit, we talk about the future of
-                          Windows Phone, whether they look
-                          like shit
-                      </div>
-                    </a>
-
-
-                      <div class="information-section__column__date">
-                          <span class="information-section__column__date__author">Nadim</span>
-                          -
-                          <span class="information-section__column__date__detail">29 February 2018</span>
-                      </div>
-
-                </div>
-
-
+            </div>
+        @endforeach
     </div>
     <!-- end of information -->
 
