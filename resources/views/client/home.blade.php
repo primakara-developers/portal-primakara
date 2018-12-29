@@ -66,7 +66,7 @@
                     </div>
 
                     <div class="information-section__column__box__detail">
-                        {{ $post->post_content }}
+                        {{ strip_tags($post->post_content) }}
                     </div>
                 </a>
 

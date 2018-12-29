@@ -13,15 +13,5 @@ class DatabaseSeeder extends Seeder
     {
         $this->call(UsersTableSeeder::class);
         $this->call(CategoriesTableSeeder::class);
-        $this->call(PostsTableSeeder::class);
-        // $fields = [
-        // 	'name' => 'Admin',
-        // 	'slug' => str_slug('admin'),
-        // 	'email' => 'admin@primdev.org',
-        // 	'password' => Hash::make('adminprimakaradev'),
-        // 	'is_admin' => 1
-        // ];
-
-        // User::create($fields);
     }
 }
