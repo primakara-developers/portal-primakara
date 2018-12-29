@@ -73,7 +73,9 @@ $ docker-compose exec workspace bash
 ```sh
 $ composer install
 $ php artisan key:generate
+$ composer dump-autoload
 $ php artisan migrate --seed
+$ php artisan storage:link
 ```
 13. Jika sudah, silahkan akses `http://localhost`.
 14. Dan selamat, project sudah berjalan dengan baik.

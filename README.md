@@ -31,7 +31,9 @@ DB_PASSWORD=secretpassword
 7. Jalankan command berikut:
 ```sh
 $ php artisan key:generate
+$ composer dump-autoload
 $ php artisan migrate --seed
+$ php artisan storage:link
 ```
 8. Jika ingin menjalankan aplikasi, jalankan command berikut:
 ```sh
