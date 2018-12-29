@@ -11,12 +11,14 @@
 |
 */
 
-Route::get('/', function () {
-    return view('client.home');
-});
+Route::prefix('/')->group(function() {
+	// index
+	Route::get('/', 'Client\HomeController@index')->name('home.index');
 
-Route::get('/post-list', function () {
-    return view('client.postList');
+	// Posts lists
+	Route::get('/post-list', function () {
+	    return view('client.postList');
+	});
 });
 
 // Auth::routes()
