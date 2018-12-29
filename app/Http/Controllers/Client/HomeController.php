@@ -12,5 +12,7 @@ class HomeController extends Controller
     	// Headline Section
 
     	// Informasi Section
+
+    	return view('client.home');
     }
 }
