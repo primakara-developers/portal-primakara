@@ -1,6 +1,7 @@
 .navigation-bar {
     background: $colorPrimary;
     padding: 12px 0;
+    position: relative;
     width: 100%;
 
     &__container {
@@ -10,10 +11,27 @@
         max-width: 1150px;
     }
 
-    &__category-list {
+    &__category {
         flex-grow: 1;
+
+        &--collapse {
+            background: $colorSecondary;
+            left: 0;
+            padding: 24px 0;
+            position: absolute;
+            top: 48px;
+            width: 100%;
+        }
+    }
+
+    &__category-list {
         margin: 0;
         padding: 0;
+    }
+
+    &__category--collapse &__category-list {
+        margin: auto;
+        max-width: 1150px;
     }
 
     &__category-list-item {
@@ -37,6 +55,20 @@
 
             &:hover {
                 text-decoration: underline;
+            }
+        }
+    }
+
+    &__category--collapse &__category-list-item {
+        border-right: none;
+        float: left;
+        margin-top: 24px;
+        padding: 0;
+        width: 20%;
+
+        @for $i from 1 through 5 {
+            &:nth-child(#{$i}) {
+                margin-top: 0;
             }
         }
     }
