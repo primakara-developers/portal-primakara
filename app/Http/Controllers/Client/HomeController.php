@@ -4,6 +4,7 @@ namespace App\Http\Controllers\Client;
 
 use Illuminate\Http\Request;
 use App\Http\Controllers\Controller;
+use App\Category;
 
 class HomeController extends Controller
 {
@@ -11,8 +12,13 @@ class HomeController extends Controller
     {
     	// Headline Section
 
-    	// Informasi Section
+        // Informasi Section
+        $category = new Category;
 
-    	return view('client.home');
+        $SingleCategory = $category->with('posts.user')->find(1);
+
+        $posts = $SingleCategory->posts()->paginate(4);
+
+    	return view('client.home')->with('posts', $posts);
     }
 }
