@@ -4,13 +4,17 @@
 	max-width: 1150px;
 	margin-left: auto;
 	margin-right: auto;
+	overflow-y: auto;
+	white-space: nowrap;
 	padding: 0;
 
 	@media only screen and (max-width: 1150px) {
         padding-left: 16px;
+        padding-bottom: 16px;
+        max-width: 95vw;
     }
 
-	&__breadcrumb-item{
+    &__breadcrumb-item{
 		display: inline-block;
 
 		&__breadcrumb-item-container{
