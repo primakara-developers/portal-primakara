@@ -8,7 +8,7 @@
     <section class="navigation-bar">
         <div class="navigation-bar__container">
             <!-- <div class="navigation-bar__category">
-                <ul class="navigation-bar__category-list">
+                <ul class="navigation-bar__category-list clearfix">
                     <li class="navigation-bar__category-list-item"><a href="/information">Information</a></li>
                     <li class="navigation-bar__category-list-item"><a href="/intermezzo">Intermezzo</a></li>
                     <li class="navigation-bar__category-list-item"><a href="/tips-and-trick">Tips & Trick</a></li>
@@ -18,7 +18,7 @@
                 </ul>
             </div> -->
             <div class="navigation-bar__category navigation-bar__category--collapse">
-                <ul class="navigation-bar__category-list">
+                <ul class="navigation-bar__category-list clearfix">
                     <li class="navigation-bar__category-list-item"><a href="/information">Information</a></li>
                     <li class="navigation-bar__category-list-item"><a href="/intermezzo">Intermezzo</a></li>
                     <li class="navigation-bar__category-list-item"><a href="/tips-and-trick">Tips & Trick</a></li>
@@ -64,7 +64,20 @@
 @section('additional-scripts')
 
 <script>
+    var categoryCollapseButton = document.getElementsByClassName('navigation-bar__category-collapse-button')[0];
+    categoryCollapseButton.addEventListener('click', function(e) {
+        var categoryCollapse = document.getElementsByClassName('navigation-bar__category--collapse')[0];
+        if (categoryCollapse.style.height) {
+            categoryCollapse.removeAttribute('style');
 
+            categoryCollapseButton.classList.remove('navigation-bar__category-collapse-button--active');
+        } else {
+            categoryCollapseHeight = categoryCollapse.scrollHeight;
+            categoryCollapse.style.height = categoryCollapseHeight + 'px';
+
+            categoryCollapseButton.classList.add('navigation-bar__category-collapse-button--active');
+        }
+    });
 </script>
 
 @endsection
