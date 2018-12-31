@@ -17,12 +17,12 @@
 
     &__category {
         flex-grow: 1;
+        overflow: hidden;
 
         &--collapse {
             background: $colorSecondary;
             height: 0;
             left: 0;
-            overflow: hidden;
             position: absolute;
             top: 48px;
             transition: all 0.3s ease-in-out;
@@ -31,13 +31,17 @@
     }
 
     &__category-list {
+        display: inline-block;
         margin: 0;
-        padding: 24px 0;
+        padding: 0;
+        white-space: nowrap;
     }
 
     &__category--collapse &__category-list {
+        display: block;
         margin: auto;
         max-width: 1150px;
+        padding: 24px 0;
     }
 
     &__category-list-item {
@@ -80,8 +84,13 @@
     }
 
     &__category-collapse-button-container {
+        display: none;
         flex-grow: 1;
         transition: all 0.3s ease-in-out;
+    }
+
+    &__category--collapse ~ &__category-collapse-button-container {
+        display: block;
     }
 
     &--search-focus &__category-collapse-button-container {
@@ -158,6 +167,7 @@
     &__search {
         flex-basis: 165px;
         flex-grow: 0;
+        flex-shrink: 0;
         transition: all 0.3s ease-in-out;
 
         @media only screen and (max-width: 530px) {

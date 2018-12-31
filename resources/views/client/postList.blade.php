@@ -7,17 +7,7 @@
     <!-- Navigation Bar -->
     <section class="navigation-bar">
         <div class="navigation-bar__container">
-            <!-- <div class="navigation-bar__category">
-                <ul class="navigation-bar__category-list clearfix">
-                    <li class="navigation-bar__category-list-item"><a href="/information">Information</a></li>
-                    <li class="navigation-bar__category-list-item"><a href="/intermezzo">Intermezzo</a></li>
-                    <li class="navigation-bar__category-list-item"><a href="/tips-and-trick">Tips & Trick</a></li>
-                    <li class="navigation-bar__category-list-item"><a href="/hardware">Hardware</a></li>
-                    <li class="navigation-bar__category-list-item"><a href="/software">Software</a></li>
-                    <li class="navigation-bar__category-list-item"><a href="/tutorials">Tutorials</a></li>
-                </ul>
-            </div> -->
-            <div class="navigation-bar__category navigation-bar__category--collapse">
+            <div class="navigation-bar__category">
                 <ul class="navigation-bar__category-list clearfix">
                     <li class="navigation-bar__category-list-item"><a href="/information">Information</a></li>
                     <li class="navigation-bar__category-list-item"><a href="/intermezzo">Intermezzo</a></li>
@@ -28,6 +18,7 @@
                     <li class="navigation-bar__category-list-item"><a href="/tutorials">Event</a></li>
                     <li class="navigation-bar__category-list-item"><a href="/tutorials">UKM</a></li>
                     <li class="navigation-bar__category-list-item"><a href="/tutorials">Announcement</a></li>
+                    <li class="navigation-bar__category-list-item"><a href="/tutorials">Akademik</a></li>
                 </ul>
             </div>
             <div class="navigation-bar__category-collapse-button-container">
@@ -64,6 +55,14 @@
 @section('additional-scripts')
 
 <script id="category-collapse-script">
+
+    var category = document.getElementsByClassName('navigation-bar__category')[0];
+    var categoryList = document.getElementsByClassName('navigation-bar__category-list')[0];
+
+    if (categoryList.offsetWidth > category.offsetWidth) {
+        category.classList.add('navigation-bar__category--collapse');
+    }
+
     var categoryCollapseButton = document.getElementsByClassName('navigation-bar__category-collapse-button')[0];
     categoryCollapseButton.addEventListener('click', function(e) {
         var categoryCollapse = document.getElementsByClassName('navigation-bar__category--collapse')[0];
