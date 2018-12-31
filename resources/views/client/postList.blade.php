@@ -63,7 +63,7 @@
 
 @section('additional-scripts')
 
-<script>
+<script id="category-collapse-script">
     var categoryCollapseButton = document.getElementsByClassName('navigation-bar__category-collapse-button')[0];
     categoryCollapseButton.addEventListener('click', function(e) {
         var categoryCollapse = document.getElementsByClassName('navigation-bar__category--collapse')[0];
@@ -78,6 +78,19 @@
             categoryCollapseButton.classList.add('navigation-bar__category-collapse-button--active');
         }
     });
+</script>
+
+<script id="search-focus-mobile-script">
+    if (window.outerWidth <= 530) {
+        var navigationBar = document.getElementsByClassName('navigation-bar')[0];
+        var searchInput = document.getElementsByClassName('navigation-bar__search-input')[0];
+        searchInput.addEventListener('focus', function(e) {
+            navigationBar.classList.add('navigation-bar--search-focus');
+        });
+        searchInput.addEventListener('blur', function(e) {
+            navigationBar.classList.remove('navigation-bar--search-focus');
+        });
+    }
 </script>
 
 @endsection

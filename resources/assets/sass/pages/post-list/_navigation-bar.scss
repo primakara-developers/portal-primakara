@@ -9,6 +9,10 @@
         display: flex;
         margin: auto;
         max-width: 1150px;
+
+        @media only screen and (max-width: 1150px) {
+            padding: 0 16px;
+        }
     }
 
     &__category {
@@ -77,6 +81,11 @@
 
     &__category-collapse-button-container {
         flex-grow: 1;
+        transition: all 0.3s ease-in-out;
+    }
+
+    &--search-focus &__category-collapse-button-container {
+        flex-grow: 0;
     }
 
     &__category-collapse-button {
@@ -135,12 +144,34 @@
         display: inline-block;
         font-size: 18px;
         margin-left: 5px;
+        max-width: 400px;
+        overflow: hidden;
+        transition: all 0.3s ease-in-out;
         vertical-align: middle;
+        white-space: nowrap;
+    }
+
+    &--search-focus &__collapse-button-text {
+        max-width: 0;
+    }
+
+    &__search {
+        flex-basis: 165px;
+        flex-grow: 0;
+        transition: all 0.3s ease-in-out;
+
+        @media only screen and (max-width: 530px) {
+            flex-basis: 120px;
+        }
+    }
+
+    &--search-focus &__search {
+        flex-grow: 1;
     }
 
     &__search-content {
         position: relative;
-        width: 165px;
+        width: 100%;
 
         &::after {
             background-image: url('/images/icons/search.svg');
