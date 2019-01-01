@@ -72,6 +72,7 @@
         margin-top: 0;
         margin-bottom: 0;
         text-decoration: none;
+        transition: all ease-in-out .3s;
     }
 
     &__left:hover ~ &__right &__title {
