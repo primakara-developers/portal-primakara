@@ -21,7 +21,7 @@ Route::prefix('/')->group(function() {
 	});
 
 	// Posts lists by category
-	Route::get('/{categoryName}', 'Client\PostsListController@index')->name('home.postList');
+	Route::get('/category/{categoryName}', 'Client\PostsListController@index')->name('home.postList');
 
     // Post detail
 	Route::get('/post-detail', function () {
