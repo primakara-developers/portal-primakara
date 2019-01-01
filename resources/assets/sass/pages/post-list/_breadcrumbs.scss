@@ -1,17 +1,18 @@
 .breadcrumbs{
 	list-style: none;
 	margin-top: 28px;
-	max-width: 1150px;
+    max-width: 1150px;
+    margin-bottom: 0;
 	margin-left: auto;
 	margin-right: auto;
 	overflow-y: auto;
 	white-space: nowrap;
-	padding: 0;
+    padding: 0;
+    padding-bottom: 16px;
 
 	@media only screen and (max-width: 1150px) {
         padding-left: 16px;
-        padding-bottom: 16px;
-        max-width: 95vw;
+        padding-right: 16px;
     }
 
     &__breadcrumb-item{
