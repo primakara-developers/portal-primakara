@@ -1,11 +1,11 @@
 // footer
   
   .footer{
-    &--border{
+    &__border{
       border: 3px solid #109d59;
     }
 
-    &--container{
+    &__container{
       width: 100%;
       height: auto;
       margin-right: auto;
@@ -14,50 +14,51 @@
       overflow: hidden;
       padding: 15px;
 
-      &--logo{
+      &__logo{
         width: 33.33%;
         float: left;
 
-        &--first{
+        &__first{
           height: 50px;
         }
-        &--second{
+        &__second{
           height: 85px;
           margin-bottom: 5%;
         }
       }
   
-      &--information{
+      &__information{
         width: 33.33%;
         float: left;
 
-        &--title{
+        &__title{
           font-size: 22px;
           color: #109d59;
           font-weight: bold;
           margin-bottom: 10px;
         }
-        &--list a{
+        &__list a{
           font-size: 22px;
           color: #109d59;
           line-height: 35px;
           transition: all ease-in-out .3s;
+          text-decoration: none;
         }
 
-        &--list a:hover{
+        &__list a:hover{
           color: #696969;
         }
       }
 
-      &--about{
+      &__about{
         width: 33.33%;
         float: left;
 
-        &--detail{
+        &__detail{
           color: #696969;
           line-height: 27px;
 
-          &--title{
+          &__title{
             font-size: 22px;
             color: #109d59;
             font-weight: bold;
@@ -66,59 +67,59 @@
         }
       }
       @media screen and (min-width: 520px) and (max-width: 800px){
-        &--logo{
+        &__logo{
           width: 50%;
-          &--second{
+          &__second{
             display: block;
             margin-left: auto;
             margin-right: auto;
           }
-          &--first{
+          &__first{
             display: block;
             margin-left: auto;
             margin-right: auto;
             margin-bottom: 50px;
           }
         } 
-        &--information{
+        &__information{
           width: 50%;
           float: right;
           text-align: center;
         }
-        &--about{
+        &__about{
           width: 100%;  
 
-          &--detail{
+          &__detail{
             text-align: center;
           }
         }
       }
       @media screen and (min-width: 320px) and (max-width: 519px){
-        &--logo{
+        &__logo{
           width: 100%;
-          &--second{
+          &__second{
             display: block;
             margin-left: auto;
             margin-right: auto;
           }
-          &--first{
+          &__first{
             display: block;
             margin-left: auto;
             margin-right: auto;
             margin-bottom: 50px;
           }
         }
-        &--information{
+        &__information{
           width: 100%;
           text-align: center;
           margin-bottom: 45px;
         }
-        &--about{
+        &__about{
           width: 100%;
           text-align: center;
-          &--detail{
+          &__detail{
 
-            &--list{
+            &__list{
               text-align: justify;
             }
           }
@@ -127,7 +128,7 @@
     }
     
     @media screen and (min-width: 1137px){
-      &--container{
+      &__container{
         width: 1137px;
         
       }
@@ -135,7 +136,7 @@
   }
 
   .footer-bottom{
-    &--container{
+    &__container{
       width: 100%;
       height: auto;
       margin-right: auto;
@@ -143,7 +144,7 @@
       position: relative;
       overflow: hidden;
 
-      &--copyright{
+      &__copyright{
         text-align: center;
         padding: 1%;
         background: #109d59;

@@ -98,24 +98,24 @@
 
     <!-- ukm -->
   <div class="ukm">
-      <div class="ukm--container">
-          <div class="ukm--container--title">UNIT KEGIATAN MAHASISWA</div>
-          <div class="ukm--container--detail">STMIK PRIMAKARA</div>
+      <div class="ukm__container">
+          <div class="ukm__container__title">UNIT KEGIATAN MAHASISWA</div>
+          <div class="ukm__container__detail">STMIK PRIMAKARA</div>
 
-            <div class="ukm--container--content">
+            <div class="ukm__container__content">
               
-              <div class="ukm--container--content--box">
-                <a href="#" class="ukm--container--content--box--link">
+              <div class="ukm__container__content__box">
+                <a href="#" class="ukm__container__content__box__link">
                   
-                  <div class="ukm--container--content--box--link--logo">
+                  <div class="ukm__container__content__box__link__logo">
 
-                    <img src="images/logo-gradient.png" class="ukm--container--content--box--link--logo--main">
-                    <img src="images/no4.jpg" class="ukm--container--content--box--link--logo--img">
-                    <div class="ukm--container--content--box--link--logo--gradient ukm--container--content--box--link--logo--primdev"></div>
+                    <img src="images/logo-gradient.png" class="ukm__container__content__box__link__logo__main">
+                    <img src="images/no4.jpg" class="ukm__container__content__box__link__logo__img">
+                    <div class="ukm__container__content__box__link__logo__gradient ukm__container__content__box__link__logo__primdev"></div>
 
                   </div>
 
-                  <div class="ukm--container--content--box--link--title">
+                  <div class="ukm__container__content__box__link__title">
                     PRIMAKARA DEVELOPERS
                   </div>
 
@@ -124,86 +124,111 @@
             
             </div>
 
-            <div class="ukm--container--content">
+            <div class="ukm__container__content">
               
-              <div class="ukm--container--content--box">
-                <a href="#" class="ukm--container--content--box--link">
-                  <div class="ukm--container--content--box--link--logo">
-                    <img src="images/logo-gradient.png" class="ukm--container--content--box--link--logo--main">
-                    <img src="images/no4.jpg" class="ukm--container--content--box--link--logo--img">
-                    <div class="ukm--container--content--box--link--logo--gradient ukm--container--content--box--link--logo--primdev"></div>
+              <div class="ukm__container__content__box">
+                <a href="#" class="ukm__container__content__box__link">
+                  
+                  <div class="ukm__container__content__box__link__logo">
+
+                    <img src="images/logo-gradient.png" class="ukm__container__content__box__link__logo__main">
+                    <img src="images/no4.jpg" class="ukm__container__content__box__link__logo__img">
+                    <div class="ukm__container__content__box__link__logo__gradient ukm__container__content__box__link__logo__primdev"></div>
+
                   </div>
-                  <div class="ukm--container--content--box--link--title">
+
+                  <div class="ukm__container__content__box__link__title">
                     PRIMAKARA DEVELOPERS
                   </div>
+
                 </a>
               </div>
             
             </div>
 
-            <div class="ukm--container--content">
+            <div class="ukm__container__content">
               
-              <div class="ukm--container--content--box">
-                <a href="#" class="ukm--container--content--box--link">
-                  <div class="ukm--container--content--box--link--logo">
-                    <img src="images/logo-gradient.png" class="ukm--container--content--box--link--logo--main">
-                    <img src="images/no4.jpg" class="ukm--container--content--box--link--logo--img">
-                    <div class="ukm--container--content--box--link--logo--gradient ukm--container--content--box--link--logo--primdev"></div>
+              <div class="ukm__container__content__box">
+                <a href="#" class="ukm__container__content__box__link">
+                  
+                  <div class="ukm__container__content__box__link__logo">
+
+                    <img src="images/logo-gradient.png" class="ukm__container__content__box__link__logo__main">
+                    <img src="images/no4.jpg" class="ukm__container__content__box__link__logo__img">
+                    <div class="ukm__container__content__box__link__logo__gradient ukm__container__content__box__link__logo__primdev"></div>
+
                   </div>
-                  <div class="ukm--container--content--box--link--title">
+
+                  <div class="ukm__container__content__box__link__title">
                     PRIMAKARA DEVELOPERS
                   </div>
+
                 </a>
               </div>
             
             </div>
 
-            <div class="ukm--container--content">
+            <div class="ukm__container__content">
               
-              <div class="ukm--container--content--box">
-                <a href="#" class="ukm--container--content--box--link">
-                  <div class="ukm--container--content--box--link--logo">
-                    <img src="images/logo-gradient.png" class="ukm--container--content--box--link--logo--main">
-                    <img src="images/no4.jpg" class="ukm--container--content--box--link--logo--img">
-                    <div class="ukm--container--content--box--link--logo--gradient ukm--container--content--box--link--logo--primdev"></div>
+              <div class="ukm__container__content__box">
+                <a href="#" class="ukm__container__content__box__link">
+                  
+                  <div class="ukm__container__content__box__link__logo">
+
+                    <img src="images/logo-gradient.png" class="ukm__container__content__box__link__logo__main">
+                    <img src="images/no4.jpg" class="ukm__container__content__box__link__logo__img">
+                    <div class="ukm__container__content__box__link__logo__gradient ukm__container__content__box__link__logo__primdev"></div>
+
                   </div>
-                  <div class="ukm--container--content--box--link--title">
+
+                  <div class="ukm__container__content__box__link__title">
                     PRIMAKARA DEVELOPERS
                   </div>
+
                 </a>
               </div>
             
             </div>
 
-            <div class="ukm--container--content">
+            <div class="ukm__container__content">
               
-              <div class="ukm--container--content--box">
-                <a href="#" class="ukm--container--content--box--link">
-                    <div class="ukm--container--content--box--link--logo">
-                    <img src="images/logo-gradient.png" class="ukm--container--content--box--link--logo--main">
-                    <img src="images/no4.jpg" class="ukm--container--content--box--link--logo--img">
-                    <div class="ukm--container--content--box--link--logo--gradient ukm--container--content--box--link--logo--primdev"></div>
+              <div class="ukm__container__content__box">
+                <a href="#" class="ukm__container__content__box__link">
+                  
+                  <div class="ukm__container__content__box__link__logo">
+
+                    <img src="images/logo-gradient.png" class="ukm__container__content__box__link__logo__main">
+                    <img src="images/no4.jpg" class="ukm__container__content__box__link__logo__img">
+                    <div class="ukm__container__content__box__link__logo__gradient ukm__container__content__box__link__logo__primdev"></div>
+
                   </div>
-                  <div class="ukm--container--content--box--link--title">
+
+                  <div class="ukm__container__content__box__link__title">
                     PRIMAKARA DEVELOPERS
                   </div>
+
                 </a>
               </div>
             
             </div>
 
-            <div class="ukm--container--content">
+            <div class="ukm__container__content">
               
-              <div class="ukm--container--content--box">
-                <a href="#" class="ukm--container--content--box--link">
-                  <div class="ukm--container--content--box--link--logo">
-                    <img src="images/logo-gradient.png" class="ukm--container--content--box--link--logo--main">
-                    <img src="images/no4.jpg" class="ukm--container--content--box--link--logo--img">
-                    <div class="ukm--container--content--box--link--logo--gradient ukm--container--content--box--link--logo--primdev"></div>
+              <div class="ukm__container__content__box">
+                <a href="#" class="ukm__container__content__box__link">
+                  
+                  <div class="ukm__container__content__box__link__logo">
+
+                    <img src="images/logo-gradient.png" class="ukm__container__content__box__link__logo__main">
+                    <img src="images/no4.jpg" class="ukm__container__content__box__link__logo__img">
+                    <div class="ukm__container__content__box__link__logo__gradient ukm__container__content__box__link__logo__primdev"></div>
+
                   </div>
-                  <div class="ukm--container--content--box--link--title">
+
+                  <div class="ukm__container__content__box__link__title">
                     PRIMAKARA DEVELOPERS
                   </div>
+
                 </a>
               </div>
             
@@ -219,23 +244,23 @@
 <footer>
     <!-- footer top -->
     <div class="footer">
-      <div class="footer--border"></div>
-      <div class="footer--container">
-          <div class="footer--container--logo">
-            <img src="images/primakara.jpg" alt="" class="footer--container--logo--second">
-            <img src="images/primdev.jpg" alt="" class="footer--container--logo--first">
+      <div class="footer__border"></div>
+      <div class="footer__container">
+          <div class="footer__container__logo">
+            <img src="images/primakara.jpg" alt="" class="footer__container__logo__second">
+            <img src="images/primdev.jpg" alt="" class="footer__container__logo__first">
           </div>
-          <div class="footer--container--information">
-            <div class="footer--container--information--title">INFORMASI</div>
-            <div class="footer--container--information--list"><a href="#">About</a></div>
-            <div class="footer--container--information--list"><a href="#">Story</a></div>
-            <div class="footer--container--information--list"><a href="#">Event</a></div>
-            <div class="footer--container--information--list"><a href="#">Etcetera</a></div>
+          <div class="footer__container__information">
+            <div class="footer__container__information__title">INFORMASI</div>
+            <div class="footer__container__information__list"><a href="#">About</a></div>
+            <div class="footer__container__information__list"><a href="#">Story</a></div>
+            <div class="footer__container__information__list"><a href="#">Event</a></div>
+            <div class="footer__container__information__list"><a href="#">Etcetera</a></div>
           </div>
-          <div class="footer--container--about">
-              <div class="footer--container--about--detail">
-                  <div class="footer--container--about--detail--title">SUMMARY</div>
-                  <div class="footer--container--about--detail--list">
+          <div class="footer__container__about">
+              <div class="footer__container__about__detail">
+                  <div class="footer__container__about__detail__title">SUMMARY</div>
+                  <div class="footer__container__about__detail__list">
                       Newspaper Tech Demo is your tech news website. We
                       provide you with the lastest breaking news and videos
                       straight from the technology industry provide you with
@@ -248,9 +273,9 @@
 
     <!-- footer-bottom -->
     <div class="footer-bottom">
-      <div class="footer-bottom--container">
-        <div class="footer-bottom--container--copyright">
-            &copy;2018 - Team Primakara Developers, All Right Reserved
+      <div class="footer-bottom__container">
+        <div class="footer-bottom__container__copyright">
+            &copy;2019 - Team Primakara Developers, All Right Reserved
         </div>
       </div>
     </div>
