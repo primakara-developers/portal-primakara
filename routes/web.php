@@ -18,6 +18,11 @@ Route::prefix('/')->group(function() {
 	// Posts lists
 	Route::get('/post-list', function () {
 	    return view('client.postList');
+    });
+
+    // Post detail
+	Route::get('/post-detail', function () {
+	    return view('client.postDetail');
 	});
 });
 
@@ -37,7 +42,7 @@ Route::prefix('dashboard')->group(function() {
 	Route::post('password/email', 'Auth\ForgotPasswordController@sendResetLinkEmail')->name('password.email');
 	Route::get('password/reset/{token}', 'Auth\ResetPasswordController@showResetForm')->name('password.reset');
 	Route::post('password/reset', 'Auth\ResetPasswordController@reset');
-	
+
 	//menu post
 	Route::get('post/add','Dashboard\PostController@create')->name('admin.post.add');
 	Route::post('post/add','Dashboard\PostController@store');
