@@ -38,7 +38,7 @@
           margin-bottom: 10px;
         }
         &__list a{
-          font-size: 22px;
+          font-size: 18px;
           color: #109d59;
           line-height: 35px;
           transition: all ease-in-out .3s;
@@ -91,6 +91,10 @@
 
           &__detail{
             text-align: center;
+
+            &__list{
+              font-size: 18px;
+            }
           }
         }
       }
@@ -121,6 +125,7 @@
 
             &__list{
               text-align: justify;
+              font-size: 18px;
             }
           }
         }
@@ -143,13 +148,20 @@
       margin-left: auto;
       position: relative;
       overflow: hidden;
-
+      
       &__copyright{
         text-align: center;
         padding: 1%;
         background: #109d59;
         color: white;
         font-size: 14px;
+      }
+    }
+
+    @media screen and (min-width: 320px) and (max-width: 519px){
+      &__container__copyright{
+        padding: 2%;
+        font-size: 11px;
       }
     }
   }
