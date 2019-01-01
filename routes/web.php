@@ -11,24 +11,6 @@
 |
 */
 
-Route::prefix('/')->group(function() {
-	// index
-	Route::get('/', 'Client\HomeController@index')->name('home.index');
-
-	// Temporary Route (WILL GET DELETED AS SOON AS REVIEW FIXED)
-	Route::get('/post-list', function() {
-		return view('client.postList');
-	});
-
-	// Posts lists by category
-	Route::get('/category/{categoryName}', 'Client\PostsListController@index')->name('home.postList');
-
-    // Post detail
-	Route::get('/post-detail', function () {
-	    return view('client.postDetail');
-	});
-});
-
 // Auth::routes()
 
 Route::prefix('dashboard')->group(function() {
@@ -82,4 +64,22 @@ Route::prefix('mockup')->group(function() {
         Route::view('post-list', 'mockup', [ 'imageName' => 'images/mockup/post-list-mockup.jpg', 'mac' => true ]);
         Route::view('post-detail', 'mockup', [ 'imageName' => 'images/mockup/post-detail-mockup.jpg', 'mac' => true ]);
 	});
+});
+
+Route::prefix('/')->group(function() {
+	// index
+	Route::get('/', 'Client\HomeController@index')->name('home.index');
+
+	// Temporary Route (WILL GET DELETED AS SOON AS REVIEW FIXED)
+	Route::get('/post-list', function() {
+		return view('client.postList');
+	});
+
+    // Post detail
+	Route::get('/post-detail', function () {
+	    return view('client.postDetail');
+	});
+
+	// Posts lists by category
+	Route::get('/{categoryName}', 'Client\PostsListController@index')->name('home.postList');
 });
