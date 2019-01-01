@@ -54,42 +54,6 @@
 
 @section('additional-scripts')
 
-<script id="category-collapse-script">
-
-    var category = document.getElementsByClassName('navigation-bar__category')[0];
-    var categoryList = document.getElementsByClassName('navigation-bar__category-list')[0];
-
-    if (categoryList.offsetWidth > category.offsetWidth) {
-        category.classList.add('navigation-bar__category--collapse');
-    }
-
-    var categoryCollapseButton = document.getElementsByClassName('navigation-bar__category-collapse-button')[0];
-    categoryCollapseButton.addEventListener('click', function(e) {
-        var categoryCollapse = document.getElementsByClassName('navigation-bar__category--collapse')[0];
-        if (categoryCollapse.style.height) {
-            categoryCollapse.removeAttribute('style');
-
-            categoryCollapseButton.classList.remove('navigation-bar__category-collapse-button--active');
-        } else {
-            categoryCollapseHeight = categoryCollapse.scrollHeight;
-            categoryCollapse.style.height = categoryCollapseHeight + 'px';
-
-            categoryCollapseButton.classList.add('navigation-bar__category-collapse-button--active');
-        }
-    });
-</script>
-
-<script id="search-focus-mobile-script">
-    if (window.outerWidth <= 530) {
-        var navigationBar = document.getElementsByClassName('navigation-bar')[0];
-        var searchInput = document.getElementsByClassName('navigation-bar__search-input')[0];
-        searchInput.addEventListener('focus', function(e) {
-            navigationBar.classList.add('navigation-bar--search-focus');
-        });
-        searchInput.addEventListener('blur', function(e) {
-            navigationBar.classList.remove('navigation-bar--search-focus');
-        });
-    }
-</script>
+<script src="{{ mix('js/navigation-bar.js') }}"></script>
 
 @endsection
