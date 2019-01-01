@@ -41,7 +41,11 @@
         display: block;
         margin: auto;
         max-width: 1150px;
-        padding: 24px 0;
+        padding-bottom: 24px;
+
+        @media only screen and (max-width: 1150px) {
+            padding: 0 16px 24px 16px;
+        }
     }
 
     &__category-list-item {
@@ -76,9 +80,19 @@
         padding: 0;
         width: 20%;
 
-        @for $i from 1 through 5 {
-            &:nth-child(#{$i}) {
-                margin-top: 0;
+        @media only screen and (max-width: 800px) {
+            width: 25%;
+        }
+
+        @media only screen and (max-width: 640px) {
+            width: 33.33%;
+        }
+
+        @media only screen and (max-width: 480px) {
+            width: 50%;
+
+            &:nth-child(2n) {
+                text-align: right;
             }
         }
     }
