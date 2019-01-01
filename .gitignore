@@ -1,5 +1,5 @@
-/public/js/app.js
-/public/css/app.css
+/public/js
+/public/css
 /public/mix-manifest.json
 
 /node_modules
@@ -15,3 +15,7 @@ Homestead.yaml
 npm-debug.log
 yarn-error.log
 .env
+/resources/views/.fuse*
+Procfile
+
+.DS_Store

@@ -11,15 +11,26 @@
 |
 */
 
-Route::get('/', function () {
-    return view('client.home');
+Route::prefix('/')->group(function() {
+	// index
+	Route::get('/', 'Client\HomeController@index')->name('home.index');
+
+	// Posts lists
+	Route::get('/post-list', function () {
+	    return view('client.postList');
+    });
+
+    // Post detail
+	Route::get('/post-detail', function () {
+	    return view('client.postDetail');
+	});
 });
 
 // Auth::routes()
 
 Route::prefix('dashboard')->group(function() {
 	//index
-	Route::get('/','AdminController@index')->name('admin.index');
+	Route::get('/','Dashboard\AdminController@index')->name('admin.index');
 
 	// Authentication Routes...
 	Route::get('login', 'Auth\LoginController@showLoginForm')->name('login');
@@ -31,35 +42,41 @@ Route::prefix('dashboard')->group(function() {
 	Route::post('password/email', 'Auth\ForgotPasswordController@sendResetLinkEmail')->name('password.email');
 	Route::get('password/reset/{token}', 'Auth\ResetPasswordController@showResetForm')->name('password.reset');
 	Route::post('password/reset', 'Auth\ResetPasswordController@reset');
-	//menu article
-	Route::get('article/add','ArticleController@create')->name('admin.article.add');
-	Route::post('article/add','ArticleController@store');
-	Route::get('articles', 'ArticleController@index')->name('admin.article.index');
-	Route::get('article/{id}/edit', 'ArticleController@edit')->name('admin.article.edit');
-	Route::get('article/{id}/delete', 'ArticleController@destroy')->name('admin.article.delete');
-	
-	//filtered articles
-	Route::get('articles/{id}','ArticleController@filteredArticles')->name('admin.article.filter');
+
+	//menu post
+	Route::get('post/add','Dashboard\PostController@create')->name('admin.post.add');
+	Route::post('post/add','Dashboard\PostController@store');
+	Route::get('posts', 'Dashboard\PostController@index')->name('admin.post.index');
+    Route::post('post/{id}/update', 'Dashboard\PostController@update')->name('admin.post.update');
+	Route::get('post/{id}/edit', 'Dashboard\PostController@edit')->name('admin.post.edit');
+	Route::get('post/{id}/delete', 'Dashboard\PostController@destroy')->name('admin.post.delete');
+
+	//filtered posts
+	Route::get('posts/{id}','Dashboard\PostController@filteredPosts')->name('admin.post.filter');
 	//menu category
-	Route::get('category/add','CategoryController@create')->name('admin.category.add');
-	Route::post('category/add','CategoryController@store');
-	Route::get('categories','CategoryController@index')->name('admin.category.index');
+	Route::get('category/add','Dashboard\CategoryController@create')->name('admin.category.add');
+	Route::post('category/add','Dashboard\CategoryController@store');
+	Route::get('categories','Dashboard\CategoryController@index')->name('admin.category.index');
 	// edit category
-	Route::get('category/edit/{id}','CategoryController@edit')->name('admin.category.edit');
-	Route::post('category/edit/{id}','CategoryController@update');
+	Route::get('category/edit/{id}','Dashboard\CategoryController@edit')->name('admin.category.edit');
+	Route::post('category/edit/{id}','Dashboard\CategoryController@update');
 	// delete category
-	Route::get('category/delete/{id}','CategoryController@destroy')->name('admin.category.delete');
+	Route::get('category/delete/{id}','Dashboard\CategoryController@destroy')->name('admin.category.delete');
 
 	//headlines
-	Route::get('headlines', 'HeadlineController@index')->name('admin.headline.index');
-	Route::post('headlines', 'HeadlineController@store')->name('admin.headline.store');
+	Route::get('headlines', 'Dashboard\HeadlineController@index')->name('admin.headline.index');
+	Route::post('headlines', 'Dashboard\HeadlineController@store')->name('admin.headline.store');
 
 });
 
 Route::prefix('mockup')->group(function() {
-	Route::view('home', 'home');
+	Route::view('home', 'mockup', [ 'imageName' => 'images/mockup/home-mockup.jpg', 'mac' => false ]);
+	Route::view('post-list', 'mockup', [ 'imageName' => 'images/mockup/post-list-mockup.jpg', 'mac' => false ]);
+	Route::view('post-detail', 'mockup', [ 'imageName' => 'images/mockup/post-detail-mockup.jpg', 'mac' => false ]);
 
 	Route::prefix('mac')->group(function() {
-		Route::view('home', 'home-mac');
+        Route::view('home', 'mockup', [ 'imageName' => 'images/mockup/home-mockup.jpg', 'mac' => true ]);
+        Route::view('post-list', 'mockup', [ 'imageName' => 'images/mockup/post-list-mockup.jpg', 'mac' => true ]);
+        Route::view('post-detail', 'mockup', [ 'imageName' => 'images/mockup/post-detail-mockup.jpg', 'mac' => true ]);
 	});
 });
