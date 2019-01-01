@@ -23,7 +23,7 @@ class HomeController extends Controller
 
         $SingleCategory = $category->with('posts.user')->find(1);
 
-        $posts = $SingleCategory->posts()->paginate(4);
+        $posts = $SingleCategory->posts()->orderBy('created_at', 'desc')->paginate(4);
 
         return view('client.home')
             ->with('posts', $posts)
