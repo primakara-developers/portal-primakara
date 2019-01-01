@@ -15,10 +15,13 @@ Route::prefix('/')->group(function() {
 	// index
 	Route::get('/', 'Client\HomeController@index')->name('home.index');
 
-	// Posts lists
-	Route::get('/post-list', function () {
-	    return view('client.postList');
-    });
+	// Temporary Route (WILL GET DELETED AS SOON AS REVIEW FIXED)
+	Route::get('/post-list', function() {
+		return view('client.postList');
+	});
+
+	// Posts lists by category
+	Route::get('/{categoryName}', 'Client\PostsListController@index')->name('home.postList');
 
     // Post detail
 	Route::get('/post-detail', function () {

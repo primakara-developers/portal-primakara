@@ -40,7 +40,7 @@
 
             <span class="information-section__tag--title">INFORMASI TERUPDATE</span>
 
-            <a href="/post-list" class="information-section__tag--next">
+            <a href="{{ route('home.postList', ['categoryName' => 'informasi']) }}" class="information-section__tag--next">
                 <span class="information-section__tag--next--remove">Selengkapnya</span>
                 <div class="information-section__tag--next--box">
                 <span class="information-section__tag--next--box--arrow"></span>
