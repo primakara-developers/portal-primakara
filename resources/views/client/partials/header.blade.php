@@ -16,10 +16,10 @@
         <div class="mobile-nav">
             <a href="javascript:void(0)" class="mobile-nav__close-button">Close</a>
             <nav class="mobile-nav__menu">
-                <a href="" class="mobile-nav__menu-item mobile-nav__menu-item--active">Home</a>
-                <a href="" class="mobile-nav__menu-item">Story</a>
-                <a href="" class="mobile-nav__menu-item">About</a>
-                <a href="" class="mobile-nav__menu-item mobile-nav__menu-item--with-background">Event</a>
+                <a href="/" class="mobile-nav__menu-item mobile-nav__menu-item--active">Home</a>
+                <a href="/story" class="mobile-nav__menu-item">Story</a>
+                <a href="/about" class="mobile-nav__menu-item">About</a>
+                <a href="/event" class="mobile-nav__menu-item mobile-nav__menu-item--with-background">Event</a>
             </nav>
         </div>
     </div>
