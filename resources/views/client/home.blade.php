@@ -55,7 +55,7 @@
         @foreach ($posts as $post)
             <div class="information-section__column">
 
-                <a href="{{ $post->post_slug }}" class="information-section__column__box">
+                <a href="#" class="information-section__column__box">
                     <div class="information-section__column__box__images">
                         <img src="{{ Storage::url('media/'.$post->post_cover) }}" alt="">
                     </div>
