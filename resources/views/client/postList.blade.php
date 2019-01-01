@@ -64,6 +64,7 @@
         </li>
     </ul>
 
+
     <!-- Post List Item -->
     <div class="post">
         <div class="post__heading">
@@ -196,7 +197,6 @@
 
 
     <!-- Pagination -->
-
     <div class="column-pagination">
         <div class="column-pagination__block">
             <a href="#" class="column-pagination__block__number column-pagination__block__number--only">1</a>
