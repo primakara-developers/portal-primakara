@@ -1,6 +1,6 @@
 @extends('layouts.clientLayout')
 
-@section('additional-title', $categorySlug.' - ')
+@section('additional-title', $categoryName.' - ')
 
 @section('content')
 
@@ -13,7 +13,7 @@
     <!-- Post List Item -->
     <div class="post">
         <div class="post__heading">
-            <h1 class="post__heading__title">{{ $categorySlug }}</h1>
+            <h1 class="post__heading__title">{{ $categoryName }}</h1>
         </div>
         <div class="post__list">
             @if(!is_null($posts))
@@ -42,7 +42,7 @@
     </div>
 
     @if(!is_null($posts))
-        {{ $posts->links('client.partials.pagination') }}
+        {{ $posts->links('client.partials.pagination', ['categorySlug' => $categorySlug]) }}
     @endif
 </main>
 

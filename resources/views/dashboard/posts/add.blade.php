@@ -124,10 +124,7 @@
         toolbar: [
             ['style',['bold','italic','underline','clear']],
             ['font', ['striketrough','superscript','subscript']],
-            ['fontsize',['fontsize']],
-            ['color', ['color']],
-            ['para', ['ul', 'ol', 'paragraph']],
-            ['height',['height']]
+            ['para', ['ul', 'ol']],
         ]
     })
     var postTitle = document.getElementById('post_title');
