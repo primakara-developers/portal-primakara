@@ -13,6 +13,8 @@ class PostsListController extends Controller
     {
         $category = new Category;
 
+        $allCategory = $category->all();
+
         $SingleCategory = $category->with('posts.user')->where('category_name', $categoryName)->firstOrFail();
 
         $posts = $SingleCategory->posts()->orderBy('created_at', 'desc')->paginate(6);
@@ -21,6 +23,7 @@ class PostsListController extends Controller
 
         return view('client.postList')
             ->with('posts', $posts)
-            ->with('categoryName', $categoryName);
+            ->with('categoryName', $categoryName)
+            ->with('allCategory', $allCategory);
     }
 }
