@@ -42,7 +42,7 @@
                     </div>
                     <div class="form-group">
                         <label for="post_cover" class="col-xs-12" >Cover of Post</label>
-                        <img src="/media/{{ $post->post_cover }}" alt="" srcset="">
+                        <img style="padding-right: 15px;padding-left: 15px;padding-bottom: 15px;max-width: 100%;" src="/media/{{ $post->post_cover }}" alt="" srcset="">
                         <div class="col-xs-12">
                             <input type="file" class="" name="post_cover" id="post_cover" <?=empty($post->post_cover) ? 'required="true"':'' ?>>
                         </div>
@@ -101,10 +101,7 @@
         toolbar: [
             ['style',['bold','italic','underline','clear']],
             ['font', ['striketrough','superscript','subscript']],
-            ['fontsize',['fontsize']],
-            ['color', ['color']],
-            ['para', ['ul', 'ol', 'paragraph']],
-            ['height',['height']]
+            ['para', ['ul', 'ol']],
         ]
     })
     var postTitle = document.getElementById('post_title');
