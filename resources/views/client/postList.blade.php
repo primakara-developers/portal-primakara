@@ -65,7 +65,7 @@
                             <img class="post__list__item__image" src="{{ Storage::url('media/'.$post->post_cover) }}">
                         </a>
                         <div class="post__list__item__right">
-                            <a href="" class="post__list__item__hoverable">
+                            <a href="{{ route('home.postDetail', ['slugPost' => $post->post_slug]) }}" class="post__list__item__hoverable">
                                 <h3 class="post__list__item__title">
                                     {{ $post->post_title }}
                                 </h3>
@@ -75,7 +75,7 @@
                             <span> - </span>
                             <span class="post__list__item__timestamp">{{ $post->created_at->format('d M Y') }}</span>
                             <br />
-                            <a href="" class="post__list__item__badge">{{ $post->categories->category_name }}</a>
+                            <a href="{{ route('home.postList', ['categorySlug' => $post->categories->category_slug]) }}" class="post__list__item__badge">{{ $post->categories->category_name }}</a>
                         </div>
                     </div>
                 @endforeach

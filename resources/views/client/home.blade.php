@@ -40,7 +40,7 @@
 
             <span class="information-section__tag--title">INFORMASI TERUPDATE</span>
 
-            <a href="{{ route('home.postList', ['categoryName' => 'informasi']) }}" class="information-section__tag--next">
+            <a href="{{ route('home.postList', ['categorySlug' => 'informasi']) }}" class="information-section__tag--next">
                 <span class="information-section__tag--next--remove">Selengkapnya</span>
                 <div class="information-section__tag--next--box">
                 <span class="information-section__tag--next--box--arrow"></span>
@@ -55,7 +55,7 @@
         @foreach ($posts as $post)
             <div class="information-section__column">
 
-                <a href="#" class="information-section__column__box">
+                <a href="{{ route('home.postDetail', ['slugPost' => $post->post_slug]) }}" class="information-section__column__box">
                     <div class="information-section__column__box__images">
                         <img src="{{ Storage::url('media/'.$post->post_cover) }}" alt="">
                     </div>
