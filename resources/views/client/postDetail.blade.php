@@ -130,6 +130,67 @@ https://kostpedia.id">
 
 
     <!-- Related Posts -->
+    <div class="related-posts">
+        <div class="related-posts--container">
+            <div class="related-posts--container__column">
+                <a href="#" class="related-posts--container__column__link">
+                    <div class="related-posts--container__column__link__images">
+                        <div class="related-posts--container__column__link__images__centered">
+                            <img src="images/no2.jpg">
+                        </div>
+                    </div>
+
+                    <div class="related-posts--container__column__link__title">
+                        UKM dance primakara adakan lari marathon keliling dunia 
+                        primakara adakan lari marathon keliling dunia
+                    </div>
+
+                </a>
+                <div class="related-posts--container__column__date">
+                    <span class="related-posts--container__column__date__author">susano'o naruto</span> - 
+                    <span class="related-posts--container__column__date__detail">2 jan 2019</span>
+                </div>
+            </div>
+
+            <div class="related-posts--container__column">
+                <a href="#" class="related-posts--container__column__link">
+                    <div class="related-posts--container__column__link__images">
+                        <div class="related-posts--container__column__link__images__centered">
+                            <img src="images/no2.jpg">
+                        </div>
+                    </div>
+
+                    <div class="related-posts--container__column__link__title">
+                    UKM dance primakara adakan lari marathon keliling dunia 
+                        primakara adakan lari marathon keliling dunia
+                    </div>
+                </a>
+                <div class="related-posts--container__column__date">
+                    <span class="related-posts--container__column__date__author">susano'o naruto</span> - 
+                    <span class="related-posts--container__column__date__detail">2 jan 2019</span>
+                </div>
+            </div>
+
+            <div class="related-posts--container__column">
+                <a href="#" class="related-posts--container__column__link">
+                    <div class="related-posts--container__column__link__images">
+                        <div class="related-posts--container__column__link__images__centered">
+                            <img src="images/no1.jpg">
+                        </div>
+                    </div>
+
+                    <div class="related-posts--container__column__link__title">
+                        UKM dance primakara adakan lari marathon keliling dunia 
+                        primakara adakan lari marathon keliling dunia
+                    </div>
+                </a>
+                <div class="related-posts--container__column__date">
+                    <span class="related-posts--container__column__date__author">susano'o naruto</span> - 
+                    <span class="related-posts--container__column__date__detail">2 jan 2019</span>
+                </div>
+            </div>
+        </div>
+    </div>
 
 
 </main>
