@@ -103,12 +103,12 @@
           <div class="ukm__container__detail">STMIK PRIMAKARA</div>
 
             <div class="ukm__container__content">
-              
+
               <div class="ukm__container__content__box">
                 <a href="#" class="ukm__container__content__box__link">
-                  
+
                   <div class="ukm__container__content__box__link__logo">
-                    
+
                     <img src="images/logo-gradient.png" class="ukm__container__content__box__link__logo__main">
                     <img src="images/no4.jpg" class="ukm__container__content__box__link__logo__img">
                     <div class="ukm__container__content__box__link__logo__gradient ukm__container__content__box__link__logo__primdev"></div>
@@ -123,14 +123,14 @@
 
                 </a>
               </div>
-            
+
             </div>
 
             <div class="ukm__container__content">
-              
+
               <div class="ukm__container__content__box">
                 <a href="#" class="ukm__container__content__box__link">
-                  
+
                   <div class="ukm__container__content__box__link__logo">
 
                     <img src="images/logo-gradient.png" class="ukm__container__content__box__link__logo__main">
@@ -145,14 +145,14 @@
 
                 </a>
               </div>
-            
+
             </div>
 
             <div class="ukm__container__content">
-              
+
               <div class="ukm__container__content__box">
                 <a href="#" class="ukm__container__content__box__link">
-                  
+
                   <div class="ukm__container__content__box__link__logo">
 
                     <img src="images/logo-gradient.png" class="ukm__container__content__box__link__logo__main">
@@ -167,14 +167,14 @@
 
                 </a>
               </div>
-            
+
             </div>
 
             <div class="ukm__container__content">
-              
+
               <div class="ukm__container__content__box">
                 <a href="#" class="ukm__container__content__box__link">
-                  
+
                   <div class="ukm__container__content__box__link__logo">
 
                     <img src="images/logo-gradient.png" class="ukm__container__content__box__link__logo__main">
@@ -189,14 +189,14 @@
 
                 </a>
               </div>
-            
+
             </div>
 
             <div class="ukm__container__content">
-              
+
               <div class="ukm__container__content__box">
                 <a href="#" class="ukm__container__content__box__link">
-                  
+
                   <div class="ukm__container__content__box__link__logo">
 
                     <img src="images/logo-gradient.png" class="ukm__container__content__box__link__logo__main">
@@ -211,14 +211,14 @@
 
                 </a>
               </div>
-            
+
             </div>
 
             <div class="ukm__container__content">
-              
+
               <div class="ukm__container__content__box">
                 <a href="#" class="ukm__container__content__box__link">
-                  
+
                   <div class="ukm__container__content__box__link__logo">
 
                     <img src="images/logo-gradient.png" class="ukm__container__content__box__link__logo__main">
@@ -233,7 +233,7 @@
 
                 </a>
               </div>
-            
+
             </div>
 
       </div>
@@ -242,47 +242,6 @@
 <!-- Main -->
 
 
-    <!-- footer section -->
-<footer>
-    <!-- footer top -->
-    <div class="footer">
-      <div class="footer__border"></div>
-      <div class="footer__container">
-          <div class="footer__container__logo">
-            <img src="images/primakara.jpg" alt="" class="footer__container__logo__first">
-            <img src="images/primdev.jpg" alt="" class="footer__container__logo__second">
-          </div>
-          <div class="footer__container__information">
-            <div class="footer__container__information__title">INFORMASI</div>
-            <div class="footer__container__information__list"><a href="#">About</a></div>
-            <div class="footer__container__information__list"><a href="#">Story</a></div>
-            <div class="footer__container__information__list"><a href="#">Event</a></div>
-            <div class="footer__container__information__list"><a href="#">Etcetera</a></div>
-          </div>
-          <div class="footer__container__about">
-              <div class="footer__container__about__detail">
-                  <div class="footer__container__about__detail__title">SUMMARY</div>
-                  <div class="footer__container__about__detail__list">
-                      Newspaper Tech Demo is your tech news website. We
-                      provide you with the lastest breaking news and videos
-                      straight from the technology industry provide you with
-                      the lastest breaking.
-                  </div>
-              </div>
-          </div>
-      </div>
-    </div>
-
-    <!-- footer-bottom -->
-    <div class="footer-bottom">
-      <div class="footer-bottom__container">
-        <div class="footer-bottom__container__copyright">
-            &copy;2019 - Team Primakara Developers, All Right Reserved
-        </div>
-      </div>
-    </div>
-</footer>
-    <!-- footer end section-->
 
 @endsection
 
