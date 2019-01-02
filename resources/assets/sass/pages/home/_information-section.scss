@@ -6,26 +6,23 @@
     margin-right: auto;
     margin-left: auto;
     position: relative;
-    padding: 1%;
     overflow: hidden;
-    margin-bottom: 7%;
+        @media screen and (max-width: 1150px) {
+            padding: 0 16px;
+        }
 
-    @media screen and (max-width: 800px) {
-        width: 100%;
-    }
-
-    @media screen and (max-width: 530px) {
-        width: 100%;
-        padding: 8px;
-    }
+        @media screen and (max-width: 530px) {
+            max-width: 334px;
+        }
 
     // Part of tag title
 
     &__tag{
         margin-bottom: 2%;
+        padding: 10px 0;
 
         &--title{
-          padding: 1%;
+          padding: 10px;
           background: #109d59;
           color: white;
           font-size: 17px;
@@ -50,11 +47,13 @@
         }
 
         &--next{
-        float: right;
-        color: #109d59;
-        font-size: 15px;
-        padding-bottom: 5px;
-        transition: all 0.3s ease-in-out;
+            float: right;
+            color: #109d59;
+            font-size: 15px;
+            margin-right: 6px;
+            padding-bottom: 5px;
+            -webkit-transition: all 0.3s ease-in-out;
+            transition: all 0.3s ease-in-out;
 
             & a{
                 text-decoration: none;
@@ -167,11 +166,27 @@
                 overflow: hidden;
                 border-radius: 12px;
 
-                & img{
+                &__centered{
+                    height: 100%;
+                    overflow: hidden;
+                    position: relative;
                     width: 100%;
-                    -webkit-transform: scaleX(1.1);
-                    transform: scaleX(1.1);
+
+                    & img{
+                        -webkit-transform: translate(-50%,-50%);
+                        display: block;
+                        height: auto;
+                        left: 50%;
+                        max-height: 133%;
+                        min-height: 100%;
+                        min-width: 100%;
+                        position: relative;
+                        top: 50%;
+                        transform: translate(-50%,-50%);
+                    }
                 }
+
+                
 
                 @media screen and (max-width: 1070px) {
                     width: 100%;

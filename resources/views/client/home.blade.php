@@ -57,7 +57,9 @@
 
                 <a href="{{ route('home.postDetail', ['slugPost' => $post->post_slug]) }}" class="information-section__column__box">
                     <div class="information-section__column__box__images">
+                      <div class="information-section__column__box__images__centered">
                         <img src="{{ Storage::url('media/'.$post->post_cover) }}" alt="">
+                      </div>
                     </div>
 
 
