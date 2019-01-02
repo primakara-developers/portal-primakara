@@ -1,7 +1,7 @@
 <!-- Header -->
 <header class="site-header">
     <div class="site-header__container">
-        <a href="/"><img src="{{ asset('images/primdev-trans.png') }}" alt="Logo Primakara Developers" class="site-header__logo"></a>
+        <a href="/"><img src="{{ asset('images/primdev-logo.svg') }}" alt="Logo Primakara Developers" class="site-header__logo"></a>
         <nav class="site-header__menu-desktop">
             <a href="/" class="site-header__menu-desktop-item site-header__menu-desktop-item--active">Home</a>
             <a href="/story" class="site-header__menu-desktop-item">Story</a>

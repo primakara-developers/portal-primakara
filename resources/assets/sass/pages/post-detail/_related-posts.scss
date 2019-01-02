@@ -2,7 +2,7 @@
     width: 100%;
     margin-top: 62px;
     margin-bottom: 52px;
-    padding: 18px 0;
+    padding: 36px 0;
     background-color: #fafafa;
 
     &--container{
@@ -93,9 +93,9 @@
                     margin-top: 3%;
                     line-height: 22px;
                     text-transform: capitalize;
-                    @include excerpt($font-size: 16px, 
-                            $line-height: 1.4, 
-                            $lines-to-show: 2, 
+                    @include excerpt($font-size: 16px,
+                            $line-height: 1.4,
+                            $lines-to-show: 2,
                             $excerpt-bg: #fafafa);
 
                     @media screen and (max-width: 950px) {
@@ -117,9 +117,9 @@
 
                     @media screen and (max-width: 530px) {
 
-                        @include excerpt($font-size: 18px, 
-                            $line-height: 1.2, 
-                            $lines-to-show: 3, 
+                        @include excerpt($font-size: 18px,
+                            $line-height: 1.2,
+                            $lines-to-show: 3,
                             $excerpt-bg: #fafafa);
                     }
                 }
@@ -129,7 +129,7 @@
                 @media screen and (max-width: 540px) {
                     margin-top: 8px;
                 }
-                
+
 
                 &__author{
                     font-size: 12px;
@@ -160,10 +160,10 @@
                         font-size: 12px;
                     }
                 }
-                
+
             }
 
-            
+
         }
     }
 }
