@@ -64,7 +64,47 @@
         </li>
     </ul>
 
-    <!-- Post Detail -->
+    <!-- Post Detai. -->
+    <section class="post-detail">
+        <div class="post-detail__heading">
+            <h1 class="post-detail__heading__title">
+                Prass CTO Laravel.org Mengakui Framework Miliknya Tidak Berguna
+            </h1>
+            <span class="post-detail__heading__author-name">Nama Author</span>
+            <span class="post-detail__heading__heading-dash"> - </span>
+            <span class="post-detail__heading__timestamp">18 February 2019</span>
+        </div>
+        <div class="post-detail__body">
+            <img class="post-detail__body__cover-image" src="{{ asset('images/bege.jpeg') }}">
+            <div class="post-detail__body__content">
+                <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod
+                tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam,
+                quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo
+                consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse
+                cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non
+                proident, sunt in culpa qui officia deserunt mollit anim id est laborum.</p>
+                <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod
+                tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam,
+                quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo
+                consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse
+                cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non
+                proident, sunt in culpa qui officia deserunt mollit anim id est laborum.</p>
+                <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod
+                tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam,
+                quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo
+                consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse
+                cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non
+                proident, sunt in culpa qui officia deserunt mollit anim id est laborum.</p>
+                <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod
+                tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam,
+                quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo
+                consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse
+                cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non
+                proident, sunt in culpa qui officia deserunt mollit anim id est laborum.</p>
+
+            </div>
+        </div>
+    </section>
 
 
     <!-- Share -->
@@ -90,6 +130,67 @@ https://kostpedia.id">
 
 
     <!-- Related Posts -->
+    <div class="related-posts">
+        <div class="related-posts--container">
+            <div class="related-posts--container__column">
+                <a href="#" class="related-posts--container__column__link">
+                    <div class="related-posts--container__column__link__images">
+                        <div class="related-posts--container__column__link__images__centered">
+                            <img src="images/no2.jpg">
+                        </div>
+                    </div>
+
+                    <div class="related-posts--container__column__link__title">
+                        UKM dance primakara adakan lari marathon keliling dunia 
+                        primakara adakan lari marathon keliling dunia
+                    </div>
+
+                </a>
+                <div class="related-posts--container__column__date">
+                    <span class="related-posts--container__column__date__author">susano'o naruto</span> - 
+                    <span class="related-posts--container__column__date__detail">2 jan 2019</span>
+                </div>
+            </div>
+
+            <div class="related-posts--container__column">
+                <a href="#" class="related-posts--container__column__link">
+                    <div class="related-posts--container__column__link__images">
+                        <div class="related-posts--container__column__link__images__centered">
+                            <img src="images/no2.jpg">
+                        </div>
+                    </div>
+
+                    <div class="related-posts--container__column__link__title">
+                    UKM dance primakara adakan lari marathon keliling dunia 
+                        primakara adakan lari marathon keliling dunia
+                    </div>
+                </a>
+                <div class="related-posts--container__column__date">
+                    <span class="related-posts--container__column__date__author">susano'o naruto</span> - 
+                    <span class="related-posts--container__column__date__detail">2 jan 2019</span>
+                </div>
+            </div>
+
+            <div class="related-posts--container__column">
+                <a href="#" class="related-posts--container__column__link">
+                    <div class="related-posts--container__column__link__images">
+                        <div class="related-posts--container__column__link__images__centered">
+                            <img src="images/no1.jpg">
+                        </div>
+                    </div>
+
+                    <div class="related-posts--container__column__link__title">
+                        UKM dance primakara adakan lari marathon keliling dunia 
+                        primakara adakan lari marathon keliling dunia
+                    </div>
+                </a>
+                <div class="related-posts--container__column__date">
+                    <span class="related-posts--container__column__date__author">susano'o naruto</span> - 
+                    <span class="related-posts--container__column__date__detail">2 jan 2019</span>
+                </div>
+            </div>
+        </div>
+    </div>
 
 
 </main>

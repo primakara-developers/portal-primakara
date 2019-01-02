@@ -1,17 +1,21 @@
-.column-pagination{
+.pagination{
     max-width: 1150px;
     margin-bottom: 80px;
     margin-right: auto;
     margin-top: 65px;
     margin-left: auto;
 
+    @media only screen and (max-width: 800px) {
+        margin-bottom: 40px;
+        margin-top: 25px;
+    }
+
     &__block{
         display: inline-block;
         width: 100%;
-        padding: 1%;
 
-        @media screen and (max-width: 800px) {
-            padding: 3%; 
+        @media screen and (max-width: 1150px) {
+            padding: 0 16px;
         }
 
         &__number{

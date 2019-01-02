@@ -40,7 +40,7 @@
 
             <span class="information-section__tag--title">INFORMASI TERUPDATE</span>
 
-            <a href="{{ route('home.postList', ['categoryName' => 'informasi']) }}" class="information-section__tag--next">
+            <a href="{{ route('home.postList', ['categorySlug' => 'informasi']) }}" class="information-section__tag--next">
                 <span class="information-section__tag--next--remove">Selengkapnya</span>
                 <div class="information-section__tag--next--box">
                 <span class="information-section__tag--next--box--arrow"></span>
@@ -55,7 +55,7 @@
         @foreach ($posts as $post)
             <div class="information-section__column">
 
-                <a href="#" class="information-section__column__box">
+                <a href="{{ route('home.postDetail', ['slugPost' => $post->post_slug]) }}" class="information-section__column__box">
                     <div class="information-section__column__box__images">
                         <img src="{{ Storage::url('media/'.$post->post_cover) }}" alt="">
                     </div>
@@ -103,10 +103,10 @@
           <div class="ukm__container__detail">STMIK PRIMAKARA</div>
 
             <div class="ukm__container__content">
-              
+
               <div class="ukm__container__content__box">
                 <a href="#" class="ukm__container__content__box__link">
-                  
+
                   <div class="ukm__container__content__box__link__logo">
                     
                     <img src="images/logo-gradient.svg" class="ukm__container__content__box__link__logo__main">
@@ -123,14 +123,14 @@
 
                 </a>
               </div>
-            
+
             </div>
 
             <div class="ukm__container__content">
-              
+
               <div class="ukm__container__content__box">
                 <a href="#" class="ukm__container__content__box__link">
-                  
+
                   <div class="ukm__container__content__box__link__logo">
 
                     <img src="images/logo-gradient.svg" class="ukm__container__content__box__link__logo__main">
@@ -145,14 +145,14 @@
 
                 </a>
               </div>
-            
+
             </div>
 
             <div class="ukm__container__content">
-              
+
               <div class="ukm__container__content__box">
                 <a href="#" class="ukm__container__content__box__link">
-                  
+
                   <div class="ukm__container__content__box__link__logo">
 
                     <img src="images/logo-gradient.svg" class="ukm__container__content__box__link__logo__main">
@@ -167,14 +167,14 @@
 
                 </a>
               </div>
-            
+
             </div>
 
             <div class="ukm__container__content">
-              
+
               <div class="ukm__container__content__box">
                 <a href="#" class="ukm__container__content__box__link">
-                  
+
                   <div class="ukm__container__content__box__link__logo">
 
                     <img src="images/logo-gradient.svg" class="ukm__container__content__box__link__logo__main">
@@ -189,14 +189,14 @@
 
                 </a>
               </div>
-            
+
             </div>
 
             <div class="ukm__container__content">
-              
+
               <div class="ukm__container__content__box">
                 <a href="#" class="ukm__container__content__box__link">
-                  
+
                   <div class="ukm__container__content__box__link__logo">
 
                     <img src="images/logo-gradient.svg" class="ukm__container__content__box__link__logo__main">
@@ -211,14 +211,14 @@
 
                 </a>
               </div>
-            
+
             </div>
 
             <div class="ukm__container__content">
-              
+
               <div class="ukm__container__content__box">
                 <a href="#" class="ukm__container__content__box__link">
-                  
+
                   <div class="ukm__container__content__box__link__logo">
 
                     <img src="images/logo-gradient.svg" class="ukm__container__content__box__link__logo__main">
@@ -233,7 +233,7 @@
 
                 </a>
               </div>
-            
+
             </div>
 
       </div>
@@ -242,47 +242,6 @@
 <!-- Main -->
 
 
-    <!-- footer section -->
-<footer>
-    <!-- footer top -->
-    <div class="footer">
-      <div class="footer__border"></div>
-      <div class="footer__container">
-          <div class="footer__container__logo">
-            <img src="images/primakara.jpg" alt="" class="footer__container__logo__first">
-            <img src="images/primdev.jpg" alt="" class="footer__container__logo__second">
-          </div>
-          <div class="footer__container__information">
-            <div class="footer__container__information__title">INFORMASI</div>
-            <div class="footer__container__information__list"><a href="#">About</a></div>
-            <div class="footer__container__information__list"><a href="#">Story</a></div>
-            <div class="footer__container__information__list"><a href="#">Event</a></div>
-            <div class="footer__container__information__list"><a href="#">Etcetera</a></div>
-          </div>
-          <div class="footer__container__about">
-              <div class="footer__container__about__detail">
-                  <div class="footer__container__about__detail__title">SUMMARY</div>
-                  <div class="footer__container__about__detail__list">
-                      Newspaper Tech Demo is your tech news website. We
-                      provide you with the lastest breaking news and videos
-                      straight from the technology industry provide you with
-                      the lastest breaking.
-                  </div>
-              </div>
-          </div>
-      </div>
-    </div>
-
-    <!-- footer-bottom -->
-    <div class="footer-bottom">
-      <div class="footer-bottom__container">
-        <div class="footer-bottom__container__copyright">
-            &copy;2019 - Team Primakara Developers, All Right Reserved
-        </div>
-      </div>
-    </div>
-</footer>
-    <!-- footer end section-->
 
 @endsection
 

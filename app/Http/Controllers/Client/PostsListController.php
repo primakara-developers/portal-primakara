@@ -6,25 +6,28 @@ use Illuminate\Http\Request;
 use App\Http\Controllers\Controller;
 use App\Post;
 use App\Category;
+use Illuminate\Pagination\Paginator;
 
 class PostsListController extends Controller
 {
-    public function index($categoryName)
+    public function index($categorySlug, $page = null)
     {
         $category = new Category;
-
-        $checker = $category->where('category_slug', $categoryName)->firstOrFail();
+        $checker = $category->where('category_slug', $categorySlug)->firstOrFail();
 
         $allCategory = $category->all();
 
-        $SingleCategory = $category->with('posts.user')->where('category_slug', $categoryName)->first();
+        $SingleCategory = $category->with('posts.user')->where('category_slug', $categorySlug)->first();
 
         if($SingleCategory->posts()->exists()){
+            Paginator::currentPageResolver(function () use ($page) {
+                return $page;
+            });
             $posts = $SingleCategory->posts()->orderBy('created_at', 'desc')->paginate(6);
             $category_name = $SingleCategory->category_name;
         }else{
             $posts = null;
-            $category_name = $category->where('category_slug', $categoryName)->first()->category_name;
+            $category_name = $category->where('category_slug', $categorySlug)->first()->category_name;
         }
 
         return view('client.postList')

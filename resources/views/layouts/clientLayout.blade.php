@@ -12,6 +12,7 @@
     <div class="wrapper">
         @include('client.partials.header')
         @yield('content')
+        @include('client.partials.footer')
     </div>
     <script src="{{ mix('js/app.js') }}"></script>
     @yield('additional-scripts')
