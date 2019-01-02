@@ -5,32 +5,7 @@
 <main>
 
     <!-- Navigation Bar -->
-    <section class="navigation-bar">
-        <div class="navigation-bar__container">
-            <div class="navigation-bar__category">
-                <ul class="navigation-bar__category-list clearfix">
-                    @foreach ($allCategory as $category)
-                        <li class="navigation-bar__category-list-item"><a href="{{ route('home.postList', ['categorySlug' => $category->category_slug]) }}">{{ $category->category_name }}</a></li>
-                    @endforeach
-                </ul>
-            </div>
-            <div class="navigation-bar__category-collapse-button-container">
-                <a href="javascript:void(0)" class="navigation-bar__category-collapse-button">
-                    <span class="navigation-bar__collapse-button-icon">
-                        <div class="navigation-bar__collapse-button-icon__middle"></div>
-                    </span>
-                    <span class="navigation-bar__collapse-button-text">Pilih Kategori</span>
-                </a>
-            </div>
-            <div class="navigation-bar__search">
-                <form action="">
-                    <div class="navigation-bar__search-content">
-                        <input type="text" name="search" placeholder="Search" class="navigation-bar__search-input">
-                    </div>
-                </form>
-            </div>
-        </div>
-    </section>
+    @include('client.partials.navigationBar')
 
 
     <!-- Breadcrumbs -->
@@ -102,63 +77,26 @@
     <!-- Related Posts -->
     <div class="related-posts">
         <div class="related-posts--container">
+            @foreach($randomPosts as $post)
             <div class="related-posts--container__column">
-                <a href="#" class="related-posts--container__column__link">
+                <a href="{{ route('home.postDetail', ['slugPost' => $post->post_slug]) }}" class="related-posts--container__column__link">
                     <div class="related-posts--container__column__link__images">
                         <div class="related-posts--container__column__link__images__centered">
-                            <img src="images/no2.jpg">
+                            <img src="{{ Storage::url('media/'.$post->post_cover) }}">
                         </div>
                     </div>
 
                     <div class="related-posts--container__column__link__title">
-                        UKM dance primakara adakan lari marathon keliling dunia 
-                        primakara adakan lari marathon keliling dunia
+                        {{ $post->post_title }}
                     </div>
 
                 </a>
                 <div class="related-posts--container__column__date">
-                    <span class="related-posts--container__column__date__author">susano'o naruto</span> - 
-                    <span class="related-posts--container__column__date__detail">2 jan 2019</span>
+                    <span class="related-posts--container__column__date__author">{{ $post->user->name }}</span> - 
+                    <span class="related-posts--container__column__date__detail">{{ $post->created_at->format('d F Y') }}</span>
                 </div>
             </div>
-
-            <div class="related-posts--container__column">
-                <a href="#" class="related-posts--container__column__link">
-                    <div class="related-posts--container__column__link__images">
-                        <div class="related-posts--container__column__link__images__centered">
-                            <img src="images/no2.jpg">
-                        </div>
-                    </div>
-
-                    <div class="related-posts--container__column__link__title">
-                    UKM dance primakara adakan lari marathon keliling dunia 
-                        primakara adakan lari marathon keliling dunia
-                    </div>
-                </a>
-                <div class="related-posts--container__column__date">
-                    <span class="related-posts--container__column__date__author">susano'o naruto</span> - 
-                    <span class="related-posts--container__column__date__detail">2 jan 2019</span>
-                </div>
-            </div>
-
-            <div class="related-posts--container__column">
-                <a href="#" class="related-posts--container__column__link">
-                    <div class="related-posts--container__column__link__images">
-                        <div class="related-posts--container__column__link__images__centered">
-                            <img src="images/no1.jpg">
-                        </div>
-                    </div>
-
-                    <div class="related-posts--container__column__link__title">
-                        UKM dance primakara adakan lari marathon keliling dunia 
-                        primakara adakan lari marathon keliling dunia
-                    </div>
-                </a>
-                <div class="related-posts--container__column__date">
-                    <span class="related-posts--container__column__date__author">susano'o naruto</span> - 
-                    <span class="related-posts--container__column__date__detail">2 jan 2019</span>
-                </div>
-            </div>
+            @endforeach
         </div>
     </div>
 
