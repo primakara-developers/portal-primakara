@@ -16,7 +16,7 @@ class HomeController extends Controller
         $headlines = Post::with('categories')
             ->where('is_headline', 1)
             ->orderBy('headline_at', 'desc')
-            ->get();
+            ->paginate(7);
 
         // Informasi Section
         $category = new Category;

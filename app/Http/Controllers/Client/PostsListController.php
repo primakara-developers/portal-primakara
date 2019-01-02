@@ -32,7 +32,7 @@ class PostsListController extends Controller
 
         return view('client.postList')
             ->with('posts', $posts)
-            ->with('categoryName', $category_name)
+            ->with('categorySlug', $category_name)
             ->with('allCategory', $allCategory);
     }
 }

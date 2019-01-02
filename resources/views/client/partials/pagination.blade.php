@@ -12,7 +12,7 @@
                     @if($page == $paginator->currentPage())
                         <a class="{{ $specialClass }} pagination__block__number pagination__block__number--active">{{ $page }}</a>
                     @else
-                        <a href="{{ $url }}" class="{{ $specialClass }} pagination__block__number">{{ $page }}</a>
+                        <a href="{{ substr($url, 0, 47).'/'.$page }}" class="{{ $specialClass }} pagination__block__number">{{ $page }}</a>
                     @endif
                 @endforeach
             @endif
