@@ -79,6 +79,9 @@
                     data-clipboard-text="Laravel mantap #PortalPrimakara
 
 https://kostpedia.id">
+                    <div class="simple-tooltip">
+                        <div class="simple-tooltip__text">Berhasil dicopy!</div>
+                    </div>
                 </a>
             </div>
             <a href="#" class="share__subscribe">Subscribe</a>
@@ -99,7 +102,17 @@ https://kostpedia.id">
 
 <script src="https://cdn.jsdelivr.net/npm/clipboard@2.0.4/dist/clipboard.min.js" integrity="sha256-FiZwavyI2V6+EXO1U+xzLG3IKldpiTFf3153ea9zikQ=" crossorigin="anonymous"></script>
 <script>
-    new ClipboardJS('.share__button--copy');
+    var clipboard = new ClipboardJS('.share__button--copy');
+
+    clipboard.on('success', function(e) {
+        var buttonCopy = document.querySelector('.share__button--copy');
+        var tooltip = buttonCopy.querySelector('.simple-tooltip');
+        tooltip.classList.add('simple-tooltip--display');
+
+        setTimeout(() => {
+            tooltip.classList.remove('simple-tooltip--display');
+        }, 2000);
+    });
 </script>
 
 @endsection
