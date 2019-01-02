@@ -9,16 +9,9 @@
         <div class="navigation-bar__container">
             <div class="navigation-bar__category">
                 <ul class="navigation-bar__category-list clearfix">
-                    <li class="navigation-bar__category-list-item"><a href="/information">Information</a></li>
-                    <li class="navigation-bar__category-list-item"><a href="/intermezzo">Intermezzo</a></li>
-                    <li class="navigation-bar__category-list-item"><a href="/tips-and-trick">Tips & Trick</a></li>
-                    <li class="navigation-bar__category-list-item"><a href="/hardware">Hardware</a></li>
-                    <li class="navigation-bar__category-list-item"><a href="/software">Software</a></li>
-                    <li class="navigation-bar__category-list-item"><a href="/tutorials">Tutorials</a></li>
-                    <li class="navigation-bar__category-list-item"><a href="/tutorials">Event</a></li>
-                    <li class="navigation-bar__category-list-item"><a href="/tutorials">UKM</a></li>
-                    <li class="navigation-bar__category-list-item"><a href="/tutorials">Announcement</a></li>
-                    <li class="navigation-bar__category-list-item"><a href="/tutorials">Akademik</a></li>
+                    @foreach ($allCategory as $category)
+                <li class="navigation-bar__category-list-item"><a href="{{ route('home.postList', ['categoryName' => $category->category_slug]) }}">{{ $category->category_name }}</a></li>
+                    @endforeach
                 </ul>
             </div>
             <div class="navigation-bar__category-collapse-button-container">
@@ -52,16 +45,10 @@
     	</li>
     	<li class="breadcrumbs__breadcrumb-item">
     		<div class="breadcrumbs__breadcrumb-item__breadcrumb-item-container">
-    			<a class="breadcrumbs__breadcrumb-item__breadcrumb-item-container__breadcrumb-link" href="#">{{ $categoryName }}</a>
+            <a class="breadcrumbs__breadcrumb-item__breadcrumb-item-container__breadcrumb-link" href="{{ route('home.postList', ['categoryName' => $categoryName]) }}">{{ $categoryName }}</a>
     			<span class="breadcrumbs__breadcrumb-item__breadcrumb-item-container__breadcrumb-item-separator"></span>
     		</div>
     	</li>
-        <li class="breadcrumbs__breadcrumb-item">
-            <div class="breadcrumbs__breadcrumb-item__breadcrumb-item-container">
-                <a class="breadcrumbs__breadcrumb-item__breadcrumb-item-container__breadcrumb-link" href="#">Framework Laravel Milik Pras adalah Framework Terburuk Tahun 2018, Anda Pemakainya?</a>
-                <span></span>
-            </div>
-        </li>
     </ul>
 
     <!-- Post List Item -->
