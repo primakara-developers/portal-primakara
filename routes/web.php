@@ -70,16 +70,9 @@ Route::prefix('/')->group(function() {
 	// index
 	Route::get('/', 'Client\HomeController@index')->name('home.index');
 
-	// Temporary Route (WILL GET DELETED AS SOON AS REVIEW FIXED)
-	// Route::get('/post-list', function() {
-	// 	return view('client.postList');
-	// });
-
-    // Post detail
-	Route::get('/post-detail', function () {
-	    return view('client.postDetail');
-	});
-
 	// Posts lists by category
-	Route::get('/{categoryName}', 'Client\PostsListController@index')->name('home.postList');
+	Route::get('/category/{categorySlug}/{page?}', 'Client\PostsListController@index')->name('home.postList');
+
+	// Post Detail
+	Route::get('/{slugPost}', 'Client\SinglePageController@index')->name('home.postDetail');
 });
