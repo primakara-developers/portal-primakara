@@ -1,5 +1,7 @@
 @extends('layouts.clientLayout')
 
+@section('additional-title', $categoryName.' - ')
+
 @section('content')
 
 <main>
@@ -10,7 +12,7 @@
             <div class="navigation-bar__category">
                 <ul class="navigation-bar__category-list clearfix">
                     @foreach ($allCategory as $category)
-                <li class="navigation-bar__category-list-item"><a href="{{ route('home.postList', ['categoryName' => $category->category_slug]) }}">{{ $category->category_name }}</a></li>
+                        <li class="navigation-bar__category-list-item"><a href="{{ route('home.postList', ['categoryName' => $category->category_slug]) }}">{{ $category->category_name }}</a></li>
                     @endforeach
                 </ul>
             </div>
@@ -56,30 +58,34 @@
             <h1 class="post__heading__title">{{ $categoryName }}</h1>
         </div>
         <div class="post__list">
-            @foreach ($posts as $post)
-                <div class="post__list__item">
-                    <a href="" class="post__list__item__left">
-                        <img class="post__list__item__image" src="{{ Storage::url('media/'.$post->post_cover) }}">
-                    </a>
-                    <div class="post__list__item__right">
-                        <a href="" class="post__list__item__hoverable">
-                            <h3 class="post__list__item__title">
-                                {{ $post->post_title }}
-                            </h3>
-                            <p class="post__list__item__preview">{{ strip_tags($post->post_content) }}</p>
+            @if(!is_null($posts))
+                @foreach ($posts as $post)
+                    <div class="post__list__item">
+                        <a href="" class="post__list__item__left">
+                            <img class="post__list__item__image" src="{{ Storage::url('media/'.$post->post_cover) }}">
                         </a>
-                        <span class="post__list__item__writter">{{ $post->user->name }}</span>
-                        <span> - </span>
-                        <span class="post__list__item__timestamp">{{ $post->created_at->format('d M Y') }}</span>
-                        <br />
-                        <a href="" class="post__list__item__badge">{{ $post->categories->category_name }}</a>
+                        <div class="post__list__item__right">
+                            <a href="" class="post__list__item__hoverable">
+                                <h3 class="post__list__item__title">
+                                    {{ $post->post_title }}
+                                </h3>
+                                <p class="post__list__item__preview">{{ strip_tags($post->post_content) }}</p>
+                            </a>
+                            <span class="post__list__item__writter">{{ $post->user->name }}</span>
+                            <span> - </span>
+                            <span class="post__list__item__timestamp">{{ $post->created_at->format('d M Y') }}</span>
+                            <br />
+                            <a href="" class="post__list__item__badge">{{ $post->categories->category_name }}</a>
+                        </div>
                     </div>
-                </div>
-            @endforeach
+                @endforeach
+            @endif
         </div>
     </div>
 
-    {{ $posts->links('client.partials.paginator') }}
+    @if(!is_null($posts))
+        {{ $posts->links('client.partials.paginator') }}
+    @endif
 </main>
 
 @endsection

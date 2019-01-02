@@ -2,7 +2,7 @@
 @section('content')
 <div class="box">
     <div class="box-header with-border">
-        <h3 class="box-title">Posts</h3>
+        <h3 class="box-title">Categories</h3>
     </div>
     <!-- /.box-header -->
     <div class="box-body table-responsive">
