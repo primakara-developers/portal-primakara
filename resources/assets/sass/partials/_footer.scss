@@ -6,24 +6,23 @@
     }
 
     &__container{
-      width: 100%;
+      max-width: 1150px;
       height: auto;
       margin-right: auto;
       margin-left: auto;
       position: relative;
       overflow: hidden;
-      padding: 15px;
 
       &__logo{
         width: 33.33%;
         float: left;
 
         &__first{
-          height: 50px;
+          height: 85px;
         }
         &__second{
-          height: 85px;
-          margin-bottom: 5%;
+          height: 50px;
+          margin-bottom: 50px;
         }
       }
   
@@ -68,23 +67,23 @@
       }
       @media screen and (min-width: 520px) and (max-width: 800px){
         &__logo{
-          width: 50%;
+          width: 67%;
           &__second{
             display: block;
-            margin-left: auto;
-            margin-right: auto;
+            // margin-left: auto;
+            // margin-right: auto;
           }
           &__first{
             display: block;
-            margin-left: auto;
-            margin-right: auto;
-            margin-bottom: 50px;
+            // margin-left: auto;
+            // margin-right: auto;
+            margin-bottom: 10px;
           }
         } 
         &__information{
-          width: 50%;
+          width: 33%;
           float: right;
-          text-align: center;
+          text-align: left;
         }
         &__about{
           width: 100%;  
@@ -98,7 +97,7 @@
           }
         }
       }
-      @media screen and (min-width: 320px) and (max-width: 519px){
+      @media screen and (max-width: 519px){
         &__logo{
           width: 100%;
           &__second{
@@ -110,7 +109,7 @@
             display: block;
             margin-left: auto;
             margin-right: auto;
-            margin-bottom: 50px;
+            margin-bottom: 15px;
           }
         }
         &__information{
@@ -131,10 +130,16 @@
         }
       }
     }
-    
-    @media screen and (min-width: 1137px){
+
+    @media screen and (max-width: 800px){
       &__container{
-        width: 1137px;
+        padding: 16px;
+      }
+    }
+    
+    @media screen and (min-width: 1150px){
+      &__container{
+        padding: 16px;
         
       }
     }
@@ -158,7 +163,7 @@
       }
     }
 
-    @media screen and (min-width: 320px) and (max-width: 519px){
+    @media screen and (max-width: 519px){
       &__container__copyright{
         padding: 2%;
         font-size: 11px;

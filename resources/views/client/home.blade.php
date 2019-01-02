@@ -249,8 +249,8 @@
       <div class="footer__border"></div>
       <div class="footer__container">
           <div class="footer__container__logo">
-            <img src="images/primakara.jpg" alt="" class="footer__container__logo__second">
-            <img src="images/primdev.jpg" alt="" class="footer__container__logo__first">
+            <img src="images/primakara.jpg" alt="" class="footer__container__logo__first">
+            <img src="images/primdev.jpg" alt="" class="footer__container__logo__second">
           </div>
           <div class="footer__container__information">
             <div class="footer__container__information__title">INFORMASI</div>
