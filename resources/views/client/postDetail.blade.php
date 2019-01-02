@@ -80,7 +80,8 @@
                     </div>
 
                     <div class="related-posts--container__column__link__title">
-                        UKM dance primakara adakan lari marathon keliling dunia
+                        UKM dance primakara adakan lari marathon keliling dunia 
+                        primakara adakan lari marathon keliling dunia
                     </div>
 
                 </a>
