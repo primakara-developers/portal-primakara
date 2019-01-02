@@ -1,6 +1,6 @@
 @extends('layouts.clientLayout')
 
-@section('additional-title', $categoryName.' - ')
+@section('additional-title', $categorySlug.' - ')
 
 @section('content')
 
@@ -13,7 +13,7 @@
     <!-- Post List Item -->
     <div class="post">
         <div class="post__heading">
-            <h1 class="post__heading__title">{{ $categoryName }}</h1>
+            <h1 class="post__heading__title">{{ $categorySlug }}</h1>
         </div>
         <div class="post__list">
             @if(!is_null($posts))

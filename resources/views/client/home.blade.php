@@ -17,16 +17,16 @@
     <!-- Banner -->
 
     {{-- Headline --}}
-    @if(count($headlines) >= 7)
+    @if(count($headlines) == 7)
 
     <section class="headline">
       <div class="headline__list">
           @foreach ($headlines as $headline)
             <span class="headline__list__item">
-                <a href="#" class="headline__list__item__gradient"></a>
-                <a href="#" class="headline__list__item__title">{{ $headline->post_title }}</a>
+                <a href="{{ route('home.postDetail', ['slugPost' => $headline->post_slug]) }}" class="headline__list__item__gradient"></a>
+                <a href="{{ route('home.postDetail', ['slugPost' => $headline->post_slug]) }}" class="headline__list__item__title">{{ $headline->post_title }}</a>
                 <img src="{{ Storage::url('media/'.$headline->post_cover) }}" alt="" class="headline__list__item__cover">
-                <a href="/post-list" class="headline__list__item__badge">{{ $headline->categories->category_name }}</a>
+                <a href="{{ route('home.postList', ['categorySlug' => $headline->categories->category_slug]) }}" class="headline__list__item__badge">{{ $headline->categories->category_name }}</a>
             </span>
           @endforeach
       </div>

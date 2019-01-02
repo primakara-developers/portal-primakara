@@ -10,7 +10,7 @@
     </li>
     <li class="breadcrumbs__breadcrumb-item">
         <div class="breadcrumbs__breadcrumb-item__breadcrumb-item-container">
-        <a class="breadcrumbs__breadcrumb-item__breadcrumb-item-container__breadcrumb-link" href="{{ route('home.postList', ['categoryName' => $categoryName]) }}">{{ $categoryName }}</a>
+        <a class="breadcrumbs__breadcrumb-item__breadcrumb-item-container__breadcrumb-link" href="{{ route('home.postList', ['categorySlug' => $categorySlug]) }}">{{ $categorySlug }}</a>
         </div>
     </li>
 </ul>
