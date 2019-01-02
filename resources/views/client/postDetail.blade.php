@@ -76,7 +76,9 @@
             <div class="related-posts--container__column">
                 <a href="#" class="related-posts--container__column__link">
                     <div class="related-posts--container__column__link__images">
-                        <img src="images/no1.jpg">
+                        <div class="related-posts--container__column__link__images__centered">
+                            <img src="images/no2.jpg">
+                        </div>
                     </div>
 
                     <div class="related-posts--container__column__link__title">
@@ -94,11 +96,14 @@
             <div class="related-posts--container__column">
                 <a href="#" class="related-posts--container__column__link">
                     <div class="related-posts--container__column__link__images">
-                        <img src="images/no1.jpg">
+                        <div class="related-posts--container__column__link__images__centered">
+                            <img src="images/no2.jpg">
+                        </div>
                     </div>
 
                     <div class="related-posts--container__column__link__title">
-                        UKM dance primakara adakan lari marathon keliling dunia
+                    UKM dance primakara adakan lari marathon keliling dunia 
+                        primakara adakan lari marathon keliling dunia
                     </div>
                 </a>
                 <div class="related-posts--container__column__date">
@@ -110,11 +115,14 @@
             <div class="related-posts--container__column">
                 <a href="#" class="related-posts--container__column__link">
                     <div class="related-posts--container__column__link__images">
-                        <img src="images/no1.jpg">
+                        <div class="related-posts--container__column__link__images__centered">
+                            <img src="images/no1.jpg">
+                        </div>
                     </div>
 
                     <div class="related-posts--container__column__link__title">
-                        UKM dance primakara adakan lari marathon keliling dunia
+                        UKM dance primakara adakan lari marathon keliling dunia 
+                        primakara adakan lari marathon keliling dunia
                     </div>
                 </a>
                 <div class="related-posts--container__column__date">
