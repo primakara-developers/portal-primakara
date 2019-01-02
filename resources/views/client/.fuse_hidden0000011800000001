@@ -108,89 +108,9 @@
 
 
     <!-- Share -->
-    <section class="share">
-        <p class="share__title">Share This Post :</p>
-        <div class="share__container">
-            <div class="share__buttons">
-                <a class="share__button share__button--facebook" href="https://www.facebook.com/sharer/sharer.php?u=https%3A//kostpedia.id" target="_blank" rel="noopener noreferrer"></a>
-                <a class="share__button share__button--whatsapp" href="whatsapp://send?text=Laravel%20mantap%20%23PortalPrimakara%0A%0Ahttps%3A%2F%2Fkostpedia.id" data-action="share/whatsapp/share" target="_blank" rel="noopener noreferrer"></a>
-                <a class="share__button share__button--line" href="line://msg/text/Laravel%20mantap%20%23PortalPrimakara%0A%0Ahttps%3A%2F%2Fkostpedia.id" target="_blank" rel="noopener noreferrer"></a>
-                <a class="share__button share__button--copy" href="javascript:void(0)"
-                    data-clipboard-text="Laravel mantap #PortalPrimakara
-
-https://kostpedia.id">
-                    <div class="simple-tooltip">
-                        <div class="simple-tooltip__text">Berhasil dicopy!</div>
-                    </div>
-                </a>
-            </div>
-            <a href="#" class="share__subscribe">Subscribe</a>
-        </div>
-    </section>
 
 
     <!-- Related Posts -->
-    <div class="related-posts">
-        <div class="related-posts--container">
-            <div class="related-posts--container__column">
-                <a href="#" class="related-posts--container__column__link">
-                    <div class="related-posts--container__column__link__images">
-                        <div class="related-posts--container__column__link__images__centered">
-                            <img src="images/no2.jpg">
-                        </div>
-                    </div>
-
-                    <div class="related-posts--container__column__link__title">
-                        UKM dance primakara adakan lari marathon keliling dunia 
-                        primakara adakan lari marathon keliling dunia
-                    </div>
-
-                </a>
-                <div class="related-posts--container__column__date">
-                    <span class="related-posts--container__column__date__author">susano'o naruto</span> - 
-                    <span class="related-posts--container__column__date__detail">2 jan 2019</span>
-                </div>
-            </div>
-
-            <div class="related-posts--container__column">
-                <a href="#" class="related-posts--container__column__link">
-                    <div class="related-posts--container__column__link__images">
-                        <div class="related-posts--container__column__link__images__centered">
-                            <img src="images/no2.jpg">
-                        </div>
-                    </div>
-
-                    <div class="related-posts--container__column__link__title">
-                    UKM dance primakara adakan lari marathon keliling dunia 
-                        primakara adakan lari marathon keliling dunia
-                    </div>
-                </a>
-                <div class="related-posts--container__column__date">
-                    <span class="related-posts--container__column__date__author">susano'o naruto</span> - 
-                    <span class="related-posts--container__column__date__detail">2 jan 2019</span>
-                </div>
-            </div>
-
-            <div class="related-posts--container__column">
-                <a href="#" class="related-posts--container__column__link">
-                    <div class="related-posts--container__column__link__images">
-                        <div class="related-posts--container__column__link__images__centered">
-                            <img src="images/no1.jpg">
-                        </div>
-                    </div>
-
-                    <div class="related-posts--container__column__link__title">
-                        UKM dance primakara adakan lari marathon keliling dunia 
-                        primakara adakan lari marathon keliling dunia
-                    </div>
-                </a>
-                <div class="related-posts--container__column__date">
-                    <span class="related-posts--container__column__date__author">susano'o naruto</span> - 
-                    <span class="related-posts--container__column__date__detail">2 jan 2019</span>
-                </div>
-            </div>
-        </div>
-    </div>
 
 
 </main>
@@ -200,20 +120,5 @@ https://kostpedia.id">
 @section('additional-scripts')
 
 <script src="{{ mix('js/navigation-bar.js') }}"></script>
-
-<script src="https://cdn.jsdelivr.net/npm/clipboard@2.0.4/dist/clipboard.min.js" integrity="sha256-FiZwavyI2V6+EXO1U+xzLG3IKldpiTFf3153ea9zikQ=" crossorigin="anonymous"></script>
-<script>
-    var clipboard = new ClipboardJS('.share__button--copy');
-
-    clipboard.on('success', function(e) {
-        var buttonCopy = document.querySelector('.share__button--copy');
-        var tooltip = buttonCopy.querySelector('.simple-tooltip');
-        tooltip.classList.add('simple-tooltip--display');
-
-        setTimeout(() => {
-            tooltip.classList.remove('simple-tooltip--display');
-        }, 2000);
-    });
-</script>
 
 @endsection
