@@ -52,6 +52,10 @@
 
         </div>
 
+        <div class="information-section-containers">
+
+        
+
         @foreach ($posts as $post)
             <div class="information-section__column">
 
@@ -79,6 +83,7 @@
                 </div>
             </div>
         @endforeach
+        </div>
     </div>
     <!-- end of information -->
 
