@@ -2,14 +2,25 @@
     margin: 40px auto 55px auto;
     max-width: 1150px;
 
+    @media only screen and (max-width: 1150px) {
+        padding: 0 16px;
+    }
+
     &__title {
         color: $textColorSecondary;
         font-size: 15px;
         margin: 0;
     }
 
-    &__button-container {
+    &__container {
         margin-top: 18px;
+    }
+
+    @media only screen and (max-width: 425px) {
+        &__buttons {
+            display: flex;
+            justify-content: space-between;
+        }
     }
 
     &__button {
@@ -24,10 +35,6 @@
         transition: all 0.3s ease-in-out;
         vertical-align: middle;
         width: 42px;
-
-        &:last-child {
-            margin-right: 0;
-        }
 
         &:hover {
             background-color: $colorPrimaryLighter;
@@ -64,6 +71,12 @@
         &:hover {
             background: $colorPrimary;
             color: #ffffff;
+        }
+
+        @media only screen and (max-width: 425px) {
+            display: block;
+            margin-top: 16px;
+            text-align: center;
         }
     }
 }

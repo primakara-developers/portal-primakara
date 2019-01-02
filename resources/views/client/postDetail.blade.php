@@ -70,15 +70,17 @@
     <!-- Share -->
     <section class="share">
         <p class="share__title">Share This Post :</p>
-        <div class="share__button-container">
-            <a class="share__button share__button--facebook" href="https://www.facebook.com/sharer/sharer.php?u=https%3A//kostpedia.id" target="_blank" rel="noopener noreferrer"></a>
-            <a class="share__button share__button--whatsapp" href="whatsapp://send?text=Laravel%20mantap%20%23PortalPrimakara%0A%0Ahttps%3A%2F%2Fkostpedia.id" data-action="share/whatsapp/share" target="_blank" rel="noopener noreferrer"></a>
-            <a class="share__button share__button--line" href="line://msg/text/Laravel%20mantap%20%23PortalPrimakara%0A%0Ahttps%3A%2F%2Fkostpedia.id" target="_blank" rel="noopener noreferrer"></a>
-            <a class="share__button share__button--copy" href="javascript:void(0)"
-                data-clipboard-text="Laravel mantap #PortalPrimakara
+        <div class="share__container">
+            <div class="share__buttons">
+                <a class="share__button share__button--facebook" href="https://www.facebook.com/sharer/sharer.php?u=https%3A//kostpedia.id" target="_blank" rel="noopener noreferrer"></a>
+                <a class="share__button share__button--whatsapp" href="whatsapp://send?text=Laravel%20mantap%20%23PortalPrimakara%0A%0Ahttps%3A%2F%2Fkostpedia.id" data-action="share/whatsapp/share" target="_blank" rel="noopener noreferrer"></a>
+                <a class="share__button share__button--line" href="line://msg/text/Laravel%20mantap%20%23PortalPrimakara%0A%0Ahttps%3A%2F%2Fkostpedia.id" target="_blank" rel="noopener noreferrer"></a>
+                <a class="share__button share__button--copy" href="javascript:void(0)"
+                    data-clipboard-text="Laravel mantap #PortalPrimakara
 
 https://kostpedia.id">
-            </a>
+                </a>
+            </div>
             <a href="#" class="share__subscribe">Subscribe</a>
         </div>
     </section>
