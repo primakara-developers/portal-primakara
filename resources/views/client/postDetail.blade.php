@@ -64,10 +64,24 @@
         </li>
     </ul>
 
-    <!-- Post Detai. -->
+    <!-- Post Detail -->
 
 
     <!-- Share -->
+    <section class="share">
+        <p class="share__title">Share This Post :</p>
+        <div class="share__button-container">
+            <a class="share__button share__button--facebook" href="https://www.facebook.com/sharer/sharer.php?u=https%3A//kostpedia.id" target="_blank" rel="noopener noreferrer"></a>
+            <a class="share__button share__button--whatsapp" href="whatsapp://send?text=Laravel%20mantap%20%23PortalPrimakara%0A%0Ahttps%3A%2F%2Fkostpedia.id" data-action="share/whatsapp/share" target="_blank" rel="noopener noreferrer"></a>
+            <a class="share__button share__button--line" href="line://msg/text/Laravel%20mantap%20%23PortalPrimakara%0A%0Ahttps%3A%2F%2Fkostpedia.id" target="_blank" rel="noopener noreferrer"></a>
+            <a class="share__button share__button--copy" href="javascript:void(0)"
+                data-clipboard-text="Laravel mantap #PortalPrimakara
+
+https://kostpedia.id">
+            </a>
+            <a href="#" class="share__subscribe">Subscribe</a>
+        </div>
+    </section>
 
 
     <!-- Related Posts -->
@@ -80,5 +94,10 @@
 @section('additional-scripts')
 
 <script src="{{ mix('js/navigation-bar.js') }}"></script>
+
+<script src="https://cdn.jsdelivr.net/npm/clipboard@2.0.4/dist/clipboard.min.js" integrity="sha256-FiZwavyI2V6+EXO1U+xzLG3IKldpiTFf3153ea9zikQ=" crossorigin="anonymous"></script>
+<script>
+    new ClipboardJS('.share__button--copy');
+</script>
 
 @endsection

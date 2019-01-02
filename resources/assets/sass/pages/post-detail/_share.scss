@@ -1,0 +1,69 @@
+.share {
+    margin: 40px auto 55px auto;
+    max-width: 1150px;
+
+    &__title {
+        color: $textColorSecondary;
+        font-size: 15px;
+        margin: 0;
+    }
+
+    &__button-container {
+        margin-top: 18px;
+    }
+
+    &__button {
+        background-color: $colorPrimary;
+        background-size: 28px;
+        background-position: center;
+        background-repeat: no-repeat;
+        border-radius: 8px;
+        display: inline-block;
+        height: 42px;
+        margin-right: 12px;
+        transition: all 0.3s ease-in-out;
+        vertical-align: middle;
+        width: 42px;
+
+        &:last-child {
+            margin-right: 0;
+        }
+
+        &:hover {
+            background-color: $colorPrimaryLighter;
+        }
+
+        &--facebook {
+            background-image: url('/images/icons/facebook.svg');
+        }
+
+        &--line {
+            background-image: url('/images/icons/line.svg');
+        }
+
+        &--whatsapp {
+            background-image: url('/images/icons/whatsapp.svg');
+        }
+
+        &--copy {
+            background-image: url('/images/icons/copy.svg');
+        }
+    }
+
+    &__subscribe {
+        border: 2px solid $colorPrimary;
+        border-radius: 8px;
+        color: $colorPrimary;
+        display: inline-block;
+        font-size: 18px;
+        padding: 11px 32px;
+        text-decoration: none;
+        transition: all .3s ease-in-out;
+        vertical-align: middle;
+
+        &:hover {
+            background: $colorPrimary;
+            color: #ffffff;
+        }
+    }
+}
