@@ -1,4 +1,4 @@
-.column-pagination{
+.pagination{
     max-width: 1150px;
     margin-bottom: 80px;
     margin-right: auto;
@@ -11,7 +11,7 @@
         padding: 1%;
 
         @media screen and (max-width: 800px) {
-            padding: 3%; 
+            padding: 3%;
         }
 
         &__number{
