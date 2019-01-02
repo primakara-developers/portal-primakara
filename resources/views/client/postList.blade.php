@@ -6,51 +6,9 @@
 
 <main>
 
-    <!-- Navigation Bar -->
-    <section class="navigation-bar">
-        <div class="navigation-bar__container">
-            <div class="navigation-bar__category">
-                <ul class="navigation-bar__category-list clearfix">
-                    @foreach ($allCategory as $category)
-                        <li class="navigation-bar__category-list-item"><a href="{{ route('home.postList', ['categoryName' => $category->category_slug]) }}">{{ $category->category_name }}</a></li>
-                    @endforeach
-                </ul>
-            </div>
-            <div class="navigation-bar__category-collapse-button-container">
-                <a href="javascript:void(0)" class="navigation-bar__category-collapse-button">
-                    <span class="navigation-bar__collapse-button-icon">
-                        <div class="navigation-bar__collapse-button-icon__middle"></div>
-                    </span>
-                    <span class="navigation-bar__collapse-button-text">Pilih Kategori</span>
-                </a>
-            </div>
-            <div class="navigation-bar__search">
-                <form action="">
-                    <div class="navigation-bar__search-content">
-                        <input type="text" name="search" placeholder="Search" class="navigation-bar__search-input">
-                    </div>
-                </form>
-            </div>
-        </div>
-    </section>
+    @include('client.partials.navigationBar')
 
-
-    <!-- Breadcrumbs -->
-    <ul class="breadcrumbs">
-    	<li class="breadcrumbs__breadcrumb-item">
-    		<div class="breadcrumbs__breadcrumb-item__breadcrumb-item-container">
-    			<a class="breadcrumbs__breadcrumb-item__breadcrumb-item-container__breadcrumb-link" href="/">
-    				Home
-    			</a>
-    			<span class="breadcrumbs__breadcrumb-item__breadcrumb-item-container__breadcrumb-item-separator"></span>
-    		</div>
-    	</li>
-    	<li class="breadcrumbs__breadcrumb-item">
-    		<div class="breadcrumbs__breadcrumb-item__breadcrumb-item-container">
-            <a class="breadcrumbs__breadcrumb-item__breadcrumb-item-container__breadcrumb-link" href="{{ route('home.postList', ['categoryName' => $categoryName]) }}">{{ $categoryName }}</a>
-    		</div>
-    	</li>
-    </ul>
+    @include('client.partials.breadcrumbs')
 
     <!-- Post List Item -->
     <div class="post">
@@ -84,7 +42,7 @@
     </div>
 
     @if(!is_null($posts))
-        {{ $posts->links('client.partials.paginator') }}
+        {{ $posts->links('client.partials.pagination') }}
     @endif
 </main>
 
