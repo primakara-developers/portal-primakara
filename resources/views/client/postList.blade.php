@@ -5,7 +5,6 @@
 @section('content')
 
 <main>
-
     @include('client.partials.navigationBar')
 
     @include('client.partials.breadcrumbs')

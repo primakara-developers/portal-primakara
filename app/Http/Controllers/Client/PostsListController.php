@@ -10,7 +10,7 @@ use Illuminate\Pagination\Paginator;
 
 class PostsListController extends Controller
 {
-    public function index($categorySlug, $page = null)
+    public function index(Request $request, $categorySlug, $page = null)
     {
         $category = new Category;
         $checker = $category->where('category_slug', $categorySlug)->firstOrFail();
@@ -28,14 +28,20 @@ class PostsListController extends Controller
             $category_slug = $SingleCategory->category_slug;
         }else{
             $posts = null;
-            $category_name = $category->where('category_slug', $categorySlug)->first()->category_name;
-            $category_slug = null;
+            $category_name = $SingleCategory->category_name;
+            $category_slug = $SingleCategory->category_slug;
         }
+
+        $links = [
+            'Home' => '/', 
+            $category_name => route('home.postList', ['categorySlug', $category_slug])
+        ];
 
         return view('client.postList')
             ->with('posts', $posts)
             ->with('categorySlug', $category_slug)
             ->with('categoryName', $category_name)
-            ->with('allCategory', $allCategory);
+            ->with('allCategory', $allCategory)
+            ->with('links', $links);
     }
 }
