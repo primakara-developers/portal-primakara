@@ -18,6 +18,7 @@ mix.js('resources/assets/js/app.js', 'public/js')
    .sass('resources/assets/sass/app.scss', 'public/css')
 
 mix.js('resources/assets/js/navigation-bar.js', 'public/js')
+mix.js('resources/assets/js/copy-to-clipboard.js', 'public/js')
 
 if (mix.inProduction()) {
     // Compress images
