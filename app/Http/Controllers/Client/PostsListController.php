@@ -25,13 +25,16 @@ class PostsListController extends Controller
             });
             $posts = $SingleCategory->posts()->orderBy('created_at', 'desc')->paginate(6);
             $category_name = $SingleCategory->category_name;
+            $category_slug = $SingleCategory->category_slug;
         }else{
             $posts = null;
             $category_name = $category->where('category_slug', $categorySlug)->first()->category_name;
+            $category_slug = null;
         }
 
         return view('client.postList')
             ->with('posts', $posts)
+            ->with('categorySlug', $category_slug)
             ->with('categoryName', $category_name)
             ->with('allCategory', $allCategory);
     }

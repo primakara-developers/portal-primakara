@@ -42,7 +42,7 @@
     </div>
 
     @if(!is_null($posts))
-        {{ $posts->links('client.partials.pagination') }}
+        {{ $posts->links('client.partials.pagination', ['categorySlug' => $categorySlug]) }}
     @endif
 </main>
 
