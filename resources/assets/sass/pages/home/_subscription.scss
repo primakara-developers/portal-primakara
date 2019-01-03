@@ -33,11 +33,11 @@
 			z-index: 2;
 			position: relative;
             text-decoration: none;
+            transition: all 0.3s ease-in-out;
 
 			&:hover{
 				background-color: #fff;
 				color: #000;
-				transition: all 0.3s ease-in-out;
 			}
     	}
 
@@ -60,7 +60,7 @@
     	}
 
     	&__content__title{
-    		font-size: 20px;	
+    		font-size: 20px;
     	}
 
     	&__content__btn-wrapper__btn{
@@ -72,7 +72,7 @@
 
     @media screen and (min-width: 520px) and (max-width: 800px){
     	&__content__title{
-    		font-size: 22px;	
+    		font-size: 22px;
     	}
     }
 }
