@@ -7,30 +7,7 @@
     <!-- Navigation Bar -->
     @include('client.partials.navigationBar')
 
-
-    <!-- Breadcrumbs -->
-    <ul class="breadcrumbs">
-    	<li class="breadcrumbs__breadcrumb-item">
-    		<div class="breadcrumbs__breadcrumb-item__breadcrumb-item-container">
-    			<a class="breadcrumbs__breadcrumb-item__breadcrumb-item-container__breadcrumb-link" href="/">
-    				Home
-    			</a>
-    			<span class="breadcrumbs__breadcrumb-item__breadcrumb-item-container__breadcrumb-item-separator"></span>
-    		</div>
-    	</li>
-    	<li class="breadcrumbs__breadcrumb-item">
-    		<div class="breadcrumbs__breadcrumb-item__breadcrumb-item-container">
-    			<a class="breadcrumbs__breadcrumb-item__breadcrumb-item-container__breadcrumb-link" href="{{ route('home.postList', ['categorySlug' => $post->categories->category_slug ]) }}">{{ $post->categories->category_name }}</a>
-    			<span class="breadcrumbs__breadcrumb-item__breadcrumb-item-container__breadcrumb-item-separator"></span>
-    		</div>
-    	</li>
-        <li class="breadcrumbs__breadcrumb-item">
-            <div class="breadcrumbs__breadcrumb-item__breadcrumb-item-container">
-            <a class="breadcrumbs__breadcrumb-item__breadcrumb-item-container__breadcrumb-link" href="{{ url()->current() }}">{{ $post->post_title}}</a>
-                <span></span>
-            </div>
-        </li>
-    </ul>
+    @include('client.partials.breadcrumbs')
 
     <!-- Post Detail -->
     <section class="post-detail">

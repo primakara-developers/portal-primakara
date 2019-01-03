@@ -5,7 +5,6 @@
 @section('content')
 
 <main>
-
     @include('client.partials.navigationBar')
 
     @include('client.partials.breadcrumbs')
@@ -19,7 +18,7 @@
             @if(!is_null($posts))
                 @foreach ($posts as $post)
                     <div class="post__list__item">
-                        <a href="" class="post__list__item__left">
+                        <a href="{{ route('home.postDetail', ['slugPost' => $post->post_slug]) }}" class="post__list__item__left">
                             <img class="post__list__item__image" src="{{ Storage::url('media/'.$post->post_cover) }}">
                         </a>
                         <div class="post__list__item__right">
