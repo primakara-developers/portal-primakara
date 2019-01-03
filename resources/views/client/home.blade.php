@@ -108,8 +108,8 @@
                 <a href="#" class="ukm__container__content__box__link">
 
                   <div class="ukm__container__content__box__link__logo">
-
-                    <img src="images/logo-gradient.png" class="ukm__container__content__box__link__logo__main">
+                    
+                    <img src="images/logo-gradient.svg" class="ukm__container__content__box__link__logo__main">
                     <img src="images/no4.jpg" class="ukm__container__content__box__link__logo__img">
                     <div class="ukm__container__content__box__link__logo__gradient ukm__container__content__box__link__logo__primdev"></div>
                     <!-- <div class="ukm__container__content__box__link__logo__gradient-white ukm__container__content__box__link__logo__primdev"></div>
@@ -133,7 +133,7 @@
 
                   <div class="ukm__container__content__box__link__logo">
 
-                    <img src="images/logo-gradient.png" class="ukm__container__content__box__link__logo__main">
+                    <img src="images/logo-gradient.svg" class="ukm__container__content__box__link__logo__main">
                     <img src="images/no4.jpg" class="ukm__container__content__box__link__logo__img">
                     <div class="ukm__container__content__box__link__logo__gradient ukm__container__content__box__link__logo__primdev"></div>
 
@@ -155,7 +155,7 @@
 
                   <div class="ukm__container__content__box__link__logo">
 
-                    <img src="images/logo-gradient.png" class="ukm__container__content__box__link__logo__main">
+                    <img src="images/logo-gradient.svg" class="ukm__container__content__box__link__logo__main">
                     <img src="images/no4.jpg" class="ukm__container__content__box__link__logo__img">
                     <div class="ukm__container__content__box__link__logo__gradient ukm__container__content__box__link__logo__primdev"></div>
 
@@ -177,7 +177,7 @@
 
                   <div class="ukm__container__content__box__link__logo">
 
-                    <img src="images/logo-gradient.png" class="ukm__container__content__box__link__logo__main">
+                    <img src="images/logo-gradient.svg" class="ukm__container__content__box__link__logo__main">
                     <img src="images/no4.jpg" class="ukm__container__content__box__link__logo__img">
                     <div class="ukm__container__content__box__link__logo__gradient ukm__container__content__box__link__logo__primdev"></div>
 
@@ -199,7 +199,7 @@
 
                   <div class="ukm__container__content__box__link__logo">
 
-                    <img src="images/logo-gradient.png" class="ukm__container__content__box__link__logo__main">
+                    <img src="images/logo-gradient.svg" class="ukm__container__content__box__link__logo__main">
                     <img src="images/no4.jpg" class="ukm__container__content__box__link__logo__img">
                     <div class="ukm__container__content__box__link__logo__gradient ukm__container__content__box__link__logo__primdev"></div>
 
@@ -221,7 +221,7 @@
 
                   <div class="ukm__container__content__box__link__logo">
 
-                    <img src="images/logo-gradient.png" class="ukm__container__content__box__link__logo__main">
+                    <img src="images/logo-gradient.svg" class="ukm__container__content__box__link__logo__main">
                     <img src="images/no4.jpg" class="ukm__container__content__box__link__logo__img">
                     <div class="ukm__container__content__box__link__logo__gradient ukm__container__content__box__link__logo__primdev"></div>
 
