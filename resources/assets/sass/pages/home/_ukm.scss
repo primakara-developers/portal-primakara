@@ -7,7 +7,11 @@
       position: relative;
       overflow: hidden;
       text-align: center;
-      padding-top: 29px;
+      padding-top: 45px;
+
+      @media only screen and (max-width: 620px) {
+          padding-top: 38px;
+      }
 
         &__title{
             font-size: 24px;
@@ -19,7 +23,7 @@
             font-size: 24px;
             color: #484848;
             font-weight: bold;
-            margin-bottom: 66px;
+            margin-bottom: 45px;
         }
 
         &__content{
@@ -40,7 +44,7 @@
                     display: block;
                     position: absolute;
                     z-index: 9;
-                    
+
                     &__logo{
                         height: 299px;
 
@@ -129,12 +133,12 @@
 
             }
         }
-        @media screen and (min-width: 520px) and (max-width: 900px){
+        @media screen and (min-width: 621px) and (max-width: 900px){
             &__content{
                 width: 50%;
             }
         }
-        @media screen and (max-width: 600px){
+        @media screen and (max-width: 620px){
             &__content{
                 width: 100%;
 
@@ -165,5 +169,5 @@
                 margin-bottom: 34px;
             }
         }
-    } 
+    }
 }

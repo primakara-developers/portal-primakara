@@ -1,14 +1,22 @@
 .headline {
     max-width: 100%;
     padding-top: 105px;
-    padding-bottom: 105px;
+    padding-bottom: 60px;
+
+    @media only screen and (max-width: 620px) {
+        padding-bottom: 38px;
+    }
+
     &__list {
         max-width: 100%;
-        width: 1151px; //1150px makes gap between menu, but 1151px or 1149 don't
+        width: 1150px;
         margin: auto;
-        padding: 13px;
         column-gap: 0;
         column-fill: initial;
+
+        @media only screen and (max-width: 1150px) {
+            padding: 0 16px;
+        }
 
         @media only screen and (min-width: 801px) {
         column-count: 3;
@@ -35,19 +43,22 @@
 
     &__cover {
         position: absolute;
-        z-index: 1;
-        top: 0;
-        left: 0;
-        width: 100%;
         transition: all ease-in-out .3s;
-        transform: scale(1.3);
+        display: block;
+        height: auto;
+        left: 50%;
+        max-height: 133%;
+        min-height: 100%;
+        min-width: 100%;
+        top: 50%;
+        transform: translate(-50%,-50%) scale(1.15);
     }
 
     &__gradient:hover ~ &__cover {
-        transform: scale(1);
+        transform: translate(-50%,-50%) scale(1);
     }
     &__title:hover ~ &__cover {
-        transform: scale(1);
+        transform: translate(-50%,-50%) scale(1);
     }
 
 
@@ -69,14 +80,19 @@
         font-weight: bold;
         z-index: 3;
         display: block;
-        line-height: 1.3;
         word-break: break-word;
-        padding-top: 45px;
-        padding-left: 22px;
-        padding-right: 22px;
-        font-size: 16px;
+        margin-top: 45px;
+        margin-left: 22px;
+        margin-right: 22px;
         text-transform: capitalize;
         text-decoration: none;
+
+        @include excerpt(
+            $font-size: 16px,
+            $line-height: 1.3,
+            $lines-to-show: 4,
+            $excerpt-bg: transparent
+        );
         &:hover {
             text-decoration: none;
         }
@@ -124,8 +140,34 @@
     &:nth-child(7) &__gradient{
         background: linear-gradient(to right, #a3931e, #e6c86b);
     }
-    &:nth-child(1) &__title, &:nth-child(7) &__title {
-        font-size: 30px;
+    &:nth-child(1) &__title {
+        @media only screen and (min-width: 621px) {
+            @include excerpt(
+                $font-size: 30px,
+                $line-height: 1.3,
+                $lines-to-show: 6,
+                $excerpt-bg: transparent
+            );
+        }
+
+        @media only screen and (min-width: 531px) and (max-width: 620px) {
+            @include excerpt(
+                $font-size: 26px,
+                $line-height: 1.3,
+                $lines-to-show: 6,
+                $excerpt-bg: transparent
+            );
+        }
+    }
+    &:nth-child(7) &__title {
+        @media only screen and (min-width: 801px) {
+            @include excerpt(
+                $font-size: 30px,
+                $line-height: 1.3,
+                $lines-to-show: 6,
+                $excerpt-bg: transparent
+            );
+        }
     }
     &:nth-child(2), &:nth-child(4), &:nth-child(5), &:nth-child(7) {
         margin-top: -4px;
