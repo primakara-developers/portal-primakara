@@ -93,10 +93,13 @@
                     margin-top: 3%;
                     line-height: 22px;
                     text-transform: capitalize;
-                    @include excerpt($font-size: 16px,
+
+                    @media only screen and (min-width: 531px) {
+                        @include excerpt($font-size: 16px,
                             $line-height: 1.4,
                             $lines-to-show: 2,
                             $excerpt-bg: #fafafa);
+                    }
 
                     @media screen and (max-width: 950px) {
                         font-size: 14px;
@@ -116,11 +119,8 @@
                     }
 
                     @media screen and (max-width: 530px) {
-
-                        @include excerpt($font-size: 18px,
-                            $line-height: 1.2,
-                            $lines-to-show: 3,
-                            $excerpt-bg: #fafafa);
+                        font-size: 18px;
+                        line-height: 1.4;
                     }
                 }
             }
