@@ -25,7 +25,10 @@
                             <a href="{{ route('admin.category.edit', ['id' => $category->id]) }}" class="btn btn-sm btn-primary">
                                 <i class="fa fa-pencil"></i>
                             </a>
-                            <a href="#" class="btn btn-sm btn-success">
+                            <a
+                                href="{{ route('home.postList', [ 'slugPost' => $category->category_slug ]) }}"
+                                class="btn btn-sm btn-success"
+                                target="_blank" rel="noopener noreferrer">
                                 <i class="fa fa-eye"></i>
                             </a>
                             <a href="{{ route('admin.category.delete',['id'=>$category->id]) }}" class="btn btn-sm btn-danger">
