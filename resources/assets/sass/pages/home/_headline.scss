@@ -34,10 +34,13 @@
     overflow: hidden;
     // padding: 10px;
     position: relative;
-    transition: all 0.2s;
-    width: 100%;
-    -webkit-column-break-inside: avoid;
+    transition: all 0.3s ease-in-out;
     margin-bottom: 0;
+    width: 100%;
+
+    &:hover &__gradient {
+        opacity: 0.9;
+    }
 
     &__cover {
         position: absolute;
@@ -66,6 +69,7 @@
         z-index: 2;
         opacity: 0.7;
         text-decoration: none;
+        transition: opacity 0.3s ease-in-out;
     }
 
     &__title {
