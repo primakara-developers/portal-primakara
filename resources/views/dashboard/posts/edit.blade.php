@@ -42,7 +42,7 @@
                     </div>
                     <div class="form-group">
                         <label for="post_cover" class="col-xs-12" >Cover of Post</label>
-                        <img style="padding-right: 15px;padding-left: 15px;padding-bottom: 15px;max-width: 100%;" src="/media/{{ $post->post_cover }}" alt="" srcset="">
+                        <img style="padding-right: 15px;padding-left: 15px;padding-bottom: 15px;max-width: 100%;" src="{{ Storage::url('media/'.$post->post_cover) }}" alt="" srcset="">
                         <div class="col-xs-12">
                             <input type="file" class="" name="post_cover" id="post_cover" <?=empty($post->post_cover) ? 'required="true"':'' ?>>
                         </div>
@@ -66,7 +66,7 @@
                     </div>
                     <div class="form-group">
                         <div class="col-xs-12">
-                            <input type="submit" value="Publish" class="btn btn-succes btn-pull">
+                            <input type="submit" value="Publish" class="btn btn-success btn-pull">
                         </div>
                     </div>
                 </form>
@@ -115,8 +115,8 @@
         return text.toString().toLowerCase()
             .replace(/\s+/g, '-')
             .replace(/[^\w\-]+/g, '')
-            .replace(/\-\-+/g, '-')  
-            .replace(/^-+/, '') 
+            .replace(/\-\-+/g, '-')
+            .replace(/^-+/, '')
             .replace(/-+$/, '');
     }
 

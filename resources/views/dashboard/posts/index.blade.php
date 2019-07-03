@@ -29,7 +29,7 @@
             background-color: #3c8dbc;
             right: 0;
         }
-        
+
     </style>
 @endsection
 @section('content')
@@ -63,7 +63,10 @@
                             <a href="{{ route('admin.post.edit', ['id'=>$post->id]) }}" class="btn btn-sm btn-primary">
                                 <i class="fa fa-pencil"></i>
                             </a>
-                            <a href="#" class="btn btn-sm btn-success">
+                            <a
+                                href="{{ route('home.postDetail', [ 'slugPost' => $post->post_slug ]) }}"
+                                class="btn btn-sm btn-success"
+                                target="_blank" rel="noopener noreferrer">
                                 <i class="fa fa-eye"></i>
                             </a>
                             <a href="{{ route('admin.post.delete',['id' => $post->id]) }}" class="btn btn-sm btn-danger">
@@ -76,7 +79,7 @@
         </table>
     </div>
 
-    
+
     <!-- /.box-body -->
     <div class="box-footer clearfix">
         {{ $posts->links('dashboard.vendor.pagination.default') }}

@@ -9,7 +9,7 @@ use App\Post;
 use App\Category;
 use Auth;
 class PostController extends Controller
-{   
+{
     /**
      * Create a new controller instance.
      *
@@ -45,7 +45,7 @@ class PostController extends Controller
      */
     public function create()
     {
-        $categories = Category::all();  
+        $categories = Category::all();
         return view('dashboard.posts.add')
         ->with('categories', $categories);
     }
@@ -79,7 +79,7 @@ class PostController extends Controller
                 $post_cover = str_slug($request->post_title).uniqid().'.'.$imageFile->getClientOriginalExtension();
                 Storage::disk('local')->putFileAs('public/media/', $imageFile, $post_cover);
             }
-    
+
             $fields = [
                 'post_title' => $request->post_title,
                 'post_cover' => $post_cover,
@@ -88,7 +88,7 @@ class PostController extends Controller
                 'category_id'=>$category_id,
                 'user_id'=>Auth::user()->id
             ];
-            
+
             $insert = Post::create($fields);
             if($insert){
                 return redirect()->to(route('admin.post.index'))
@@ -97,7 +97,7 @@ class PostController extends Controller
         }
 
 
-       
+
     }
 
     /**
@@ -150,6 +150,8 @@ class PostController extends Controller
 
         if($insertCategory){
             $category_id = $insertCategory->id;
+
+            $post_cover = null;
             if($request->hasFile('post_cover')){
                 $imageFile = $request->file('post_cover');
                 $post_cover = str_slug($request->post_title).uniqid().'.'.$imageFile->getClientOriginalExtension();
@@ -158,12 +160,13 @@ class PostController extends Controller
 
             $fields = [
                 'post_title' => $request->post_title,
-                // 'post_cover' => $post_cover,
-                // 'post_slug'=> $request->post_slug,
+                'post_slug'=> $request->post_slug,
                 'post_content'=>$request->post_content,
                 'category_id'=>$category_id,
                 'user_id'=>Auth::user()->id
             ];
+
+            if ($post_cover !== null) $fields['post_cover'] = $post_cover;
 
             $post = Post::find($id);
 

@@ -11,17 +11,17 @@ class SinglePageController extends Controller
 {
     function index($slugPost)
     {
-    	$checker = Post::where('post_slug', $slugPost)->firstOrFail(); 
+    	$checker = Post::where('post_slug', $slugPost)->firstOrFail();
 
         $category = new Category;
 
         $allCategory = $category->all();
 
         $post = Post::with('categories', 'user')->where('post_slug', $slugPost)->first();
-        $randomPosts = Post::inRandomOrder()->paginate(3);
+        $randomPosts = Post::with('user')->where('id', '!=', $post->id)->inRandomOrder()->paginate(3);
 
         $links = [
-            'Home' => '/', 
+            'Home' => '/',
             $post->categories->category_name => route('home.postList', ['categorySlug' => $post->categories->category_slug]),
             $post->post_title => route('home.postDetail', ['slugPost' => $post->post_slug])
         ];

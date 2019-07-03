@@ -34,7 +34,7 @@
                     </div>
                     <div class="form-group">
                         <div class="col-xs-12">
-                            <input type="submit" value="Save" class="btn btn-succes btn-pull">
+                            <input type="submit" value="Save" class="btn btn-success btn-pull">
                         </div>
                     </div>
                 </form>
@@ -62,8 +62,8 @@
         return text.toString().toLowerCase()
             .replace(/\s+/g, '-')
             .replace(/[^\w\-]+/g, '')
-            .replace(/\-\-+/g, '-')  
-            .replace(/^-+/, '') 
+            .replace(/\-\-+/g, '-')
+            .replace(/^-+/, '')
             .replace(/-+$/, '');
     }
 
